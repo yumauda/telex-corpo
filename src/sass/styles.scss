@@ -11,11 +11,15 @@
 // Project
 @use "./project/_p-404";
 @use "./project/_p-common-link";
+@use "./project/_p-common-mv";
 @use "./project/_p-footer";
 @use "./project/_p-form";
 @use "./project/_p-header";
+@use "./project/_p-history";
 @use "./project/_p-home-topics";
 @use "./project/_p-mv";
+@use "./project/_p-page-company";
+@use "./project/_p-purpose";
 @use "./project/_p-single-topics";
 @use "./project/_p-top-business";
 @use "./project/_p-top-csr";

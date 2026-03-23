@@ -1,0 +1,88 @@
+@use "../global" as *;
+
+.p-history {
+  background: #3a3a3a;
+  padding-top: rem(80);
+  padding-bottom: rem(80);
+
+  @include mq("md") {
+    padding-top: rem(120);
+    padding-bottom: rem(120);
+  }
+}
+
+.p-history__content {
+  max-width: rem(915);
+}
+
+.p-history__enTitle {
+  font-family: "Cormorant", serif;
+  font-weight: $bold;
+  font-size: rem(58);
+  line-height: 0.48;
+  color: #fff;
+}
+
+.p-history__jaTitle {
+  margin-top: rem(12);
+  font-family: $base-font-family;
+  font-weight: $normal;
+  font-size: rem(20);
+  line-height: 1.4;
+  color: #fff;
+}
+
+.p-history__timeline {
+  position: relative;
+  margin-top: rem(48);
+  padding-left: rem(0);
+
+  @include mq("md") {
+    margin-top: rem(65);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: rem(3.5);
+    top: rem(10);
+    bottom: rem(10);
+    width: 1px;
+    background: #fff;
+  }
+}
+
+.p-history__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.p-history__item {
+  display: grid;
+  grid-template-columns: rem(7) rem(65) 1fr;
+  column-gap: rem(12);
+  align-items: start;
+  color: #fff;
+
+  & + & {
+    margin-top: rem(58);
+  }
+}
+
+.p-history__dot {
+  margin-top: rem(6);
+  width: rem(7);
+  height: rem(7);
+  border-radius: 50%;
+  background: #fff;
+}
+
+.p-history__year,
+.p-history__desc {
+  font-family: $base-font-family;
+  font-weight: $normal;
+  font-size: rem(16);
+  line-height: 2.05;
+}
+

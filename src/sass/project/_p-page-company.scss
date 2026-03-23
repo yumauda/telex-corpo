@@ -1,0 +1,135 @@
+@use "../global" as *;
+
+.p-page-company {
+  padding-top: rem(80);
+  padding-bottom: rem(80);
+
+  @include mq("md") {
+    padding-top: rem(120);
+    padding-bottom: rem(120);
+  }
+}
+
+.p-page-company__content {
+  max-width: rem(901);
+}
+
+.p-page-company__enTitle {
+  font-family: "Cormorant", serif;
+  font-weight: $bold;
+  font-size: rem(58);
+  line-height: 0.48;
+  color: #000;
+}
+
+.p-page-company__jaTitle {
+  margin-top: rem(12);
+  font-family: $base-font-family;
+  font-weight: $normal;
+  font-size: rem(20);
+  line-height: 1.4;
+  color: #000;
+}
+
+.p-page-company__list {
+  margin-top: rem(40);
+  margin-inline: 0;
+}
+
+.p-page-company__row {
+  display: grid;
+  grid-template-columns: rem(208) 1fr;
+  column-gap: rem(24);
+  padding-block: rem(20);
+  border-top: 1px solid #969696;
+}
+
+.p-page-company__list--bottom {
+  margin-top: rem(34);
+
+  .p-page-company__row:last-child {
+    border-bottom: 1px solid #969696;
+  }
+}
+
+.p-page-company__label {
+  font-family: $base-font-family;
+  font-weight: $normal;
+  font-size: rem(16);
+  line-height: 2.05;
+  color: #000;
+  width: rem(205);
+}
+
+.p-page-company__value {
+  font-family: $base-font-family;
+  font-weight: $normal;
+  font-size: rem(16);
+  line-height: 2.05;
+  color: #000;
+  width: calc(100% - rem(205));
+
+}
+
+.p-page-company__value--address {
+  line-height: 1.3625;
+}
+
+.p-page-company__map {
+  margin-top: rem(28);
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 691 / 470;
+    object-fit: cover;
+  }
+}
+
+.p-page-company__exec {
+  display: grid;
+  grid-template-columns: rem(142) 1fr;
+  column-gap: rem(16);
+
+  & + & {
+    margin-top: rem(6);
+  }
+}
+
+.p-page-company__execTitle,
+.p-page-company__execName {
+  font-size: rem(16);
+  line-height: 2.05;
+}
+
+.p-page-company__cta {
+  margin-top: rem(40);
+  display: flex;
+  justify-content: center;
+}
+
+.p-page-company__ctaLink {
+  width: rem(290);
+  min-height: rem(80);
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: rem(8);
+  border: 1px solid #000;
+}
+
+.p-page-company__ctaEn {
+  font-family: "Cormorant", serif;
+  font-weight: $bold;
+  font-size: rem(36);
+  line-height: 0.78;
+}
+
+.p-page-company__ctaJa {
+  font-family: $base-font-family;
+  font-weight: $normal;
+  font-size: rem(20);
+  line-height: 1.4;
+}
+

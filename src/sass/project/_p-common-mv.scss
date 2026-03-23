@@ -1,0 +1,97 @@
+@use "../global" as *;
+
+.p-common-mv {
+  position: relative;
+  overflow-x: clip;
+
+  .l-inner {
+    max-width: none;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.p-common-mv__content {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1440 / 480;
+}
+
+.p-common-mv__media {
+  position: absolute;
+  inset: 0;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  z-index: 1;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
+  svg {
+    padding-top: rem(40);
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1565 / 780;
+    object-fit: cover;
+    display: block;
+
+  }
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+  .p-common-mv__waveGroup {
+    filter: none;
+  }
+}
+
+.p-common-mv__titles {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 4;
+  display: grid;
+  justify-items: center;
+  row-gap: rem(12);
+  text-align: center;
+}
+
+.p-common-mv__enTitle {
+  font-family: "Cormorant", serif;
+  font-weight: $bold;
+  font-size: rem(40);
+  line-height: 0.48;
+  color: #000;
+  text-align: center;
+
+  @include mq("md") {
+    font-size: rem(58);
+  }
+}
+
+.p-common-mv__jaTitle {
+  font-family: $base-font-family;
+  font-weight: $normal;
+  font-size: rem(18);
+  line-height: 1.4;
+  margin-top: rem(12);
+  color: #000;
+  text-align: center;
+
+  @include mq("md") {
+    font-size: rem(20);
+  }
+}
