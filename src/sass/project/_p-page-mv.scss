@@ -1,0 +1,45 @@
+@use "../global" as *;
+
+.p-page-mv {
+  overflow-x: clip;
+}
+
+
+.p-page-mv__content {
+  position: relative;
+}
+
+.p-page-mv__img {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+.p-page-mv__img img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.p-page-mv__detail {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.p-page-mv__en {
+  font-size: rem(58);
+  font-weight: $bold;
+  font-family: "Cormorant", serif;
+  color: #fff;
+}
+
+.p-page-mv__ja {
+  font-size: rem(20);
+  font-weight: $normal;
+  font-family: $base-font-family;
+  color: #fff;
+}

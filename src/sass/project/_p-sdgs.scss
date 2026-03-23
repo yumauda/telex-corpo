@@ -1,0 +1,107 @@
+@use "../global" as *;
+
+.p-sdgs {
+  padding-top: rem(80);
+  padding-bottom: rem(80);
+  @include mq(md) {
+    padding-top: rem(120);
+    padding-bottom: rem(120);
+  }
+}
+
+.p-sdgs__title {
+  margin: 0;
+  font-family: $second-font-family;
+  font-weight: $bold;
+  font-size: rem(24);
+  line-height: 1.3125;
+  text-align: center;
+  color: #313131;
+
+  @include mq("md") {
+    font-size: rem(32);
+  }
+}
+
+.p-sdgs__panel {
+  max-width: rem(899);
+  margin-inline: auto;
+  border: 1px solid #000;
+  padding: rem(40) $padding-sp rem(56);
+
+  @include mq("md") {
+    padding: rem(56) rem(64) rem(72);
+  }
+}
+
+.p-sdgs__blocks {
+  margin-top: rem(48);
+  display: grid;
+  gap: rem(64);
+  @include mq(md) {
+    margin-top: rem(72);
+    gap: rem(86);
+  }
+}
+
+.p-sdgs__blockTitle {
+  margin: 0;
+  font-family: $second-font-family;
+  font-weight: $bold;
+  font-size: rem(20);
+  line-height: 1.1666667;
+  text-align: center;
+  color: #313131;
+  padding-bottom: rem(16);
+  border-bottom: 1px solid #7c7c7c;
+
+  @include mq("md") {
+    font-size: rem(24);
+    padding-bottom: rem(17);
+  }
+}
+
+.p-sdgs__icons {
+  margin-top: rem(24);
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: rem(6);
+  @include mq(md) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: rem(6);
+  }
+
+  @include mq("md") {
+    max-width: rem(768);
+    margin-inline: auto;
+  }
+}
+
+.p-sdgs__icon {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.p-sdgs__text {
+  margin-top: rem(24);
+  font-family: $base-font-family;
+  font-weight: $normal;
+  font-size: rem(14);
+  line-height: 2.05;
+  color: #222;
+  @include mq(md) {
+    font-size: rem(16);
+    line-height: 2.05;
+  }
+
+  @include mq("md") {
+    max-width: rem(768);
+    margin-inline: auto;
+  }
+}
+
