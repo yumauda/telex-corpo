@@ -1,0 +1,120 @@
+@use "../global" as *;
+
+.p-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 999;
+  height: rem(74);
+}
+
+.p-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.4) 34%,
+    rgba(0, 0, 0, 0.2) 77%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  pointer-events: none;
+}
+
+.p-header__inner {
+  position: relative;
+  height: 100%;
+  max-width: rem(1440);
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $padding-sp;
+  padding-left: $padding-sp;
+  display: flex;
+  align-items: center;
+  @include mq(md) {
+    padding-right: rem(27);
+    padding-left: rem(27);
+  }
+}
+
+.p-header__content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: rem(20);
+}
+
+.p-header__logoLink {
+  display: inline-flex;
+  align-items: center;
+  gap: rem(9);
+  color: #fff;
+}
+
+.p-header__logo {
+  width: rem(43);
+  height: auto;
+}
+
+.p-header__logoText {
+  font-family: $base-font-family;
+  font-weight: $bold;
+  font-size: rem(20);
+  line-height: 1;
+  @include mq(md) {
+    font-size: rem(24);
+  }
+}
+
+.p-header__nav {
+  display: none;
+  align-items: center;
+  gap: rem(24);
+  @include mq(md) {
+    display: flex;
+  }
+}
+
+.p-header__navList {
+  display: flex;
+  align-items: center;
+  gap: rem(32);
+}
+
+.p-header__navLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $second-font-family;
+  font-weight: 500;
+  font-size: rem(16);
+  line-height: 1.1375;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.p-header__cta {
+  display: flex;
+  align-items: center;
+  gap: rem(16);
+}
+
+.p-header__btn {
+  width: rem(131);
+  height: rem(36);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  font-family: $second-font-family;
+  font-weight: 500;
+  font-size: rem(16);
+  line-height: 1.1375;
+  color: #fff;
+  white-space: nowrap;
+}
+
