@@ -1,0 +1,125 @@
+@use "../global" as *;
+
+.p-privacy {
+  padding-top: rem(80);
+  padding-bottom: rem(120);
+
+  @include mq("md") {
+    padding-top: rem(120);
+    padding-bottom: rem(160);
+  }
+}
+
+.p-privacy__content {
+  max-width: rem(899);
+  margin-inline: auto;
+}
+
+.p-privacy__enTitle {
+  font-family: "Cormorant", serif;
+  font-weight: $bold;
+  font-size: rem(58);
+  line-height: 0.48;
+  color: #000;
+}
+
+.p-privacy__jaTitle {
+  margin-top: rem(14);
+  font-family: $base-font-family;
+  font-weight: $normal;
+  font-size: rem(20);
+  line-height: 1.4;
+  color: #000;
+}
+
+.p-privacy__body {
+  margin-top: rem(48);
+}
+
+.p-privacy__intro {
+  margin: 0;
+  font-family: $base-font-family;
+  font-weight: $normal;
+  font-size: rem(20);
+  line-height: 2.05;
+  color: #222;
+}
+
+.p-privacy__sections {
+  margin-top: rem(56);
+  display: grid;
+  gap: rem(40);
+}
+
+.p-privacy__sectionTitle {
+  font-weight: $bold;
+  font-size: rem(20);
+  line-height: 1.6;
+  color: #000;
+}
+
+.p-privacy__text {
+  margin-top: rem(16);
+  font-family: $base-font-family;
+  font-weight: $normal;
+  font-size: rem(20);
+  line-height: 2.05;
+  color: #222;
+}
+
+.p-privacy__list {
+  margin-top: rem(14);
+  padding-left: rem(18);
+  display: grid;
+  gap: rem(10);
+  list-style: disc;
+}
+
+.p-privacy__listItem {
+  font-family: $base-font-family;
+  font-weight: $normal;
+  font-size: rem(20);
+  line-height: 1.8;
+  color: #222;
+}
+
+.p-privacy__dl {
+  margin-top: rem(16);
+  display: grid;
+  gap: rem(12);
+}
+
+.p-privacy__dlRow {
+  // display: grid;
+  // gap: rem(6);
+
+  // @include mq("md") {
+  //   grid-template-columns: 6em 1fr;
+  //   gap: rem(12);
+  //   align-items: start;
+  // }
+}
+
+.p-privacy__dt {
+  font-family: $base-font-family;
+  font-weight: $normal;
+  font-size: rem(20);
+  line-height: 1.6;
+  color: #000;
+}
+
+.p-privacy__dd {
+  font-family: $base-font-family;
+  font-weight: $normal;
+  font-size: rem(20);
+  line-height: 2.0;
+  color: #222;
+}
+
+.p-privacy__mail {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  word-break: break-all;
+}
+

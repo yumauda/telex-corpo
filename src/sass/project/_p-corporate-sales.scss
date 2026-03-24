@@ -1,0 +1,21 @@
+@use "../global" as *;
+
+.p-page-mv__wave {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  width: 110vw;
+  height: auto;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.p-page-mv__overlay {
+  z-index: 2;
+}
+
+.p-page-mv__detail {
+  z-index: 3;
+}
+

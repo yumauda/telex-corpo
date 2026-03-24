@@ -1,0 +1,42 @@
+@use "../global" as *;
+
+.p-introduce {
+  padding-top: rem(80);
+  padding-bottom: rem(80);
+
+  @include mq("md") {
+    padding-top: rem(120);
+    padding-bottom: rem(120);
+  }
+}
+
+.p-introduce__content {
+  max-width: rem(899);
+}
+
+.p-introduce__enTitle {
+  font-family: "Cormorant", serif;
+  font-weight: $bold;
+  font-size: rem(58);
+  line-height: 0.48;
+  color: #000;
+}
+
+.p-introduce__jaTitle {
+  margin-top: rem(14);
+  font-family: $base-font-family;
+  font-weight: $normal;
+  font-size: rem(20);
+  line-height: 1.4;
+  color: #000;
+}
+
+.p-introduce__text {
+  margin-top: rem(48);
+  font-family: $base-font-family;
+  font-weight: $normal;
+  font-size: rem(16);
+  line-height: 2.05;
+  color: #222;
+}
+
