@@ -1,94 +1,223 @@
-"use strict";
+gsap.registerPlugin(ScrollTrigger);
 
-// アニメーションパターンを定義
-const animationPatterns = {
-  // ページ読み込み時に即座に表示（ScrollTrigger無し）
-  "js-top": {
-    from: { opacity: 0, y: 50 },
-    to: { duration: 1.5, opacity: 1, y: 0, stagger: 0.8, ease: "power3.out" },
-    useScrollTrigger: false,
-  },
-  // フェードイン（下から上へ）
-  "js-fadeUp": {
-    from: { opacity: 0, y: 30 },
-    to: { duration: 1.5, opacity: 1, y: 0, stagger: 0.3, ease: "power3.out" },
-    useScrollTrigger: true,
-  },
-  // シンプルなフェードイン（移動なし）
-  "js-fadeIn": {
-    from: { opacity: 0 },
-    to: { duration: 1.2, opacity: 1, stagger: 0.2, ease: "power2.out" },
-    useScrollTrigger: true,
-  },
-  // 左からフェードイン
-  "js-fadeLeft": {
-    from: { opacity: 0, x: -30 },
-    to: { duration: 1.2, opacity: 1, x: 0, stagger: 0.2, ease: "power3.out" },
-    useScrollTrigger: true,
-  },
-  // 右からフェードイン
-  "js-fadeRight": {
-    from: { opacity: 0, x: 30 },
-    to: { duration: 1.2, opacity: 1, x: 0, stagger: 0.2, ease: "power3.out" },
-    useScrollTrigger: true,
-  },
-  // スケールイン
-  "js-scaleIn": {
-    from: { opacity: 0, scale: 0.9 },
-    to: {
-      duration: 1.2,
-      opacity: 1,
-      scale: 1,
-      stagger: 0.2,
-      ease: "power3.out",
+const opening = gsap.timeline();
+
+opening.fromTo(".js-mv-img", {
+  opacity: 0,
+  clipPath: "inset(0 100% 0 0)",
+}, {
+  clipPath: "inset(0 0% 0 0)",
+  opacity: 1,
+  stagger: 0.2,
+  ease: "power2.inOut",
+  duration: 1.5,
+});
+opening.fromTo(".js-mv-ribbon", {
+  opacity: 0,
+  clipPath: "inset(0 100% 0 0)",
+}, {
+  opacity: 1,
+  clipPath: "inset(0 0% 0 0)",
+  duration: 1.5,
+  ease: 'power2.inOut',
+}, "-=1");
+opening.fromTo(".js-en-title", {
+  opacity: 0,
+  clipPath: "inset(100% 0 0 0)",
+}, {
+  clipPath: "inset(0% 0 0 0)",
+  opacity: 1,
+  stagger: 0.2,
+  ease: "power2.inOut",
+  duration: 1,
+});
+opening.fromTo(".js-ja-title", {
+  opacity: 0,
+  clipPath: "inset(100% 0 0 0)",
+}, {
+  clipPath: "inset(0% 0 0 0)",
+  opacity: 1,
+  ease: "power2.inOut",
+  duration: 1,
+  "--width": "100%",
+}, "-=0.5");
+opening.fromTo(".js-top-header", {
+  opacity: 0,
+  y: -100,
+}, {
+  y: 0,
+  opacity: 1,
+  ease: "power2.inOut",
+  duration: 1,
+});
+
+
+
+
+let ribbons = document.querySelectorAll('.js-ribbon');
+
+ribbons.forEach((ribbon) => {
+  gsap.fromTo(
+    ribbon,
+    {
+      opacity: 0,
+      clipPath: "inset(0 100% 0 0)",
     },
-    useScrollTrigger: true,
-  },
-  // 既存のセカンドアニメーション
-  "js-second": {
-    from: { opacity: 0, y: 30 },
-    to: { duration: 1.5, opacity: 1, y: 0, stagger: 0.3, ease: "power3.out" },
-    useScrollTrigger: true,
-  },
-};
-
-// アニメーションを適用する汎用関数
-function initScrollAnimations() {
-  gsap.registerPlugin(ScrollTrigger);
-
-  Object.keys(animationPatterns).forEach((className) => {
-    const elements = document.querySelectorAll(`.${className}`);
-
-    if (elements.length === 0) return; // 要素がなければスキップ
-
-    const pattern = animationPatterns[className];
-    const { from, to, useScrollTrigger, trigger } = pattern;
-
-    if (useScrollTrigger) {
-      // ScrollTriggerを使用する場合 - 各要素に個別に適用
-      elements.forEach((element, index) => {
-        const toConfig = { ...to };
-
-        // staggerは個別要素には不要なので削除
-        delete toConfig.stagger;
-
-        // ScrollTrigger設定 - カスタムトリガーがあれば使用、なければ要素自身をトリガーに
-        toConfig.scrollTrigger = {
-          trigger: trigger || element, // カスタムトリガーがあれば使用、なければ要素自身
-          start: "0% 80%", // 画面の80%の位置で発火
-          // markers: true, // デバッグ用（必要に応じてコメント解除）
-        };
-
-        gsap.fromTo(element, from, toConfig);
-      });
-    } else {
-      // ScrollTrigger無し（即座にアニメーション）
-      gsap.fromTo(`.${className}`, from, to);
+    {
+      opacity: 1,
+      clipPath: "inset(0 0% 0 0)",
+      duration: 3,
+      ease: 'power3.out',
+      delay: 0.5,
+      scrollTrigger: {
+        trigger: ribbon,
+        start: 'top 90%',
+      },
     }
-  });
-}
+  );
+});
 
-// ページ読み込み時に実行
-window.addEventListener("DOMContentLoaded", function () {
-  initScrollAnimations();
+let newsRibbons = document.querySelectorAll('.js-news-ribbon');
+
+newsRibbons.forEach((newsRibbon) => {
+  gsap.fromTo(
+    newsRibbon,
+    {
+      opacity: 0,
+      clipPath: "inset(0 100% 0 0)",
+    },
+    {
+      opacity: 1,
+      clipPath: "inset(0 0% 0 0)",
+      duration: 1.5,
+      ease: 'power3.out',
+      scrollTrigger: {
+        trigger: newsRibbon,
+        start: 'top 90%',
+      },
+    }
+  );
+});
+
+
+let pageMainTitles = document.querySelectorAll('.js-page-main-title');
+
+pageMainTitles.forEach((pageMainTitle) => {
+  gsap.fromTo(
+    pageMainTitle,
+    {
+      opacity: 0,
+      clipPath: "inset(0 100% 0 0)",
+    },
+    {
+      opacity: 1,
+      clipPath: "inset(0 0% 0 0)",
+      duration: 1.5,
+      ease: 'power2.inOut',
+      scrollTrigger: {
+        trigger: pageMainTitle,
+        start: 'top 90%',
+      },
+    }
+  );
+});
+
+let clipPathFromBottom = document.querySelectorAll('.js-clip-path-from-bottom');
+
+clipPathFromBottom.forEach((clipPathFromBottom) => {
+  gsap.fromTo(
+    clipPathFromBottom,
+    {
+      opacity: 0,
+      clipPath: "inset(100% 0 0 0)",
+    },
+    {
+      opacity: 1,
+      clipPath: "inset(0% 0 0 0)",
+      duration: 1.5,
+      ease: 'power2.inOut',
+      scrollTrigger: {
+        trigger: clipPathFromBottom,
+        start: 'top 90%',
+      },
+    }
+  );
+});
+let opacityWords = document.querySelectorAll('.js-opacity-word');
+
+opacityWords.forEach((opacityWord) => {
+  gsap.fromTo(
+    opacityWord,
+    {
+      opacity: 0,
+    },
+    {
+      opacity: 1,
+      duration: 1,
+      ease: 'power2.inOut',
+      scrollTrigger: {
+        trigger: opacityWord,
+        start: 'top 90%',
+      },
+    }
+  );
+});
+let proWords = document.querySelectorAll('.js-pro-word');
+
+proWords.forEach((proWord) => {
+  gsap.fromTo(
+    proWord,
+    {
+      "--width": "0%",
+      opacity: 0,
+    },
+    {
+      "--width": "100%",
+      opacity: 1,
+      duration: 1.5,
+      ease: 'power3.out',
+      stagger: 0.08,
+      scrollTrigger: {
+        trigger: proWord,
+        start: 'top 90%',
+      },
+    }
+  );
+});
+gsap.fromTo(".js-pro-img", {
+  opacity: 0,
+  scale: 0.3,
+  filter: "blur(200px)",
+}, {
+  opacity: 1,
+  scale: 1,
+  filter: "blur(0px)",
+  duration: 1.5,
+  ease: 'power3.out',
+  scrollTrigger: {
+    trigger: ".js-pro-img",
+    start: 'top 90%',
+  },
+});
+
+let parallaxImgs = document.querySelectorAll('.js-parallax');
+
+parallaxImgs.forEach((parallaxImg) => {
+  gsap.fromTo(
+    parallaxImg.querySelector('img'),
+    {
+      y: -60,
+    },
+    {
+      y: 0,
+      duration: 1,
+      ease: 'power2.inOut',
+      scrollTrigger: {
+        trigger: parallaxImg,
+        start: 'top bottom',
+        end: 'bottom top',
+        scrub: true,
+      },
+    }
+  );
 });
