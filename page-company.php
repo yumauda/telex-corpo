@@ -462,6 +462,6 @@
     </div>
   </section>
   <?php get_template_part('includes/common-link'); ?>
-
+  
 </main>
 <?php get_footer(); ?>

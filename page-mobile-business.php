@@ -107,7 +107,7 @@
               </div>
               <figure class="p-features__itemMedia">
                 <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile-business/features/features-05-7e7b7e.png" alt="" width="3227" height="2154">
-              </figure>
+          </figure>
             </article>
           </div>
         </div>
@@ -120,7 +120,7 @@
         <div class="p-achievements__head">
           <p class="p-achievements__enTitle">Achievements</p>
           <h2 class="p-achievements__jaTitle">これまでの実績について</h2>
-        </div>
+          </div>
 
         <div class="p-achievements__list">
           <figure class="p-achievements__card">

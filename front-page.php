@@ -1,5 +1,18 @@
 <?php get_header(); ?>
 <main>
+  <div class="p-loader" aria-hidden="true">
+    <div class="p-loader__bg" aria-hidden="true"></div>
+    <div class="p-loader__center">
+      <div class="p-loader__logoLink">
+        <div class="p-loader__logo-img">
+          <img decoding="async" loading="lazy" class="p-header__logo p-loader__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/common/header-logo.png" alt="" width="260" height="357">
+        </div>
+        <span class="p-header__logoText p-loader__logoText">
+          <span class="p-loader__char">T</span><span class="p-loader__char">e</span><span class="p-loader__char">l</span><span class="p-loader__char">e</span><span class="p-loader__char">x</span><span class="p-loader__char">&nbsp;</span><span class="p-loader__char">K</span><span class="p-loader__char">a</span><span class="p-loader__char">n</span><span class="p-loader__char">s</span><span class="p-loader__char">a</span><span class="p-loader__char">i</span>
+        </span>
+      </div>
+    </div>
+  </div>
   <section class="p-mv">
     <div class="l-inner">
       <div class="p-mv__content">

@@ -2,6 +2,52 @@ gsap.registerPlugin(ScrollTrigger);
 
 const opening = gsap.timeline();
 
+opening.fromTo(".p-loader__logo-img", {
+  opacity: 0,
+  scale: 2.5,
+  x: () => {
+    const logoLink = document.querySelector(".p-loader__logoLink");
+    const textEl = document.querySelector(".p-loader__logoText");
+    if (!logoLink || !textEl) return 0;
+    const styles = window.getComputedStyle(logoLink);
+    const gap = parseFloat(styles.gap || styles.columnGap || "0") || 0;
+    const textWidth = textEl.getBoundingClientRect().width || 0;
+    return (textWidth + gap) / 2;
+  },
+}, {
+  opacity: 1,
+  scale: 1,
+  x: 0,
+  duration: 3,
+  ease: "power2.inOut",
+});
+
+// ロゴをscaleで小さく、元の位置にずらす
+// telexkansaiを一文字ずつ出現させる
+opening.fromTo(".p-loader__logoText", {
+  opacity: 0,
+}, {
+  opacity: 1,
+  duration: 0.01,
+});
+opening.fromTo(".p-loader__char", {
+  opacity: 0,
+  y: 6,
+}, {
+  opacity: 1,
+  y: 0,
+  duration: 0.45,
+  stagger: 0.08,
+  ease: "power2.out",
+}, "<");
+// 全体をふわっと消す
+opening.to(".p-loader", {
+  opacity: 0,
+  duration: 0.9,
+  ease: "power2.inOut",
+}, "+=0.4");
+opening.set(".p-loader", { display: "none" });
+
 opening.fromTo(".js-mv-img", {
   opacity: 0,
   clipPath: "inset(0 100% 0 0)",
@@ -50,6 +96,7 @@ opening.fromTo(".js-top-header", {
   ease: "power2.inOut",
   duration: 1,
 });
+
 
 
 
