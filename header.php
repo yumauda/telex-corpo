@@ -69,9 +69,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;600;700&family=Oswald:wght@400&family=Urbanist:wght@400;500;600&display=swap" rel="stylesheet">
-    <?php if (is_404()) : ?>
+    <!-- <?php if (is_404()) : ?>
         <meta http-equiv="refresh" content=" 3; url=<?php echo esc_url(home_url("/")); ?>">
-    <?php endif; ?>
+    <?php endif; ?> -->
     <?php wp_head() ?>
 </head>
 
@@ -95,16 +95,16 @@
                         <a class="p-header__navLink" href="<?php echo esc_url(home_url('/business/')); ?>">事業内容</a>
                     </li>
                     <li class="p-header__navItem">
-                        <a class="p-header__navLink" href="<?php echo esc_url(home_url('/csr/')); ?>">CSRの取り組み</a>
+                        <a class="p-header__navLink" href="<?php echo esc_url(home_url('/csr')); ?>">CSRの取り組み</a>
                     </li>
                     <li class="p-header__navItem">
-                        <a class="p-header__navLink" href="<?php echo esc_url(home_url('/news/')); ?>">お知らせ</a>
+                        <a class="p-header__navLink" href="<?php echo esc_url(home_url('/news')); ?>">お知らせ</a>
                     </li>
                 </ul>
 
                 <div class="p-header__cta">
-                    <a class="p-header__btn" href="<?php echo esc_url(home_url('/recruit/')); ?>">採用情報</a>
-                    <a class="p-header__btn" href="<?php echo esc_url(home_url('/contact/')); ?>">お問い合わせ</a>
+                    <a class="p-header__btn" href="<?php echo esc_url(home_url('/recruit')); ?>">採用情報</a>
+                    <a class="p-header__btn" href="<?php echo esc_url(home_url('/contact')); ?>">お問い合わせ</a>
                 </div>
             </nav>
         </div>

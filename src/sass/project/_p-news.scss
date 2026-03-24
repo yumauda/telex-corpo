@@ -1,0 +1,153 @@
+@use "../global" as *;
+
+.p-news {
+  padding-top: rem(80);
+  padding-bottom: rem(120);
+
+  @include mq("md") {
+    padding-top: rem(120);
+    padding-bottom: rem(160);
+  }
+}
+
+.p-news__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: rem(40);
+
+  @include mq("md") {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: rem(67);
+    row-gap: rem(72);
+  }
+}
+
+.p-news__itemLink {
+  display: grid;
+  gap: rem(8);
+  color: inherit;
+}
+
+.p-news__thumb {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 260 / 185;
+
+  img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.p-news__thumbNoImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.p-news__date {
+  margin-top: rem(8);
+  font-family: $base-font-family;
+  font-weight: $normal;
+  font-size: rem(16);
+  line-height: 1.4875;
+  color: #000;
+}
+
+.p-news__title {
+  font-family: $base-font-family;
+  font-weight: $normal;
+  font-size: rem(18);
+  line-height: 1.3222223;
+  color: #000;
+}
+
+.p-news__empty {
+  font-family: $base-font-family;
+  font-weight: $normal;
+  font-size: rem(16);
+  line-height: 2;
+  color: #222;
+}
+
+.p-news__pager {
+  margin-top: rem(56);
+  display: flex;
+  justify-content: center;
+}
+
+.p-news__pagerInner {
+  display: flex;
+  align-items: center;
+  gap: rem(39);
+}
+
+.p-news__pagerMeta {
+  width: rem(30);
+  height: rem(30);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: $base-font-family;
+  font-weight: $normal;
+  font-size: rem(16);
+  line-height: 1.4875;
+  color: #000;
+}
+
+.p-news__pagerLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(9);
+  flex-wrap: wrap;
+}
+
+.p-news__pagerItem {
+  display: grid;
+}
+
+.p-news__pagerLinks {
+  .page-numbers {
+    width: rem(30);
+    height: rem(30);
+    display: grid;
+    place-items: center;
+    font-family: $base-font-family;
+    font-weight: $normal;
+    font-size: rem(16);
+    line-height: 1;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .page-numbers.current {
+    color: #fff;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: rem(20);
+      height: rem(20);
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background: #000;
+      z-index: -1;
+    }
+  }
+
+  .page-numbers.dots {
+    width: auto;
+    padding-inline: rem(6);
+  }
+}
+
