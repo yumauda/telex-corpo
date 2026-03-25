@@ -76,7 +76,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <header class="p-header">
+    <header class="p-header<?php echo is_front_page() ? ' js-top-header' : ''; ?>">
     <div class="p-header__inner">
         <div class="p-header__content">
             <div class="p-header__brand">

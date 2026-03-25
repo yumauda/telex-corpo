@@ -16,14 +16,17 @@ opening.fromTo(".p-loader__logo-img", {
   },
 }, {
   opacity: 1,
+  duration: 3,
+  ease: "power2.inOut",
+}, "-=1.5");
+
+opening.to(".p-loader__logo-img", {
   scale: 1,
   x: 0,
-  duration: 3,
+  duration: 1.0,
   ease: "power2.inOut",
 });
 
-// ロゴをscaleで小さく、元の位置にずらす
-// telexkansaiを一文字ずつ出現させる
 opening.fromTo(".p-loader__logoText", {
   opacity: 0,
 }, {
@@ -46,47 +49,10 @@ opening.to(".p-loader", {
   duration: 0.9,
   ease: "power2.inOut",
 }, "+=0.4");
-opening.set(".p-loader", { display: "none" });
+opening.set(".p-loader", {
+  display: "none",
+});
 
-opening.fromTo(".js-mv-img", {
-  opacity: 0,
-  clipPath: "inset(0 100% 0 0)",
-}, {
-  clipPath: "inset(0 0% 0 0)",
-  opacity: 1,
-  stagger: 0.2,
-  ease: "power2.inOut",
-  duration: 1.5,
-});
-opening.fromTo(".js-mv-ribbon", {
-  opacity: 0,
-  clipPath: "inset(0 100% 0 0)",
-}, {
-  opacity: 1,
-  clipPath: "inset(0 0% 0 0)",
-  duration: 1.5,
-  ease: 'power2.inOut',
-}, "-=1");
-opening.fromTo(".js-en-title", {
-  opacity: 0,
-  clipPath: "inset(100% 0 0 0)",
-}, {
-  clipPath: "inset(0% 0 0 0)",
-  opacity: 1,
-  stagger: 0.2,
-  ease: "power2.inOut",
-  duration: 1,
-});
-opening.fromTo(".js-ja-title", {
-  opacity: 0,
-  clipPath: "inset(100% 0 0 0)",
-}, {
-  clipPath: "inset(0% 0 0 0)",
-  opacity: 1,
-  ease: "power2.inOut",
-  duration: 1,
-  "--width": "100%",
-}, "-=0.5");
 opening.fromTo(".js-top-header", {
   opacity: 0,
   y: -100,

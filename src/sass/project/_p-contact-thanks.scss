@@ -1,0 +1,73 @@
+@use "../global" as *;
+
+.p-contactThanks {
+  padding-top: rem(70);
+  padding-bottom: rem(100);
+
+  @include mq(md) {
+    padding-top: rem(110);
+    padding-bottom: rem(140);
+  }
+}
+
+.p-contactThanks__content {
+  max-width: rem(920);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.p-contactThanks__title {
+  font-size: rem(18);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #222;
+
+  @include mq(md) {
+    font-size: rem(26);
+  }
+}
+
+.p-contactThanks__text {
+  margin-top: rem(18);
+  font-size: rem(14);
+  line-height: 1.9;
+  letter-spacing: 0.05em;
+  color: #222;
+
+  @include mq(md) {
+    margin-top: rem(24);
+    font-size: rem(18);
+  }
+}
+
+.p-contactThanks__btn {
+  margin-top: rem(30);
+  display: flex;
+  justify-content: center;
+
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}
+
+.p-contactThanks__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: rem(240);
+  height: rem(60);
+  border-radius: 9999px;
+  background: #222;
+  color: #fff;
+  border: 1px solid #222;
+  font-size: rem(18);
+  letter-spacing: 0.05em;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    background: rgba($color: $black, $alpha: 0.3);
+    border-color: $white;
+  }
+}
+

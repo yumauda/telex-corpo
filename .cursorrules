@@ -1,0 +1,17 @@
+## GSAP（アニメーション）コーディングルール
+
+- 既存の `js/gsap.js` の流儀に合わせ、**`gsap.timeline()` に `fromTo()` / `to()` を順番に積む**書き方を優先する
+- **複雑な抽象化（細かい関数分割・汎用ユーティリティ化・過度な分岐）を避ける**。読みやすさ優先で「上から読めば流れが分かる」形にする
+- レイアウト崩れ防止のため、アニメで `position/top/left/width/height` を頻繁に変えない。基本は **`opacity` / `x,y` / `scale` / `clipPath`** などの見た目変化で実現する
+- 1文字ずつ表示したい場合:
+  - **SplitText前提の書き方はしない**（プラグイン依存を増やさない）
+  - **HTML（またはJSで1回だけ）で文字を `span` に分割**し、`.p-loader__char` のような要素を **`stagger`** で出す
+
+### 例（推奨の形）
+
+```js
+const tl = gsap.timeline();
+tl.fromTo(".target", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.8 });
+tl.fromTo(".chars", { opacity: 0, y: 6 }, { opacity: 1, y: 0, stagger: 0.08, duration: 0.45 }, "<");
+tl.to(".overlay", { opacity: 0, duration: 0.8 }, "+=0.3");
+```

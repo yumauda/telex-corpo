@@ -1,0 +1,289 @@
+@use "../global" as *;
+
+.p-contact {
+  padding-top: rem(56);
+  padding-bottom: rem(96);
+
+  @include mq(md) {
+    padding-top: rem(96);
+    padding-bottom: rem(132);
+  }
+}
+
+.p-contact__head {
+  max-width: rem(920);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-contact__lead {
+  color: #000;
+  font-size: rem(16);
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+
+  @include mq(md) {
+    font-size: rem(20);
+    line-height: 1.75;
+  }
+}
+
+.p-contact__form {
+  margin-top: rem(34);
+  max-width: rem(920);
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mq(md) {
+    margin-top: rem(42);
+  }
+}
+
+/* CF7 multi-step (input/confirm) */
+.js-contactForm {
+  &.is-confirm {
+    .js-contactInput {
+      display: none;
+    }
+    .js-contactConfirmArea {
+      display: block;
+    }
+  }
+}
+
+.js-contactConfirmArea {
+  display: none;
+}
+
+.p-contact {
+  .p-form__row-wrapper {
+    border-top: none;
+    padding-top: 0;
+    padding-bottom: rem(24);
+
+    @include mq(md) {
+      padding-bottom: rem(20);
+    }
+  }
+
+  .p-form__row {
+    display: block;
+  }
+
+  .p-form__dt-wrapper {
+    width: auto;
+    padding-top: 0;
+    margin-bottom: rem(10);
+    gap: rem(8);
+
+    @include mq(md) {
+      margin-bottom: rem(10);
+    }
+  }
+
+  .p-form__dt {
+    color: #000;
+    font-size: rem(15);
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+
+    @include mq(md) {
+      font-size: rem(16);
+    }
+  }
+
+  .p-form__need {
+    width: rem(45);
+    height: rem(22);
+    border-radius: rem(4);
+    font-size: rem(11);
+  }
+
+  .p-form__description {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .p-form input[type="text"],
+  .p-form input[type="tel"],
+  .p-form input[type="email"] {
+    border: 1px solid #5b5b5b;
+    border-radius: rem(8);
+    min-height: rem(58);
+    font-size: rem(16);
+    color: #000;
+    padding: rem(14) rem(20);
+    line-height: 1.4;
+
+    @include mq(md) {
+      min-height: rem(58);
+      font-size: rem(16);
+    }
+  }
+
+  .p-form textarea {
+    border: 1px solid #5b5b5b;
+    border-radius: rem(8);
+    min-height: rem(170);
+    font-size: rem(16);
+    color: #000;
+    padding: rem(14) rem(20);
+    line-height: 1.7;
+
+    @include mq(md) {
+      min-height: rem(170);
+    }
+  }
+
+  .p-form input::placeholder,
+  .p-form textarea::placeholder {
+    color: #5b5b5b;
+    font-size: rem(16);
+    opacity: 1;
+  }
+
+  .p-form__privacy-wrapper {
+    margin-top: rem(8);
+    text-align: left;
+  }
+
+  .p-form__privacy-text {
+    color: #000;
+    font-size: rem(15);
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+
+    @include mq(md) {
+      font-size: rem(20);
+      line-height: 1.7;
+    }
+  }
+
+  .wpcf7-acceptance,
+  .wpcf7-checkbox {
+    display: inline-flex;
+    align-items: center;
+    margin-top: rem(8);
+  }
+
+  .wpcf7-acceptance .wpcf7-list-item,
+  .wpcf7-checkbox .wpcf7-list-item {
+    margin: 0;
+    width: auto;
+    display: inline-block;
+  }
+
+  .wpcf7-acceptance .wpcf7-list-item label,
+  .wpcf7-checkbox .wpcf7-list-item label {
+    display: inline-flex;
+    align-items: center;
+    gap: rem(10);
+  }
+
+  .wpcf7-acceptance .wpcf7-list-item-label,
+  .wpcf7-checkbox .wpcf7-list-item-label {
+    color: #000;
+    font-size: rem(18);
+    line-height: 1.4;
+    display: inline-flex;
+    align-items: center;
+    gap: rem(10);
+
+    &::before {
+      content: "";
+      width: rem(31);
+      height: rem(31);
+      border: 1px solid #5b5b5b;
+      border-radius: rem(4);
+      background: #fff;
+      box-sizing: border-box;
+      display: inline-block;
+      flex: 0 0 auto;
+    }
+
+    @include mq(md) {
+      font-size: rem(20);
+    }
+  }
+
+  .wpcf7-acceptance input[type="checkbox"]:checked + .wpcf7-list-item-label::before,
+  .wpcf7-checkbox input[type="checkbox"]:checked + .wpcf7-list-item-label::before {
+    background-color: #fff;
+    background-image: url("../images/common/contact-check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: rem(16) rem(12);
+    border-color: #000;
+  }
+
+  .p-form__btn-wrapper {
+    margin-top: rem(38);
+    justify-content: center;
+  }
+
+  .p-form__btn-outside {
+    width: rem(248);
+    justify-content: center;
+  }
+
+  .p-form__btn-outside::before,
+  .p-form__btn-outside::after {
+    display: none;
+  }
+
+  .p-form__btn input[type="submit"],
+  .p-form__btn input[type="button"] {
+    width: rem(248);
+    height: rem(59);
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+    font-size: rem(20);
+    font-weight: 400;
+    letter-spacing: 0.03em;
+  }
+
+  .p-form__btn input[type="submit"]:hover,
+  .p-form__btn input[type="button"]:hover {
+    background: #000;
+    color: #fff;
+    border-color: #000;
+  }
+
+  .wpcf7-response-output {
+    margin: rem(24) 0 0;
+    padding: rem(12) rem(16);
+    border-radius: rem(8);
+    font-size: rem(14);
+    line-height: 1.6;
+  }
+
+  .wpcf7-not-valid-tip {
+    margin-top: rem(6);
+    font-size: rem(12);
+  }
+}
+
+.p-contactConfirm__title {
+  font-size: rem(20);
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: #000;
+  text-align: left;
+  margin-bottom: rem(20);
+
+  @include mq(md) {
+    margin-bottom: rem(26);
+  }
+}
+
+.p-contactConfirm__value {
+  font-size: rem(16);
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #000;
+  white-space: pre-wrap;
+}
+

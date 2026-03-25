@@ -234,7 +234,8 @@
   }
 }
 
-.p-form__btn input[type="submit"] {
+.p-form__btn input[type="submit"],
+.p-form__btn input[type="button"] {
   transition: 0.3s ease-in-out;
   border-radius: 9999px;
   position: relative;
