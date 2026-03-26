@@ -48,7 +48,7 @@ function my_script_init()
 		));
 	}
 
-	if (is_front_page()) {
+	if (is_front_page() || is_singular('shop')) {
 		wp_enqueue_style('swiper-css', get_template_directory_uri() . '/css/swiper-bundle.min.css', array(), filemtime(get_theme_file_path('/css/swiper-bundle.min.css')), 'all');
 		wp_enqueue_script('js-swiper-bundle', get_template_directory_uri() . '/js/swiper.min.js', array('jquery'), filemtime(get_theme_file_path('/js/swiper.min.js')), true);
 		wp_enqueue_script('js-swiper-init', get_template_directory_uri() . '/js/swiper.js', array('jquery'), filemtime(get_theme_file_path('/js/swiper.js')), true);
@@ -358,11 +358,11 @@ function custom_hiragana_validation_filter($result, $tag)
 
 //投稿タイプの作成(カスタム投稿)
 register_post_type(
-	'allcolumn',
+	'shop',
 	array(
 		'labels' => array(
-			'name' => __('コラム'),
-			'singular_name' => __('コラム')
+			'name' => __('店舗'),
+			'singular_name' => __('店舗')
 		),
 		'supports' => array(
 			'title',
@@ -379,13 +379,13 @@ register_post_type(
 		'show_in_rest' => true,
 	)
 );
-register_taxonomy('allcolumn_category', array('allcolumn'), array(
+register_taxonomy('shop_category', array('shop'), array(
 	'hierarchical' => true,
 	'label' => 'カテゴリー',
 	'show_ui' => true,
 	'public' => true
 ));
-register_taxonomy('allcolumn_tag', 'allcolumn', array(
+register_taxonomy('shop_tag', 'shop', array(
 	'hierarchical' => false,
 	'label' => 'タグ',
 	'show_ui' => true,

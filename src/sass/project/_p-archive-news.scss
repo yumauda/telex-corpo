@@ -1,0 +1,138 @@
+@use "../global" as *;
+
+.p-archive-news-mv {
+  position: relative;
+  height: rem(320);
+  overflow: hidden;
+
+  @include mq(md) {
+    height: rem(480);
+  }
+}
+
+.p-archive-news-mv__media {
+  position: absolute;
+  inset: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.p-archive-news-mv__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(86, 86, 86, 0.4);
+}
+
+.p-archive-news-mv .l-inner {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+
+.p-archive-news-mv__titles {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.p-archive-news-mv__en {
+  font-family: "Cormorant", serif;
+  font-size: rem(46);
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+
+  @include mq(md) {
+    font-size: rem(58);
+  }
+}
+
+.p-archive-news-mv__ja {
+  margin-top: rem(14);
+  font-size: rem(18);
+  font-weight: 400;
+  line-height: 1.4;
+  color: #fff;
+
+  @include mq(md) {
+    margin-top: rem(20);
+    font-size: rem(20);
+  }
+}
+
+.p-archive-news {
+  padding-top: rem(64);
+  padding-bottom: rem(120);
+
+  @include mq(md) {
+    padding-top: rem(110);
+    padding-bottom: rem(160);
+  }
+}
+.p-archive-news__content {
+  max-width: rem(899);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-archive-news__title {
+  text-align: center;
+  font-size: rem(34);
+  font-weight: 400;
+  line-height: 1.2;
+
+  @include mq(md) {
+    font-size: rem(48);
+  }
+}
+
+.p-archive-news__table {
+  margin-top: rem(40);
+
+  @include mq(md) {
+    margin-top: rem(76);
+  }
+}
+
+.p-archive-news__row {
+  border-bottom: 1px solid #969696;
+  padding: rem(14) 0;
+  display: grid;
+  row-gap: rem(10);
+  grid-template-columns: 1fr;
+
+  @include mq(md) {
+    min-height: rem(61);
+    padding: rem(20) 0;
+    align-items: center;
+    grid-template-columns: rem(55) minmax(rem(180), 1fr) rem(140) rem(260);
+    column-gap: rem(30);
+  }
+}
+
+.p-archive-news__area {
+  width: rem(55);
+  height: rem(22);
+  background: #222;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: rem(13);
+  line-height: 1;
+}
+
+.p-archive-news__name,
+.p-archive-news__tel,
+.p-archive-news__address {
+  font-size: rem(15);
+  line-height: 1.7;
+  color: #000;
+}

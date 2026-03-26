@@ -1,0 +1,219 @@
+{
+    "key": "group_shop_fields",
+    "title": "Shop Fields",
+    "fields": [
+        {
+            "key": "field_shop_area",
+            "label": "エリア",
+            "name": "shop_area",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "一覧で表示するエリア名（例: 京都、北大阪）",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_shop_tel",
+            "label": "電話番号",
+            "name": "shop_tel",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "一覧・詳細で表示する電話番号",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "000-0000-0000",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_shop_address",
+            "label": "住所",
+            "name": "shop_address",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "一覧・詳細で表示する住所",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_shop_business_hours",
+            "label": "営業時間",
+            "name": "shop_business_hours",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "詳細ページの営業時間",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "10:00~19:00",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_shop_holiday",
+            "label": "定休日",
+            "name": "shop_holiday",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "詳細ページの定休日",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_shop_parking",
+            "label": "駐車場",
+            "name": "shop_parking",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "詳細ページの駐車場情報",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "有り \/ 無し",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_shop_gallery",
+            "label": "店舗ギャラリー",
+            "name": "shop_gallery",
+            "aria-label": "",
+            "type": "gallery",
+            "instructions": "詳細ページのスライダー画像（複数枚）",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "insert": "append",
+            "library": "all",
+            "min": "",
+            "max": "",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_shop_map_image",
+            "label": "マップ画像",
+            "name": "shop_map_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "詳細ページのマップ画像",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_shop_google_map_embed",
+            "label": "Google Map埋め込みコード",
+            "name": "shop_google_map_embed",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Google Mapの共有＞地図を埋め込むで取得したiframeコードを貼り付け（入力がある場合はマップ画像より優先表示）",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": "",
+            "placeholder": "<iframe ...><\/iframe>"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "shop"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "shop カスタム投稿用のACFフィールド",
+    "show_in_rest": 0,
+    "display_title": "",
+    "modified": 1774491589
+}

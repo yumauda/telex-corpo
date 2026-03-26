@@ -313,3 +313,17 @@
 }
 .p-single-topics__main-content .wp-block-image {
 }
+
+/* 埋め込み地図（Google Map iframe） */
+.p-single-topics__main-content iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 0;
+  margin-top: rem(12);
+  display: block;
+
+  @include mq(md) {
+    margin-top: rem(16);
+  }
+}
