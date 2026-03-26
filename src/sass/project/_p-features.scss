@@ -22,12 +22,16 @@
 
 
 .p-features__enTitle {
-  margin: 0;
   font-family: "Cormorant", serif;
   font-weight: $bold;
-  font-size: rem(58);
-  line-height: 0.48;
+  line-height: 1.6;
   color: #fff;
+  font-size: rem(40);
+
+  @include mq(md) {
+
+    font-size: rem(58);
+  }
 }
 
 .p-features__jaTitle {
@@ -60,6 +64,13 @@
   }
 }
 
+.p-features__item--other {
+  @include mq(md) {
+    gap: rem(103);
+    justify-content: center;
+  }
+}
+
 .p-features__item+.p-features__item {
   margin-top: rem(64);
 
@@ -69,16 +80,31 @@
   }
 }
 
+.p-features__item--other+.p-features__item--other {
+  @include mq(md) {
+
+    margin-top: rem(129);
+  }
+}
+
 .p-features__item--reverse {
   @include mq("md") {
     flex-direction: row-reverse;
   }
 
 }
+
 .p-features__itemBody {
   width: 100%;
-  @include mq(md){
+
+  @include mq(md) {
     max-width: rem(541);
+  }
+}
+
+.p-features__itemBody--other {
+  @include mq(md) {
+    max-width: rem(438);
   }
 }
 
@@ -95,26 +121,47 @@
 }
 
 .p-features__itemText {
-  margin-top: rem(22);
   font-family: $base-font-family;
   font-weight: $normal;
   font-size: rem(16);
   line-height: 2.05;
   color: #fff;
+  margin-top: rem(24);
+
+  @include mq(md) {
+    margin-top: rem(40);
+
+  }
 }
 
 .p-features__itemMedia {
   position: relative;
   overflow: hidden;
   width: 100%;
-  @include mq(md){
+
+  @include mq(md) {
     max-width: rem(609);
-    
+
   }
 }
 
 .p-features__itemMedia img {
   aspect-ratio: 609 / 406;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.p-features__itemOther-img {
+  width: 100%;
+
+  @include mq(md) {
+    max-width: rem(355);
+  }
+}
+
+.p-features__itemOther-img img {
+  aspect-ratio: 355 / 237;
   object-fit: cover;
   width: 100%;
   height: auto;

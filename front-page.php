@@ -149,7 +149,7 @@
             </a>
           </li>
           <li class="p-top-business__card p-top-business__card--other">
-            <a class="p-top-business__cardLink" href="<?php echo esc_url(home_url('/other')); ?>" aria-label="その他の事業">
+            <a class="p-top-business__cardLink" href="<?php echo esc_url(home_url('/other-business')); ?>" aria-label="その他の事業">
               <figure class="p-top-business__cardFigure">
                 <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/business/business-other.png" alt="その他の事業" width="3930" height="2625">
               </figure>

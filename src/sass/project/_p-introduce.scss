@@ -17,19 +17,27 @@
 .p-introduce__enTitle {
   font-family: "Cormorant", serif;
   font-weight: $bold;
-  font-size: rem(58);
-  line-height: 0.48;
+  line-height: 1.6;
   color: #000;
+  font-size: rem(40);
+  @include mq(md){
+    font-size: rem(58);
+    
+  }
 }
 
 .p-introduce__jaTitle {
-  margin-top: rem(14);
+  margin-top: rem(12);
   font-family: $base-font-family;
   font-weight: $normal;
-  font-size: rem(20);
   line-height: 1.4;
-  margin-top: rem(24);
+  font-size: rem(14);
   color: #000;
+  @include mq(md){
+    margin-top: rem(24);
+    font-size: rem(20);
+    
+  }
 }
 
 .p-introduce__text {

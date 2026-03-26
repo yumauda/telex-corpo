@@ -6,7 +6,6 @@
         <figure class="p-page-mv__img">
           <img src="<?php echo get_template_directory_uri() ?>/images/event-business/mv.webp" alt="イベント事業部" width="1440" height="480">
         </figure>
-        <!-- <span class="p-page-mv__overlay" aria-hidden="true"></span> -->
         <div class="p-page-mv__detail">
           <p class="p-page-mv__en">Event Business</p>
           <h1 class="p-page-mv__ja">イベント事業部</h1>
@@ -19,100 +18,54 @@
     <div class="l-page-inner">
       <div class="p-introduce__content">
         <div class="p-introduce__head">
-          <p class="p-introduce__enTitle">Event business</p>
-          <h2 class="p-introduce__jaTitle">イベント営業について</h2>
+          <p class="p-introduce__enTitle">Event Business</p>
+          <h2 class="p-introduce__jaTitle">イベント事業部について</h2>
         </div>
         <p class="p-introduce__text">
-          イベント事業部「REX」は、ドコモ・auを中心とした通信キャリアの販促イベントをトータルにプロデュースしています。単なる「販売」の枠を超え、来場導線から心理設計、クロージングまでを一気通貫で構築。個人の力に依存しない「組織としての勝利」を追求し続けています。
+          イベント事業部（REX）は、docomo・auを中心とした通信キャリアの販促イベントの企画・運営を行う事業部です。単なる販売イベントにとどまらず、来場導線の設計からお客様へのアプローチ、クロージングまでを一気通貫で構築する「成果設計型モデル」を強みとしています。関西圏の商業施設を中心に多数のイベントを展開し、短期間で成果を最大化する設計力と現場対応力を武器に、自社モバイル事業の売上拡大に貢献しています。
         </p>
       </div>
     </div>
   </section>
   <section class="p-features">
     <div class="l-inner">
-      <div class="p-feature__content">
-        <div class="p-features__inner">
-          <div class="p-features__head">
-            <p class="p-features__enTitle">Features</p>
-            <h2 class="p-features__jaTitle">イベント営業の特徴</h2>
-          </div>
+      <div class="p-features__content">
+        <div class="p-features__head">
+          <p class="p-features__enTitle">Features</p>
+          <h2 class="p-features__jaTitle">イベント事業の特徴</h2>
+        </div>
 
-          <div class="p-features__list">
-            <article class="p-features__item">
-              <div class="p-features__itemBody">
-                <h3 class="p-features__itemTitle">
-                  チームで成果を最大化する<br>
-                  高い組織力
-                </h3>
-                <p class="p-features__itemText">
-                  REXの強みは、特定のスタープレイヤーに頼らない運営体制にあります。役割分担を明確化し、数字管理と即日改善を徹底。個人の能力を組織の力へと昇華させることで、どんな現場でも安定して高いパフォーマンスを発揮します。
-                </p>
-              </div>
-              <figure class="p-features__itemMedia">
-                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/event-business/features-01.png" alt="" width="4096" height="2736">
-              </figure>
-            </article>
+        <div class="p-features__list">
+          <article class="p-features__item">
+            <div class="p-features__itemBody">
+              <h3 class="p-features__itemTitle">
+                チームで最大化する<br>
+                成果の仕組み
+              </h3>
+              <p class="p-features__itemText">
+                REXでは、個人の力に依存せず、チーム全体で成果を最大化する運営体制を構築しています。役割分担を明確化し、数字管理や即日改善を徹底することで、短期成果と安定運営の両立を実現。イベントの成果は、仕組みと人によって決まると考え、一人ひとりが自らの役割と責任を理解し、自ら考え、動ける自走型現場をつくっています。<br>
+                分業制により「誰が何を担うのか」を明確に定義することで、属人化に依存せず、どの現場でも再現性のある運営モデルを確立。若手やインターンも早期から戦力化し、挑戦の機会を積極的に提供しています。
+              </p>
+            </div>
+            <figure class="p-features__itemMedia">
+              <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/event-business/features-main-01.webp" alt="チームで最大化する成果の仕組み" width="609" height="406">
+            </figure>
+          </article>
 
-            <article class="p-features__item">
-              <div class="p-features__itemBody">
-                <h3 class="p-features__itemTitle">
-                  一人ひとりが自ら考え、動く<br>
-                  「自走する現場力」
-                </h3>
-                <p class="p-features__itemText">
-                  イベントの成否を分けるのは、現場の判断力です。REXではスタッフ一人ひとりが自らの役割と責任を深く理解し、自ら考え行動する体制を構築。指示待ちではなく、現場の状況に合わせて最適解を導き出す「自走型チーム」が私たちの誇りです。
-                </p>
-              </div>
-              <figure class="p-features__itemMedia">
-                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/event-business/features-02.png" alt="" width="3802" height="2539">
-              </figure>
-            </article>
-
-            <article class="p-features__item">
-              <div class="p-features__itemBody">
-                <h3 class="p-features__itemTitle">
-                  準備から振り返りまで<br>
-                  「一気通貫の運営体制」
-                </h3>
-                <p class="p-features__itemText">
-                  事前準備、当日の運営、そして実施後の詳細な振り返り。これらすべてを自社で完結させることで、現場で得た気づきや改善点を即座に次の施策へと反映します。自社運営だからこそ実現できる「改善スピード」と「再現性」が、圧倒的な成果を生み出します。
-                </p>
-              </div>
-              <figure class="p-features__itemMedia">
-                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/event-business/features-03-66eab8.png" alt="" width="2383" height="1591">
-              </figure>
-            </article>
-
-            <article class="p-features__item">
-              <div class="p-features__itemBody">
-                <h3 class="p-features__itemTitle">
-                  どの現場でも結果を出す<br>
-                  「再現性の高い仕組み」
-                </h3>
-                <p class="p-features__itemText">
-                  一過性の成功で終わらせない。REXでは成功事例や改善ポイントを組織全体で知財化し、次の運営に活かしています。蓄積されたノウハウをシステムとして共有することで、場所や時期を問わず「期待を超える結果」を再現し続けます。
-                </p>
-              </div>
-              <figure class="p-features__itemMedia">
-                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/event-business/features-04.png" alt="" width="3812" height="2546">
-              </figure>
-            </article>
-
-            <article class="p-features__item">
-              <div class="p-features__itemBody">
-                <h3 class="p-features__itemTitle">
-                  挑戦が人を強くする<br>
-                  「圧倒的な育成環境」
-                </h3>
-                <p class="p-features__itemText">
-                  イベントの現場は、人が最も成長できるステージです。未経験からでも短期間で戦力化できる教育カリキュラムを整え、実践の中で責任ある役割を任せています。「人が成長するから現場が強くなる」という信念のもと、事業の成長を「人」の成長と直結させています。
-                </p>
-              </div>
-              <figure class="p-features__itemMedia">
-                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/event-business/features-05-a0574e.png" alt="" width="2397" height="1600">
-              </figure>
-            </article>
-          </div>
+          <article class="p-features__item p-features__item--reverse">
+            <div class="p-features__itemBody">
+              <h3 class="p-features__itemTitle">
+                再現性の高い人材育成で<br>
+                安定した成果を生みだす
+              </h3>
+              <p class="p-features__itemText">
+                単なる台数追求ではなく、事前準備から当日の運営、振り返りまでを一貫して行い、イベント全体の流れを設計。成功事例や改善内容を組織内で共有することで、次の施策に素早く反映し、再現性の高い成果を生み出しています。さらに、未経験から現場に立つ育成環境を整え、実践の中で役割を担い、成果に向き合う経験を重ねることで、短期間でも大きく成長できる仕組みを構築。人が成長することで現場が強くなり、その強さが成果につながる――。育成と成果を切り離さず、成長そのものを事業の力へと変えることが、REXの大きな強みです。
+              </p>
+            </div>
+            <figure class="p-features__itemMedia">
+              <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/event-business/features-main-02.webp" alt="再現性の高い人材育成で安定した成果を生みだす" width="609" height="406">
+            </figure>
+          </article>
         </div>
       </div>
     </div>
