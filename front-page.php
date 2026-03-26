@@ -68,6 +68,41 @@
       </div>
     </div>
   </section>
+  <section class="p-top-about">
+    <div class="l-inner">
+      <div class="p-top-about__content">
+        <!-- <figure class="p-top-about__media">
+          <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/top-about-bg.webp" alt="" width="4054" height="2708">
+        </figure> -->
+        <div class="p-top-about__detail">
+          <div class="p-top-about__head">
+            <p class="p-top-about__enTitle">About Us</p>
+            <h2 class="p-top-about__jaTitle">私たちについて</h2>
+          </div>
+          <div class="p-top-about__body">
+            <p class="p-top-about__text">
+              ICTの進歩により、急激に変化を遂げた社会。<br>
+              欲しい情報が簡単に手に入り、あたりまえのように遠くの人と顔を合わせて会話ができる。買い物だってどこにいても片手で済ませられるようになった。<br><br>
+              この先、未来はどうなっていくのだろう。<br><br>
+              私たちテレックス関西は時代に合わせて提供すべき価値を見定め、社会と自分たちの可能性を信じ、より豊かで生産性のある社会を目指して前進・進化し続けます。
+            </p>
+            <div class="p-top-about__cta">
+              <a class="p-top-about__link" href="<?php echo esc_url(home_url('/about/')); ?>">
+                <span class="p-top-about__linkText">VIEW ALL</span>
+                <span class="p-top-about__linkIcon" aria-hidden="true"></span>
+              </a>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
   <section class="p-top-business">
     <div class="l-inner">
       <div class="p-top-business__content">

@@ -1,0 +1,148 @@
+@use "../global" as *;
+
+.p-top-about {
+  margin-top: rem(64);
+  overflow-x: clip;
+  background: url(../images/top/top-about-bg.webp) no-repeat center center / cover;
+  padding-top: rem(64);
+  padding-bottom: rem(64);
+  @include mq(md){
+    padding-top: rem(109);
+    padding-bottom: rem(161);
+  }
+}
+
+.p-top-about__content {
+  position: relative;
+}
+
+.p-top-about__media {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.p-top-about__media img {
+  aspect-ratio: 748 / 850;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+
+  @include mq(md) {
+    aspect-ratio: 1440 / 748;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.p-top-about__detail {
+  // position: absolute;
+  // left: 0;
+  // width: 100%;
+  // top: rem(64);
+
+  @include mq(md) {
+    // top: rem(109);
+    display: flex;
+    gap: rem(235);
+
+  }
+}
+
+.p-top-about__head {
+  @include mq(md) {
+    max-width: rem(300);
+    width: 100%;
+  }
+}
+
+.p-top-about__head,
+.p-top-about__body,
+.p-top-about__cta {
+  position: relative;
+  z-index: 2;
+}
+
+.p-top-about__enTitle {
+  font-family: "Cormorant", serif;
+  font-weight: 700;
+  font-size: rem(42);
+  line-height: 1;
+  color: #fff;
+
+  @include mq(md) {
+    font-size: rem(58);
+  }
+}
+
+.p-top-about__jaTitle {
+  margin-top: rem(12);
+  font-size: rem(18);
+  font-weight: 400;
+  line-height: 1.4;
+  color: #fff;
+
+  @include mq(md) {
+    margin-top: rem(10);
+    font-size: rem(20);
+  }
+}
+
+.p-top-about__body {
+  margin-top: rem(36);
+
+  @include mq(md) {
+    margin-top: rem(140);
+    margin-left: auto;
+    max-width: rem(670);
+  }
+}
+
+.p-top-about__text {
+  font-size: rem(14);
+  font-weight: 500;
+  line-height: 1.8;
+  color: #fff;
+
+  @include mq(md) {
+    font-size: rem(18);
+    line-height: 1.766666;
+  }
+}
+
+.p-top-about__cta {
+  margin-top: rem(28);
+  display: flex;
+  justify-content: flex-end;
+
+  @include mq(md) {
+    margin-top: rem(32);
+  }
+}
+
+.p-top-about__link {
+  display: flex;
+  align-items: center;
+  gap: rem(40);
+  color: #fff;
+}
+
+.p-top-about__linkText {
+  font-family: "Oswald", sans-serif;
+  font-size: rem(18);
+  font-weight: 400;
+  line-height: 1.4;
+
+  @include mq(md) {
+    font-size: rem(20);
+  }
+}
+
+.p-top-about__linkIcon {
+  width: 0;
+  height: 0;
+  border-top: rem(8.5) solid transparent;
+  border-bottom: rem(8.5) solid transparent;
+  border-left: rem(15) solid currentColor;
+}
