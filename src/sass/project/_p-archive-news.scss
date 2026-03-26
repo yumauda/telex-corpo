@@ -76,6 +76,7 @@
     padding-bottom: rem(160);
   }
 }
+
 .p-archive-news__content {
   max-width: rem(899);
   margin-left: auto;
@@ -122,17 +123,22 @@
   height: rem(22);
   background: #222;
   color: #fff;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: rem(13);
+  font-size: rem(16);
   line-height: 1;
 }
 
 .p-archive-news__name,
 .p-archive-news__tel,
 .p-archive-news__address {
-  font-size: rem(15);
   line-height: 1.7;
   color: #000;
+  font-size: rem(14);
+
+  @include mq(md) {
+
+    font-size: rem(16);
+  }
 }
