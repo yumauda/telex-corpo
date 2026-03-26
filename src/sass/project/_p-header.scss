@@ -73,7 +73,7 @@
 .p-header__nav {
   display: none;
   align-items: center;
-  gap: rem(24);
+  gap: rem(60);
   @include mq(md) {
     display: flex;
   }
@@ -82,11 +82,11 @@
 .p-header__navList {
   display: flex;
   align-items: center;
-  gap: rem(32);
+  gap: rem(37);
 }
 
 .p-header__navLink {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   font-family: $second-font-family;
@@ -100,13 +100,13 @@
 .p-header__cta {
   display: flex;
   align-items: center;
-  gap: rem(16);
+  gap: rem(25);
 }
 
 .p-header__btn {
   width: rem(131);
   height: rem(36);
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid #fff;

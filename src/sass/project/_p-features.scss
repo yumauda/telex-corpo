@@ -7,26 +7,19 @@
   padding-bottom: rem(80);
 
   @include mq("md") {
-    padding-top: rem(120);
-    padding-bottom: rem(120);
-  }
-
-  .l-inner {
-    max-width: none;
-    padding-right: 0;
-    padding-left: 0;
+    padding-top: rem(124);
+    padding-bottom: rem(250);
   }
 }
 
-.p-features__inner {
-  max-width: rem(899);
-  margin-inline: auto;
-  padding-inline: $padding-sp;
-
+.p-features__content {
   @include mq("md") {
-    padding-inline: 0;
+    max-width: rem(1200);
+    margin-left: auto;
+    margin-right: auto;
   }
 }
+
 
 .p-features__enTitle {
   margin: 0;
@@ -47,24 +40,50 @@
 }
 
 .p-features__list {
-  margin-top: rem(78);
-  display: grid;
-  gap: rem(129);
+  margin-top: rem(56);
+
+  @include mq("md") {
+    margin-top: rem(102);
+  }
 }
 
 .p-features__item {
-  display: grid;
+  display: flex;
   gap: rem(24);
+  flex-direction: column;
 
   @include mq("md") {
-    grid-template-columns: rem(438) rem(355);
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: start;
     align-items: start;
-    gap: rem(0);
+    gap: rem(47);
+  }
+}
+
+.p-features__item+.p-features__item {
+  margin-top: rem(64);
+
+  @include mq(md) {
+    margin-top: rem(180);
+
+  }
+}
+
+.p-features__item--reverse {
+  @include mq("md") {
+    flex-direction: row-reverse;
+  }
+
+}
+.p-features__itemBody {
+  width: 100%;
+  @include mq(md){
+    max-width: rem(541);
   }
 }
 
 .p-features__itemTitle {
+  font-family: "Noto Serif JP", serif;
   font-weight: $bold;
   font-size: rem(22);
   line-height: 1.45;
@@ -85,18 +104,18 @@
 }
 
 .p-features__itemMedia {
-  margin: 0;
   position: relative;
   overflow: hidden;
-  aspect-ratio: 355 / 237;
-
-  img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  @include mq(md){
+    max-width: rem(609);
+    
   }
 }
 
+.p-features__itemMedia img {
+  aspect-ratio: 609 / 406;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}

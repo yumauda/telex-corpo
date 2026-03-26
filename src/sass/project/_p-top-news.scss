@@ -4,8 +4,8 @@
   padding-top: rem(80);
   padding-bottom: rem(80);
   @include mq(md) {
-    padding-top: rem(120);
-    padding-bottom: rem(120);
+    padding-top: rem(100);
+    padding-bottom: rem(100);
   }
 }
 
@@ -15,7 +15,7 @@
   row-gap: rem(32);
   @include mq(md) {
     grid-template-columns: rem(300) 1fr;
-    column-gap: rem(60);
+    column-gap: rem(109);
     align-items: start;
   }
 }

@@ -71,9 +71,6 @@
   <section class="p-top-about">
     <div class="l-inner">
       <div class="p-top-about__content">
-        <!-- <figure class="p-top-about__media">
-          <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/top-about-bg.webp" alt="" width="4054" height="2708">
-        </figure> -->
         <div class="p-top-about__detail">
           <div class="p-top-about__head">
             <p class="p-top-about__enTitle">About Us</p>
@@ -119,7 +116,7 @@
 
         <ul class="p-top-business__cards">
           <li class="p-top-business__card p-top-business__card--mobile">
-            <a class="p-top-business__cardLink" href="#" aria-label="モバイル事業部">
+            <a class="p-top-business__cardLink" href="<?php echo esc_url(home_url('/mobile-business')); ?>" aria-label="モバイル事業部">
               <figure class="p-top-business__cardFigure">
                 <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/business/business-mobile.png" alt="モバイル事業部" width="3784" height="2527">
               </figure>
@@ -130,7 +127,7 @@
             </a>
           </li>
           <li class="p-top-business__card p-top-business__card--corporate">
-            <a class="p-top-business__cardLink" href="#" aria-label="法人営業部">
+            <a class="p-top-business__cardLink" href="<?php echo esc_url(home_url('/corporate-sales')); ?>" aria-label="法人営業部">
               <figure class="p-top-business__cardFigure">
                 <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/business/business-corporate.png" alt="法人営業部" width="4096" height="2736">
               </figure>
@@ -141,7 +138,7 @@
             </a>
           </li>
           <li class="p-top-business__card p-top-business__card--event">
-            <a class="p-top-business__cardLink" href="#" aria-label="イベント事業部">
+            <a class="p-top-business__cardLink" href="<?php echo esc_url(home_url('/event-business')); ?>" aria-label="イベント事業部">
               <figure class="p-top-business__cardFigure">
                 <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/business/business-event.png" alt="イベント事業部" width="3366" height="2248">
               </figure>
@@ -152,7 +149,7 @@
             </a>
           </li>
           <li class="p-top-business__card p-top-business__card--other">
-            <a class="p-top-business__cardLink" href="#" aria-label="その他の事業">
+            <a class="p-top-business__cardLink" href="<?php echo esc_url(home_url('/other')); ?>" aria-label="その他の事業">
               <figure class="p-top-business__cardFigure">
                 <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/business/business-other.png" alt="その他の事業" width="3930" height="2625">
               </figure>
