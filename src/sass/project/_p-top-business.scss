@@ -31,9 +31,14 @@
   margin-top: rem(8);
   font-family: $base-font-family;
   font-weight: 400;
-  font-size: rem(20);
   line-height: 1.4;
   color: #000;
+  font-size: rem(16);
+
+  @include mq(md) {
+    font-size: rem(20);
+
+  }
 }
 
 .p-top-business__lead {
@@ -42,7 +47,6 @@
   font-size: rem(16);
   line-height: 1.6125;
   color: #222;
-  text-align: center;
   max-width: rem(1007);
   margin-right: auto;
   margin-left: auto;
@@ -50,6 +54,7 @@
 
   @include mq(md) {
     margin-top: rem(48);
+    text-align: center;
 
   }
 }
@@ -86,8 +91,7 @@
 }
 
 
-.p-top-business__cardFigure {
-}
+.p-top-business__cardFigure {}
 
 .p-top-business__cardFigure img {
   aspect-ratio: 282 / 337;

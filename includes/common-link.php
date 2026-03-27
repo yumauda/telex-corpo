@@ -7,8 +7,8 @@
                 </figure>
                 <span class="p-common-link__overlay" aria-hidden="true"></span>
                 <span class="p-common-link__body">
-                    <span class="p-common-link__en">Shop</span>
-                    <span class="p-common-link__ja">店舗一覧</span>
+                    <span class="p-common-link__en js-page-main-title">Shop</span>
+                    <span class="p-common-link__ja js-opacity-word">店舗一覧</span>
                 </span>
             </a>
         </li>
@@ -19,8 +19,8 @@
                 </figure>
                 <span class="p-common-link__overlay" aria-hidden="true"></span>
                 <span class="p-common-link__body">
-                    <span class="p-common-link__en">Recruit</span>
-                    <span class="p-common-link__ja">採用情報</span>
+                    <span class="p-common-link__en js-page-main-title">Recruit</span>
+                    <span class="p-common-link__ja js-opacity-word">採用情報</span>
                 </span>
             </a>
         </li>
@@ -31,8 +31,8 @@
                 </figure>
                 <span class="p-common-link__overlay" aria-hidden="true"></span>
                 <span class="p-common-link__body">
-                    <span class="p-common-link__en">Contact</span>
-                    <span class="p-common-link__ja">お問い合わせ</span>
+                    <span class="p-common-link__en js-page-main-title">Contact</span>
+                    <span class="p-common-link__ja js-opacity-word">お問い合わせ</span>
                 </span>
             </a>
         </li>

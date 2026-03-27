@@ -16,12 +16,12 @@
   <section class="p-mv">
     <div class="l-inner">
       <div class="p-mv__content">
-        <div class="p-mv__media">
+        <figure class="p-mv__media">
           <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/mv/mv-main.webp" alt="" width="3687" height="2726">
-        </div>
+        </figure>
         <span class="p-mv__overlay" aria-hidden="true"></span>
         <h1 class="p-mv__title">
-          <span class="p-mv__titleMain">「未来のあたりまえ」を世界に</span>
+          <span class="p-mv__titleMain js-page-main-title">「未来のあたりまえ」を世界に</span>
         </h1>
       </div>
     </div>
@@ -29,27 +29,27 @@
   <section class="p-top-news">
     <div class="l-inner">
       <div class="p-top-news__content">
-        <div class="p-top-news__grid">
+        <div class="p-top-news__grid js-grid-side">
           <div class="p-top-news__head">
-            <p class="p-top-news__enTitle">News</p>
-            <h2 class="p-top-news__jaTitle">お知らせ</h2>
+            <p class="p-top-news__enTitle js-page-main-title">News</p>
+            <h2 class="p-top-news__jaTitle js-opacity-word">お知らせ</h2>
           </div>
 
           <div class="p-top-news__body">
             <ul class="p-top-news__list">
-              <li class="p-top-news__item">
+              <li class="p-top-news__item js-opacity-word">
                 <a class="p-top-news__itemLink" href="#">
                   <time class="p-top-news__date" datetime="2025-12-18">2025.12.18</time>
                   <p class="p-top-news__title">2025年度　ホワイト企業認定、ゴールドランクに認定されました。</p>
                 </a>
               </li>
-              <li class="p-top-news__item">
+              <li class="p-top-news__item js-opacity-word">
                 <a class="p-top-news__itemLink" href="#">
                   <time class="p-top-news__date" datetime="2025-10-01">2025.10.01</time>
                   <p class="p-top-news__title">23名の新たな仲間が集結！ 2025年度内定式を執り行いました</p>
                 </a>
               </li>
-              <li class="p-top-news__item">
+              <li class="p-top-news__item js-opacity-word">
                 <a class="p-top-news__itemLink" href="#">
                   <time class="p-top-news__date" datetime="2025-06-13">2025.06.13</time>
                   <p class="p-top-news__title">アローグループによる学生向けインターンプログラム</p>
@@ -57,7 +57,7 @@
               </li>
             </ul>
 
-            <div class="p-top-news__more">
+            <div class="p-top-news__more js-opacity-word">
               <a class="p-top-news__moreLink" href="<?php echo esc_url(home_url('/news/')); ?>">
                 <span class="p-top-news__moreText">VIEW ALL</span>
                 <span class="p-top-news__moreIcon" aria-hidden="true"></span>
@@ -73,11 +73,11 @@
       <div class="p-top-about__content">
         <div class="p-top-about__detail">
           <div class="p-top-about__head">
-            <p class="p-top-about__enTitle">About Us</p>
-            <h2 class="p-top-about__jaTitle">私たちについて</h2>
+            <p class="p-top-about__enTitle js-page-main-title js-page-main-title">About Us</p>
+            <h2 class="p-top-about__jaTitle js-opacity-word js-opacity-word">私たちについて</h2>
           </div>
           <div class="p-top-about__body">
-            <p class="p-top-about__text">
+            <p class="p-top-about__text js-opacity-word">
               ICTの進歩により、急激に変化を遂げた社会。<br>
               欲しい情報が簡単に手に入り、あたりまえのように遠くの人と顔を合わせて会話ができる。買い物だってどこにいても片手で済ませられるようになった。<br><br>
               この先、未来はどうなっていくのだろう。<br><br>
@@ -90,13 +90,7 @@
               </a>
             </div>
           </div>
-
-
-
         </div>
-
-
-
       </div>
     </div>
   </section>
@@ -104,18 +98,18 @@
     <div class="l-inner">
       <div class="p-top-business__content">
         <div class="p-top-business__head">
-          <p class="p-top-business__en">Business</p>
-          <h2 class="p-top-business__ja">事業内容</h2>
+          <p class="p-top-business__en js-page-main-title">Business</p>
+          <h2 class="p-top-business__ja js-opacity-word">事業内容</h2>
         </div>
 
-        <p class="p-top-business__lead">
+        <p class="p-top-business__lead js-opacity-word">
           昨今の社会環境の変容に伴い、お客さまの生活環境や価値観も大きく変化をしています。<br>
-          そのような中、一人ひとりのお客さまと向き合い、そのライフスタイルにあった最適なサービス提案を通して、<br>
+          そのような中、一人ひとりのお客さまと向き合い、そのライフスタイルにあった最適なサービス提案を通して、<br class="u-desktop">
           感動とワクワクをお届けすることが私たちの仕事です。
         </p>
 
         <ul class="p-top-business__cards">
-          <li class="p-top-business__card p-top-business__card--mobile">
+          <li class="p-top-business__card p-top-business__card--mobile js-opacity-word">
             <a class="p-top-business__cardLink" href="<?php echo esc_url(home_url('/mobile-business')); ?>" aria-label="モバイル事業部">
               <figure class="p-top-business__cardFigure">
                 <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/business/business-mobile.webp" alt="モバイル事業部" width="282" height="337">
@@ -126,7 +120,7 @@
               </div>
             </a>
           </li>
-          <li class="p-top-business__card p-top-business__card--corporate">
+          <li class="p-top-business__card p-top-business__card--corporate js-opacity-word">
             <a class="p-top-business__cardLink" href="<?php echo esc_url(home_url('/corporate-sales')); ?>" aria-label="法人営業部">
               <figure class="p-top-business__cardFigure">
                 <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/business/business-corporate.webp" alt="法人営業部" width="282" height="337">
@@ -137,7 +131,7 @@
               </div>
             </a>
           </li>
-          <li class="p-top-business__card p-top-business__card--event">
+          <li class="p-top-business__card p-top-business__card--event js-opacity-word">
             <a class="p-top-business__cardLink" href="<?php echo esc_url(home_url('/event-business')); ?>" aria-label="イベント事業部">
               <figure class="p-top-business__cardFigure">
                 <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/business/business-event.webp" alt="イベント事業部" width="282" height="337">
@@ -148,7 +142,7 @@
               </div>
             </a>
           </li>
-          <li class="p-top-business__card p-top-business__card--other">
+          <li class="p-top-business__card p-top-business__card--other js-opacity-word">
             <a class="p-top-business__cardLink" href="<?php echo esc_url(home_url('/other-business')); ?>" aria-label="その他の事業">
               <figure class="p-top-business__cardFigure">
                 <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/business/business-other.webp" alt="その他の事業" width="282" height="337">
@@ -170,24 +164,24 @@
     <div class="l-inner">
       <div class="p-top-csr__content">
         <div class="p-top-csr__head">
-          <p class="p-top-csr__enTitle">CSR</p>
-          <h2 class="p-top-csr__title">CSRの取組み</h2>
+          <p class="p-top-csr__enTitle js-page-main-title">CSR</p>
+          <h2 class="p-top-csr__title js-opacity-word">CSRの取組み</h2>
         </div>
         <div class="p-top-csr__grid">
 
-          <figure class="p-top-csr__media js-parallax">
+          <figure class="p-top-csr__media js-parallax js-opacity-word">
             <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/common/top-csr.png" alt="" width="828" height="336">
           </figure>
 
           <div class="p-top-csr__copy">
-            <p class="p-top-csr__lead">
+            <p class="p-top-csr__lead js-opacity-word">
               可能性を広げ一人ひとりが輝ける<br>
               より良い社会を創り出す
             </p>
-            <p class="p-top-csr__text">
+            <p class="p-top-csr__text js-opacity-word">
               アローグループが目指すのは、誰もが自分らしく挑戦し、安心して暮らせる社会です。次世代の育成、女性活躍の支援、そして地球環境への配慮。私たちは一つひとつのアクションを積み重ね、事業と社会貢献を両立させることで、新しい時代の価値を創造し続けます。
             </p>
-            <div class="p-top-csr__cta">
+            <div class="p-top-csr__cta js-opacity-word">
               <a class="p-top-csr__link" href="<?php echo esc_url(home_url('/csr/')); ?>">
                 <span class="p-top-csr__linkText">VIEW ALL</span>
                 <span class="p-top-csr__linkIcon" aria-hidden="true"></span>

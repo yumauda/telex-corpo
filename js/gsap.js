@@ -1,5 +1,4 @@
-gsap.registerPlugin(ScrollTrigger);
-
+gsap.registerPlugin(ScrollTrigger, SplitText);
 
 
 var webStorage = function () {
@@ -77,10 +76,6 @@ var webStorage = function () {
 }
 webStorage();
 
-
-
-
-
 let ribbons = document.querySelectorAll('.js-ribbon');
 
 ribbons.forEach((ribbon) => {
@@ -125,22 +120,58 @@ newsRibbons.forEach((newsRibbon) => {
     }
   );
 });
+let gridSides = document.querySelectorAll('.js-grid-side');
+
+gridSides.forEach((gridSide) => {
+  gsap.fromTo(
+    gridSide,
+    {
+      columnGap: 0,
+    },
+    {
+      columnGap: '109px',
+      duration: 1.5,
+      ease: 'power3.out',
+      scrollTrigger: {
+        trigger: gridSide,
+        start: 'top 90%',
+      },
+    }
+  );
+});
 
 
 let pageMainTitles = document.querySelectorAll('.js-page-main-title');
 
 pageMainTitles.forEach((pageMainTitle) => {
+  const originalText = pageMainTitle.textContent || "";
+  const chars = Array.from(originalText);
+  const fragment = document.createDocumentFragment();
+
+  pageMainTitle.textContent = "";
+
+  chars.forEach((char) => {
+    const span = document.createElement("span");
+    span.className = "js-page-main-title-char";
+    span.style.display = "inline-block";
+    span.innerHTML = char === " " ? "&nbsp;" : char;
+    fragment.appendChild(span);
+  });
+
+  pageMainTitle.appendChild(fragment);
+
   gsap.fromTo(
-    pageMainTitle,
+    pageMainTitle.querySelectorAll('.js-page-main-title-char'),
     {
       opacity: 0,
-      clipPath: "inset(0 100% 0 0)",
+      y: 12,
     },
     {
       opacity: 1,
-      clipPath: "inset(0 0% 0 0)",
-      duration: 1.5,
-      ease: 'power2.inOut',
+      y: 0,
+      duration: 0.5,
+      ease: 'power2.out',
+      stagger: 0.08,
       scrollTrigger: {
         trigger: pageMainTitle,
         start: 'top 90%',
@@ -170,6 +201,7 @@ clipPathFromBottom.forEach((clipPathFromBottom) => {
     }
   );
 });
+
 let opacityWords = document.querySelectorAll('.js-opacity-word');
 
 opacityWords.forEach((opacityWord) => {
