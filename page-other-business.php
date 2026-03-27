@@ -3,8 +3,8 @@
   <section class="p-page-mv">
     <div class="l-inner">
       <div class="p-page-mv__content">
-        <figure class="p-page-mv__img">
-          <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/other-business/mv.webp" alt="モバイル事業部" width="1440" height="480">
+        <figure class="p-page-mv__img p-page-mv__img--other">
+          <img src="<?php echo get_template_directory_uri() ?>/images/other-business/mv.webp" alt="モバイル事業部" width="1440" height="480">
         </figure>
         <span class="p-page-mv__overlay" aria-hidden="true"></span>
         <div class="p-page-mv__detail">

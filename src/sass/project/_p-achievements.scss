@@ -1,8 +1,8 @@
 @use "../global" as *;
 
 .p-achievements {
-  padding-top: rem(80);
-  padding-bottom: rem(80);
+  padding-top: rem(60);
+  padding-bottom: rem(60);
 
   @include mq("md") {
     padding-top: rem(97);
@@ -16,31 +16,36 @@
 }
 
 .p-achievements__enTitle {
-  margin: 0;
   font-family: "Cormorant", serif;
   font-weight: $bold;
-  font-size: rem(58);
-  line-height: 0.48;
+  font-size: rem(40);
   color: #000;
+  @include mq(md){
+    font-size: rem(58);
+  }
 }
 
 .p-achievements__jaTitle {
-  margin-top: rem(14);
   font-family: $base-font-family;
   font-weight: $normal;
-  font-size: rem(20);
+  font-size: rem(16);
   line-height: 1.4;
   color: #000;
+  @include mq(md){
+    margin-top: rem(14);
+    font-size: rem(20);
+  }
 }
 
 .p-achievements__list {
-  margin-top: rem(67);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: rem(16);
-
+  margin-top: rem(32);
+  
   @include mq("md") {
     display: flex;
+    margin-top: rem(67);
     gap: 0;
   }
 }

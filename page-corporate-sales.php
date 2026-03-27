@@ -3,7 +3,7 @@
   <section class="p-page-mv">
     <div class="l-inner">
       <div class="p-page-mv__content">
-        <figure class="p-page-mv__img">
+        <figure class="p-page-mv__img p-page-mv__img--corporate">
           <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/corporate-sales/mv.webp" alt="法人営業" width="3687" height="2726">
         </figure>
         <div class="p-page-mv__detail">

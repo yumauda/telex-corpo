@@ -3,7 +3,7 @@
   <section class="p-page-mv">
     <div class="l-inner">
       <div class="p-page-mv__content">
-        <figure class="p-page-mv__img">
+        <figure class="p-page-mv__img p-page-mv__img--event">
           <img src="<?php echo get_template_directory_uri() ?>/images/event-business/mv.webp" alt="イベント事業部" width="1440" height="480">
         </figure>
         <div class="p-page-mv__detail">

@@ -3,7 +3,7 @@
   <section class="p-page-mv">
     <div class="l-inner">
       <div class="p-page-mv__content">
-        <figure class="p-page-mv__img">
+        <figure class="p-page-mv__img p-page-mv__img--mobile">
           <img src="<?php echo get_template_directory_uri() ?>/images/mobile-business/mv.webp" alt="モバイル事業部" width="1440" height="480">
         </figure>
         <span class="p-page-mv__overlay" aria-hidden="true"></span>

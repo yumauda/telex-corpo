@@ -3,8 +3,8 @@
 .p-features {
   background: #3a3a3a;
   color: #fff;
-  padding-top: rem(80);
-  padding-bottom: rem(80);
+  padding-top: rem(60);
+  padding-bottom: rem(60);
 
   @include mq("md") {
     padding-top: rem(124);
@@ -35,16 +35,19 @@
 }
 
 .p-features__jaTitle {
-  margin-top: rem(14);
   font-family: $base-font-family;
   font-weight: $normal;
-  font-size: rem(20);
+  font-size: rem(16);
   line-height: 1.4;
   color: #fff;
+  @include mq(md){
+    margin-top: rem(14);
+    font-size: rem(20);
+  }
 }
 
 .p-features__list {
-  margin-top: rem(56);
+  margin-top: rem(32);
 
   @include mq("md") {
     margin-top: rem(102);
@@ -111,7 +114,7 @@
 .p-features__itemTitle {
   font-family: "Noto Serif JP", serif;
   font-weight: $bold;
-  font-size: rem(22);
+  font-size: rem(18);
   line-height: 1.45;
   color: #fff;
 
@@ -123,13 +126,14 @@
 .p-features__itemText {
   font-family: $base-font-family;
   font-weight: $normal;
-  font-size: rem(16);
   line-height: 2.05;
   color: #fff;
   margin-top: rem(24);
-
+  font-size: rem(14);
+  
   @include mq(md) {
     margin-top: rem(40);
+    font-size: rem(16);
 
   }
 }

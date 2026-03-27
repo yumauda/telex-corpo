@@ -1,8 +1,8 @@
 @use "../global" as *;
 
 .p-introduce {
-  padding-top: rem(80);
-  padding-bottom: rem(80);
+  padding-top: rem(60);
+  padding-bottom: rem(60);
 
   @include mq("md") {
     padding-top: rem(146);
@@ -27,7 +27,6 @@
 }
 
 .p-introduce__jaTitle {
-  margin-top: rem(12);
   font-family: $base-font-family;
   font-weight: $normal;
   line-height: 1.4;
@@ -41,11 +40,16 @@
 }
 
 .p-introduce__text {
-  margin-top: rem(48);
   font-family: $base-font-family;
   font-weight: $normal;
-  font-size: rem(16);
   line-height: 2.05;
   color: #222;
+  font-size: rem(14);
+  margin-top: rem(24);
+  @include mq(md){
+    font-size: rem(16);
+    margin-top: rem(48);
+    
+  }
 }
 
