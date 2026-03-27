@@ -1,8 +1,8 @@
 @use "../global" as *;
 
 .p-news {
-  padding-top: rem(80);
-  padding-bottom: rem(120);
+  padding-top: rem(40);
+  padding-bottom: rem(60);
 
   @include mq("md") {
     padding-top: rem(120);
@@ -13,7 +13,7 @@
 .p-news__list {
   display: grid;
   grid-template-columns: 1fr;
-  gap: rem(40);
+  gap: rem(24);
 
   @include mq("md") {
     grid-template-columns: repeat(3, 1fr);
@@ -78,15 +78,23 @@
 }
 
 .p-news__pager {
-  margin-top: rem(56);
   display: flex;
   justify-content: center;
+  margin-top: rem(32);
+  @include mq(md){
+    margin-top: rem(56);
+    
+  }
 }
 
 .p-news__pagerInner {
   display: flex;
   align-items: center;
-  gap: rem(39);
+  gap: rem(24);
+  @include mq(md){
+    gap: rem(39);
+    
+  }
 }
 
 .p-news__pagerMeta {
