@@ -1,8 +1,8 @@
 @use "../global" as *;
 
 .p-sdgs {
-  padding-top: rem(80);
-  padding-bottom: rem(80);
+  padding-top: rem(40);
+  padding-bottom: rem(60);
   @include mq(md) {
     padding-top: rem(120);
     padding-bottom: rem(120);
@@ -10,10 +10,9 @@
 }
 
 .p-sdgs__title {
-  margin: 0;
   font-family: $second-font-family;
   font-weight: $bold;
-  font-size: rem(24);
+  font-size: rem(20);
   line-height: 1.3125;
   text-align: center;
   color: #313131;
@@ -27,7 +26,7 @@
   max-width: rem(899);
   margin-inline: auto;
   border: 1px solid #000;
-  padding: rem(40) $padding-sp rem(56);
+  padding: rem(20) $padding-sp rem(32);
 
   @include mq("md") {
     padding: rem(56) rem(64) rem(72);
@@ -35,9 +34,9 @@
 }
 
 .p-sdgs__blocks {
-  margin-top: rem(48);
+  margin-top: rem(32);
   display: grid;
-  gap: rem(64);
+  gap: rem(32);
   @include mq(md) {
     margin-top: rem(72);
     gap: rem(86);
