@@ -1,8 +1,8 @@
 @use "../global" as *;
 
 .p-purpose {
-  padding-top: rem(80);
-  padding-bottom: rem(80);
+  padding-top: rem(60);
+  padding-bottom: rem(60);
   background: #E6E6E6;
   position: relative;
   z-index: 5;
@@ -20,64 +20,105 @@
 .p-purpose__enTitle {
   font-family: "Cormorant", serif;
   font-weight: $bold;
-  font-size: rem(58);
-  line-height: 0.48;
+  line-height: 1;
   color: #000;
+  font-size: rem(40);
+
+  @include mq(md) {
+    font-size: rem(58);
+
+  }
 }
 
 .p-purpose__jaTitle {
   margin-top: rem(12);
   font-family: $base-font-family;
   font-weight: $normal;
-  font-size: rem(20);
   line-height: 1.4;
+  font-size: rem(16);
   color: #000;
+
+  @include mq(md) {
+    font-size: rem(20);
+
+  }
 }
 
 .p-purpose__vision {
-  margin-top: rem(68);
+  margin-top: rem(32);
+
+  @include mq(md) {
+    margin-top: rem(68);
+  }
 }
 
 .p-purpose__sectionEn {
   font-family: "Cormorant", serif;
   font-weight: $bold;
-  font-size: rem(40);
   line-height: 0.7;
   color: #000;
+  font-size: rem(28);
+
+  @include mq(md) {
+    font-size: rem(40);
+
+  }
 }
 
 .p-purpose__visionTitle {
-  margin-top: rem(24);
   font-family: $second-font-family;
   font-weight: $bold;
-  font-size: rem(24);
   line-height: 1.1666667;
   color: #000;
+  font-size: rem(16);
+  margin-top: rem(12);
+
+  @include mq(md) {
+    margin-top: rem(24);
+    font-size: rem(24);
+
+  }
 }
 
 .p-purpose__text {
-  margin-top: rem(16);
   font-family: $base-font-family;
   font-weight: $normal;
-  font-size: rem(16);
   line-height: 2.05;
   color: #000;
+  margin-top: rem(12);
+  font-size: rem(14);
+
+  @include mq(md) {
+    margin-top: rem(16);
+    font-size: rem(16);
+
+  }
 }
 
 .p-purpose__divider {
-  margin-top: rem(56);
-  margin-bottom: rem(56);
-  border: 0;
   border-top: 1px solid #000;
+  margin-top: rem(24);
+  margin-bottom: rem(24);
+
+  @include mq(md) {
+    margin-top: rem(56);
+    margin-bottom: rem(56);
+
+  }
 }
 
 .p-purpose__missionLead {
-  margin-top: rem(24);
+  margin-top: rem(12);
   font-family: $second-font-family;
   font-weight: $bold;
-  font-size: rem(24);
+  font-size: rem(14);
   line-height: 1.6666667;
   color: #000;
+
+  @include mq(md) {
+    margin-top: rem(24);
+    font-size: rem(24);
+  }
 }
 
 .p-purpose__missionItems {
@@ -89,18 +130,32 @@
 .p-purpose__missionItemTitle {
   font-family: $base-font-family;
   font-weight: $bold;
-  font-size: rem(20);
   line-height: 1.4;
   color: #000;
+  font-size: rem(16);
+
+  @include mq(md) {
+    font-size: rem(20);
+
+  }
 }
 
 .p-purpose__divider--bottom {
-  margin-top: rem(56);
   margin-bottom: 0;
+  margin-top: rem(24);
+
+  @include mq(md) {
+    margin-top: rem(56);
+
+  }
 }
 
 .p-purpose__policy {
-  margin-top: rem(56);
+  margin-top: rem(24);
+
+  @include mq(md) {
+    margin-top: rem(56);
+  }
 }
 
 .p-purpose__policyInner {
@@ -116,26 +171,42 @@
 .p-purpose__policyNum {
   font-family: "Cormorant", serif;
   font-weight: $bold;
-  font-size: rem(40);
+  font-size: rem(28);
   line-height: 0.7;
   color: #000;
+
+  @include mq(md) {
+    font-size: rem(40);
+
+  }
 }
 
 .p-purpose__policyTitle {
   font-family: "Cormorant", serif;
   font-weight: $bold;
-  font-size: rem(40);
   line-height: 0.7;
   color: #000;
+  font-size: rem(28);
+
+  @include mq(md) {
+    font-size: rem(40);
+
+  }
 }
 
 .p-purpose__policyLead {
-  margin-top: rem(26);
   font-family: $base-font-family;
   font-weight: $normal;
-  font-size: rem(16);
   line-height: 2.05;
   color: #000;
+  margin-top: rem(12);
+  font-size: rem(14);
+
+  @include mq(md) {
+    margin-top: rem(26);
+    font-size: rem(16);
+
+  }
 }
 
 .p-purpose__policyFigure {
@@ -168,10 +239,15 @@
 }
 
 .p-purpose__policyItemText {
-  margin-top: rem(16);
   font-family: $base-font-family;
   font-weight: $normal;
-  font-size: rem(16);
   line-height: 2.05;
   color: #000;
+  margin-top: rem(12);
+  font-size: rem(14);
+  @include mq(md){
+    margin-top: rem(16);
+    font-size: rem(16);
+    
+  }
 }

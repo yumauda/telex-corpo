@@ -429,3 +429,169 @@ function webp_is_displayable($result, $path)
 	return $result;
 }
 add_filter('file_is_displayable_image', 'webp_is_displayable', 10, 2);
+
+// 一時的な店舗追加コード（追加後は自動的に無効化されます）
+function auto_add_sample_shop() {
+	// すでに実行済みかチェック
+	if (get_option('sample_shop_added')) {
+		return;
+	}
+
+	// 店舗投稿を作成
+	$shop_data = array(
+		'post_title'    => 'テレックス梅田店',
+		'post_content'  => '',
+		'post_status'   => 'publish',
+		'post_type'     => 'shop',
+		'post_author'   => 1,
+	);
+
+	$post_id = wp_insert_post($shop_data);
+
+	if ($post_id && !is_wp_error($post_id)) {
+		// ACFフィールドを設定
+		if (function_exists('update_field')) {
+			update_field('shop_area', '大阪', $post_id);
+			update_field('shop_tel', '06-1234-5678', $post_id);
+			update_field('shop_address', '大阪府大阪市北区梅田1-2-3 テレックスビル1F', $post_id);
+			update_field('shop_business_hours', '10:00~19:00', $post_id);
+			update_field('shop_holiday', '水曜日', $post_id);
+			update_field('shop_parking', '有り（10台）', $post_id);
+		}
+
+		// 実行済みフラグを保存
+		update_option('sample_shop_added', true);
+	}
+}
+add_action('init', 'auto_add_sample_shop');
+
+// 10店舗一括追加コード（追加後は自動的に無効化されます）
+function auto_add_bulk_shops() {
+	// すでに実行済みかチェック
+	if (get_option('bulk_shops_added')) {
+		return;
+	}
+
+	// 10店舗分のデータ
+	$shops = array(
+		array(
+			'title' => 'テレックス京都店',
+			'area' => '京都',
+			'tel' => '075-123-4567',
+			'address' => '京都府京都市下京区烏丸通四条下ル 京都ビル2F',
+			'hours' => '10:00~19:00',
+			'holiday' => '水曜日',
+			'parking' => '有り（8台）'
+		),
+		array(
+			'title' => 'テレックス神戸三宮店',
+			'area' => '兵庫',
+			'tel' => '078-234-5678',
+			'address' => '兵庫県神戸市中央区三宮町1-2-3 三宮タワー1F',
+			'hours' => '10:00~20:00',
+			'holiday' => '木曜日',
+			'parking' => '有り（15台）'
+		),
+		array(
+			'title' => 'テレックス難波店',
+			'area' => '大阪',
+			'tel' => '06-2345-6789',
+			'address' => '大阪府大阪市中央区難波2-3-4 なんばプラザ3F',
+			'hours' => '11:00~20:00',
+			'holiday' => '年中無休',
+			'parking' => '無し'
+		),
+		array(
+			'title' => 'テレックス天王寺店',
+			'area' => '大阪',
+			'tel' => '06-3456-7890',
+			'address' => '大阪府大阪市天王寺区悲田院町3-4-5 天王寺MIO 2F',
+			'hours' => '10:00~21:00',
+			'holiday' => '年中無休',
+			'parking' => '無し'
+		),
+		array(
+			'title' => 'テレックス心斎橋店',
+			'area' => '大阪',
+			'tel' => '06-4567-8901',
+			'address' => '大阪府大阪市中央区心斎橋筋1-5-6 心斎橋ビル1F',
+			'hours' => '10:30~19:30',
+			'holiday' => '火曜日',
+			'parking' => '無し'
+		),
+		array(
+			'title' => 'テレックス北大阪店',
+			'area' => '北大阪',
+			'tel' => '06-5678-9012',
+			'address' => '大阪府豊中市本町6-7-8 豊中センタービル1F',
+			'hours' => '10:00~19:00',
+			'holiday' => '水曜日',
+			'parking' => '有り（12台）'
+		),
+		array(
+			'title' => 'テレックス姫路店',
+			'area' => '兵庫',
+			'tel' => '079-678-9012',
+			'address' => '兵庫県姫路市駅前町7-8-9 姫路駅前ビル2F',
+			'hours' => '10:00~19:00',
+			'holiday' => '水曜日',
+			'parking' => '有り（10台）'
+		),
+		array(
+			'title' => 'テレックス奈良店',
+			'area' => '奈良',
+			'tel' => '0742-789-0123',
+			'address' => '奈良県奈良市西大寺南町8-9-10 奈良プラザ1F',
+			'hours' => '10:00~18:00',
+			'holiday' => '水曜日・木曜日',
+			'parking' => '有り（6台）'
+		),
+		array(
+			'title' => 'テレックス和歌山店',
+			'area' => '和歌山',
+			'tel' => '073-890-1234',
+			'address' => '和歌山県和歌山市友田町9-10-11 和歌山駅前ビル1F',
+			'hours' => '10:00~19:00',
+			'holiday' => '水曜日',
+			'parking' => '有り（8台）'
+		),
+		array(
+			'title' => 'テレックス滋賀店',
+			'area' => '滋賀',
+			'tel' => '077-901-2345',
+			'address' => '滋賀県大津市中央10-11-12 大津駅前タワー2F',
+			'hours' => '10:00~19:00',
+			'holiday' => '水曜日',
+			'parking' => '有り（10台）'
+		),
+	);
+
+	// 各店舗を追加
+	foreach ($shops as $shop) {
+		$shop_data = array(
+			'post_title'    => $shop['title'],
+			'post_content'  => '',
+			'post_status'   => 'publish',
+			'post_type'     => 'shop',
+			'post_author'   => 1,
+		);
+
+		$post_id = wp_insert_post($shop_data);
+
+		if ($post_id && !is_wp_error($post_id)) {
+			// ACFフィールドを設定
+			if (function_exists('update_field')) {
+				update_field('shop_area', $shop['area'], $post_id);
+				update_field('shop_tel', $shop['tel'], $post_id);
+				update_field('shop_address', $shop['address'], $post_id);
+				update_field('shop_business_hours', $shop['hours'], $post_id);
+				update_field('shop_holiday', $shop['holiday'], $post_id);
+				update_field('shop_parking', $shop['parking'], $post_id);
+			}
+		}
+	}
+
+	// 実行済みフラグを保存
+	update_option('bulk_shops_added', true);
+}
+add_action('init', 'auto_add_bulk_shops');

@@ -14,7 +14,12 @@
 .p-common-mv__content {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 1440 / 480;
+  aspect-ratio: 480 / 480;
+
+  @include mq(md) {
+    aspect-ratio: 1440 / 480;
+
+  }
 }
 
 .p-common-mv__media {
