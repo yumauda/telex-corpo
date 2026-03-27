@@ -120,32 +120,44 @@
                                 <a href="<?php echo esc_url(home_url('/')); ?>" class="p-drawer-content__link">トップ</a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="<?php echo esc_url(home_url('/about')); ?>" class="p-drawer-content__link">TRUXiAについて</a>
+                                <a href="<?php echo esc_url(home_url('/about')); ?>" class="p-drawer-content__link">私たちについて</a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="<?php echo esc_url(home_url('/business')); ?>" class="p-drawer-content__link">事業紹介</a>
+                                <a href="<?php echo esc_url(home_url('/company')); ?>" class="p-drawer-content__link">会社概要</a>
+                            </li>
+                            <li class="p-drawer-content__list p-drawer-content__list--parent">
+                                <span class="p-drawer-content__link p-drawer-content__link--parent">事業内容</span>
+                                <ul class="p-drawer-content__sublist">
+                                    <li class="p-drawer-content__subitem">
+                                        <a href="<?php echo esc_url(home_url('/mobile-business')); ?>" class="p-drawer-content__sublink">モバイルショップ事業</a>
+                                    </li>
+                                    <li class="p-drawer-content__subitem">
+                                        <a href="<?php echo esc_url(home_url('/corporate-sales')); ?>" class="p-drawer-content__sublink">法人営業</a>
+                                    </li>
+                                    <li class="p-drawer-content__subitem">
+                                        <a href="<?php echo esc_url(home_url('/event-business')); ?>" class="p-drawer-content__sublink">イベント事業</a>
+                                    </li>
+                                    <li class="p-drawer-content__subitem">
+                                        <a href="<?php echo esc_url(home_url('/other-business')); ?>" class="p-drawer-content__sublink">その他事業</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="<?php echo esc_url(home_url('/talent')); ?>" class="p-drawer-content__link">タレント紹介</a>
+                                <a href="<?php echo esc_url(home_url('/csr')); ?>" class="p-drawer-content__link">CSRの取り組み</a>
                             </li>
                             <li class="p-drawer-content__list">
                                 <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-drawer-content__link">お知らせ</a>
                             </li>
+                            <li class="p-drawer-content__list">
+                                <a href="<?php echo esc_url(home_url('/recruit')); ?>" class="p-drawer-content__link">採用情報</a>
+                            </li>
                         </ul>
-                        <div class="p-drawer-content__sns">
-                            <p class="p-drawer-content__sns-text">FOLLOW US</p>
-                            <a href="https://www.instagram.com/truxia.management/" class="p-drawer-content__sns-link" target="_blank">
-                                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/instagram.svg" alt="インスタグラム" width="30" height="30">
-                            </a>
-                            <a href="https://x.com/truxia_mg" class="p-drawer-content__sns-link" target="_blank">
-                                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/x.svg" alt="x" width="30" height="30">
-                            </a>
-                        </div>
                         <div class="p-drawer-content__contact-wrapper">
                             <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-drawer-content__contact">
-                                <p class="p-drawer-content__contact-text">お問い合わせ</p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15.5" height="4.81">
-                                    <path d="M.75 4.06h14l-2.831-3" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                                <span class="p-drawer-content__contact-text">お問い合わせ</span>
+                                <svg class="p-drawer-content__contact-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
                                 </svg>
                             </a>
                         </div>
