@@ -82,9 +82,13 @@
 }
 
 .p-top-news__more {
-  margin-top: rem(18);
   display: flex;
   justify-content: flex-end;
+  margin-top: rem(24);
+  @include mq(md){
+    margin-top: rem(32);
+    
+  }
 }
 
 .p-top-news__moreLink {

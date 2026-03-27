@@ -21,12 +21,16 @@
   display: grid;
   place-items: center;
   overflow: hidden;
-  aspect-ratio: 480 / 390;
   color: #fff;
+  aspect-ratio: 479 / 390;
+}
 
-  @include mq("md") {
-    aspect-ratio: 481 / 390;
-  }
+.p-common-link__img img {
+  transition: 0.3s ease-in-out;
+  aspect-ratio: 479 / 390;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
 }
 
 .p-common-link__bg {
@@ -46,20 +50,20 @@
 }
 
 .p-common-link__body {
-  position: relative;
+  position: absolute;
   z-index: 2;
-  display: grid;
-  justify-items: center;
-  row-gap: rem(12);
-  padding-inline: $padding-sp;
   text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .p-common-link__en {
   font-family: $second-font-family;
   font-size: rem(40);
   font-weight: $bold;
-  line-height: 0.48;
+  display: block;
+  text-align: center;
 
   @include mq("md") {
     font-size: rem(58);
@@ -70,9 +74,15 @@
   font-size: rem(18);
   font-weight: $normal;
   line-height: 1.4;
+  margin-top: rem(-4);
+  display: block;
+  text-align: center;
 
   @include mq("md") {
     font-size: rem(20);
   }
 }
 
+.p-common-link__link:hover .p-common-link__img img {
+  transform: scale(1.05);
+}

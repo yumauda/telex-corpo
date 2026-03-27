@@ -12,8 +12,6 @@
 }
 
 .p-top-csr__grid {
-
-
   @include mq("md") {
     display: flex;
     gap: rem(44);
@@ -23,7 +21,6 @@
 .p-top-csr__head {
   @include mq("md") {
     grid-area: head;
-    padding-left: rem(120);
     margin-bottom: rem(38);
   }
 }
@@ -32,7 +29,6 @@
   font-family: $second-font-family;
   font-size: rem(40);
   font-weight: $bold;
-  line-height: 0.48;
   color: #313131;
 
   @include mq("md") {
@@ -55,6 +51,7 @@
 .p-top-csr__media {
   position: relative;
   overflow: hidden;
+  aspect-ratio: 828 / 336;
 
   @include mq(md) {
     margin-left: calc(50% - 50vw);
@@ -64,10 +61,9 @@
 }
 
 .p-top-csr__media img {
-  aspect-ratio: 828 / 336;
-  object-fit: cover;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 .p-top-csr__copy {
@@ -115,12 +111,12 @@
 .p-top-csr__link {
   display: flex;
   align-items: center;
-  gap: rem(6);
+  gap: rem(40);
   color: #000;
 }
 
 .p-top-csr__linkText {
-  font-family: $urbanist;
+  font-family: "Oswald", sans-serif;
   font-size: rem(18);
   font-weight: $normal;
   line-height: 1.4;

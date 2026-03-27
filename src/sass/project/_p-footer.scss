@@ -122,14 +122,16 @@
 
 .p-footer__divider {
   margin-top: rem(32);
-  margin-bottom: rem(16);
-  border: 0;
   border-top: 1px solid $white;
+
+  @include mq(md) {
+    margin-top: rem(96);
+  }
 }
 
 .p-footer__copyright {
   font-size: rem(16);
   line-height: 1.3;
   text-align: center;
+  margin-top: rem(20);
 }
-
