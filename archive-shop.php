@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 <main>
   <section class="p-archive-news-mv">
-    <div class="p-archive-news-mv__media">
+    <figure class="p-archive-news-mv__media js-parallax">
       <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/common/shop_mv.webp" alt="" width="3687" height="2726">
-    </div>
+    </figure>
     <div class="l-inner">
       <div class="p-archive-news-mv__titles">
         <p class="p-archive-news-mv__en">Shop</p>

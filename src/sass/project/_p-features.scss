@@ -150,10 +150,11 @@
 }
 
 .p-features__itemMedia img {
-  aspect-ratio: 609 / 406;
+  // aspect-ratio: 609 / 406;
   object-fit: cover;
   width: 100%;
-  height: auto;
+  height: 100%;
+  // height: auto;
 }
 
 .p-features__itemOther-img {
