@@ -309,12 +309,16 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <header class="p-header<?php echo is_front_page() ? ' js-top-header' : ''; ?>">
+    <?php
+    $is_header_light = is_home() || is_singular('post') || is_page(array('contact', 'contact-thanks', 'privacy', 'message', 'company'));
+    $header_logo_file = $is_header_light ? 'header-logo-black.png' : 'header-logo.png';
+    ?>
+    <header class="p-header<?php echo is_front_page() ? ' js-top-header' : ''; ?><?php echo $is_header_light ? ' p-header--light' : ''; ?>">
         <div class="p-header__inner">
             <div class="p-header__content">
                 <div class="p-header__brand">
                     <a class="p-header__logoLink" href="<?php echo esc_url(home_url('/')); ?>" aria-label="Telex Kansai">
-                        <img decoding="async" loading="lazy" class="p-header__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/common/header-logo.png" alt="" width="43" height="59">
+                        <img decoding="async" loading="lazy" class="p-header__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/common/<?php echo esc_attr($header_logo_file); ?>" alt="" width="<?php echo esc_attr($is_header_light ? '35' : '43'); ?>" height="<?php echo esc_attr($is_header_light ? '39' : '59'); ?>">
                         <span class="p-header__logoText">Telex Kansai</span>
                     </a>
                 </div>

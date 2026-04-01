@@ -46,6 +46,41 @@
             <p>店舗情報は準備中です。</p>
           <?php endif; ?>
         </div>
+
+        <?php
+        global $wp_query;
+        $current_page = max(1, get_query_var('paged'));
+        $max_pages = (int) $wp_query->max_num_pages;
+        ?>
+        <?php if ($max_pages > 1) : ?>
+          <nav class="p-news__pager" aria-label="ページネーション">
+            <div class="p-news__pagerInner">
+              <div class="p-news__pagerMeta"><?php echo esc_html($current_page . '/' . $max_pages); ?></div>
+              <div class="p-news__pagerLinks">
+                <?php
+                $page_links = paginate_links(array(
+                  'total' => $max_pages,
+                  'current' => $current_page,
+                  'type' => 'array',
+                  'prev_next' => true,
+                  'prev_text' => '≪',
+                  'next_text' => '≫',
+                  'end_size' => 0,
+                  'mid_size' => 1,
+                ));
+                if (is_array($page_links)) :
+                  foreach ($page_links as $link) :
+                    if (strpos($link, 'prev page-numbers') !== false) {
+                      continue;
+                    }
+                    echo '<div class="p-news__pagerItem">' . $link . '</div>';
+                  endforeach;
+                endif;
+                ?>
+              </div>
+            </div>
+          </nav>
+        <?php endif; ?>
       </div>
     </div>
   </section>

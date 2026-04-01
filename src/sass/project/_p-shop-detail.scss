@@ -46,8 +46,13 @@
 }
 
 .p-shop-detail__info {
-  margin-top: rem(60);
   border-top: 1px solid #969696;
+  margin-top: rem(40);
+
+  @include mq(md) {
+    margin-top: rem(72);
+
+  }
 }
 
 .p-shop-detail__row {
@@ -81,6 +86,8 @@
 }
 
 .p-shop-detail__row--map {
+  border-bottom: initial;
+
   @include mq(md) {
     align-items: start;
   }

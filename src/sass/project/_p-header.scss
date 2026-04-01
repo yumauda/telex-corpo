@@ -118,3 +118,26 @@
   white-space: nowrap;
 }
 
+.p-header--light {
+  background: #fff;
+}
+
+.p-header--light::before {
+  display: none;
+}
+
+.p-header--light .p-header__logoLink,
+.p-header--light .p-header__logoText,
+.p-header--light .p-header__navLink {
+  color: #000;
+}
+
+.p-header--light .p-header__btn {
+  color: #000;
+  border-color: #000;
+}
+
+.p-header--light .p-header__logo {
+  width: rem(35);
+}
+

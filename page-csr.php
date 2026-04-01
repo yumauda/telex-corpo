@@ -14,7 +14,7 @@
     </div>
   </section>
   <div class="p-common-mv">
-    <div class="p-common-mv__media">
+    <div class="p-common-mv__media p-common-mv__media--csr">
       <svg class="p-common-mv__waveSvg" viewBox="0 0 1440 672" preserveAspectRatio="xMidYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g class="p-common-mv__waveGroup" opacity="0.1">
           <mask id="mask0_0_2372" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="24" y="0" width="1416" height="392">
@@ -170,7 +170,7 @@
           </div>
 
           <figure class="p-us__media">
-            <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/csr/us-policy-3b9136.png" alt="" width="1412" height="843">
+            <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/csr/us-policy-3b9136.webp" alt="" width="1412" height="843">
           </figure>
         </div>
       </div>

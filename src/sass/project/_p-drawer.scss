@@ -16,6 +16,10 @@
   }
 }
 
+.p-header--light .p-drawer-icon {
+  border: 1px solid #000;
+}
+
 .p-drawer-icon.is-active {
   position: relative;
   z-index: 10001;
