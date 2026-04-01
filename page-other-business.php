@@ -175,7 +175,7 @@
   </section>
   <section class="p-features">
     <div class="l-page-inner">
-      <div class="p-features__content">
+      <div class="p-features__content p-features__content--other">
         <div class="p-features__head">
           <p class="p-features__enTitle">Business Portfolio</p>
           <h2 class="p-features__jaTitle">これまでの事業展開</h2>
