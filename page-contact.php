@@ -154,7 +154,8 @@
       <div class="p-contact__content">
         <div class="p-contact__head">
           <p class="p-contact__lead">
-            お問い合わせ内容を入力のうえ「確認する」ボタンを押してください。
+            下記の項目にご入力のうえ、ボタンを押してください。<br>
+            追って担当より連絡いたします。
           </p>
         </div>
 

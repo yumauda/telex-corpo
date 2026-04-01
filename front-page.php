@@ -21,7 +21,7 @@
         </figure>
         <span class="p-mv__overlay" aria-hidden="true"></span>
         <h1 class="p-mv__title">
-          <span class="p-mv__titleMain js-page-main-title">「未来のあたりまえ」を世界に</span>
+          <span class="p-mv__titleMain js-page-main-title">「未来のあたりまえ」<br class="u-mobile">を世界に</span>
         </h1>
       </div>
     </div>
@@ -36,25 +36,40 @@
           </div>
 
           <div class="p-top-news__body">
+
+
+
             <ul class="p-top-news__list">
-              <li class="p-top-news__item js-opacity-word">
-                <a class="p-top-news__itemLink" href="#">
-                  <time class="p-top-news__date" datetime="2025-12-18">2025.12.18</time>
-                  <p class="p-top-news__title">2025年度　ホワイト企業認定、ゴールドランクに認定されました。</p>
-                </a>
-              </li>
-              <li class="p-top-news__item js-opacity-word">
-                <a class="p-top-news__itemLink" href="#">
-                  <time class="p-top-news__date" datetime="2025-10-01">2025.10.01</time>
-                  <p class="p-top-news__title">23名の新たな仲間が集結！ 2025年度内定式を執り行いました</p>
-                </a>
-              </li>
-              <li class="p-top-news__item js-opacity-word">
-                <a class="p-top-news__itemLink" href="#">
-                  <time class="p-top-news__date" datetime="2025-06-13">2025.06.13</time>
-                  <p class="p-top-news__title">アローグループによる学生向けインターンプログラム</p>
-                </a>
-              </li>
+
+              <?php
+              // パラメータの設定
+              $args = array(
+                'posts_per_page' => 3,
+                'post_status' => 'publish',
+                'post_type' => 'post',
+                'orderby' => 'date',
+              );
+
+              // WP_Queryインスタンスの生成
+              $my_query = new WP_Query($args);
+              if ($my_query->have_posts()) :
+                while ($my_query->have_posts()) : $my_query->the_post();
+              ?>
+
+                  <li class="p-top-news__item js-opacity-word">
+                    <a class="p-top-news__itemLink" href="<?php the_permalink(); ?>">
+                      <time class="p-top-news__date" datetime="<?php echo esc_attr(get_the_date('c')); ?>">
+                        <?php echo esc_html(get_the_date('Y.m.d')); ?>
+                      </time>
+                      <p class="p-top-news__title"><?php the_title(); ?></p>
+                    </a>
+                  </li>
+
+              <?php
+                endwhile;
+              endif;
+              wp_reset_postdata();
+              ?>
             </ul>
 
             <div class="p-top-news__more js-opacity-word">

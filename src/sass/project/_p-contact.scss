@@ -1,11 +1,9 @@
 @use "../global" as *;
 
 .p-contact {
-  padding-top: rem(32);
   padding-bottom: rem(60);
 
   @include mq(md) {
-    padding-top: rem(96);
     padding-bottom: rem(132);
   }
 }
@@ -23,6 +21,7 @@
   letter-spacing: 0.03em;
 
   @include mq(md) {
+    text-align: center;
     font-size: rem(20);
     line-height: 1.75;
   }
@@ -35,7 +34,7 @@
   margin-right: auto;
 
   @include mq(md) {
-    margin-top: rem(42);
+    margin-top: rem(72);
   }
 }
 
@@ -253,10 +252,16 @@
     letter-spacing: 0.03em;
     width: rem(210);
     height: rem(44);
+    transition: opacity 0.3s ease, background 0.3s ease, color 0.3s ease;
     @include mq(md){
       width: rem(248);
       height: rem(59);
-     font-size: rem(20); 
+     font-size: rem(20);
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
     }
   }
 
@@ -264,6 +269,13 @@
   .p-form__btn input[type="button"]:hover {
     background: #000;
     color: #fff;
+    border-color: #000;
+  }
+
+  .p-form__btn input[type="submit"]:disabled:hover,
+  .p-form__btn input[type="button"]:disabled:hover {
+    background: #fff;
+    color: #000;
     border-color: #000;
   }
 

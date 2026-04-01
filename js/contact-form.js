@@ -15,6 +15,7 @@ jQuery(function ($) {
   const $confirmArea = $multi.find(".js-contactConfirmArea");
   const $confirmBtn = $multi.find(".js-contactConfirm");
   const $backBtn = $multi.find(".js-contactBack");
+  const $submitBtn = $form.find('input[type="submit"]');
 
   const setConfirmDisabled = () => {
     if (!$confirmBtn.length) return;
@@ -47,6 +48,7 @@ jQuery(function ($) {
     if ($accept.length && !$accept.is(":checked")) ok = false;
 
     $confirmBtn.prop("disabled", !ok);
+    $submitBtn.prop("disabled", !ok);
   };
 
   const getRadioValue = (name) => {
