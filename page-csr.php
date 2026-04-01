@@ -179,11 +179,11 @@
   <section class="p-sdgs">
     <div class="l-inner">
       <div class="p-sdgs__content">
+        <h2 class="p-sdgs__title">
+          SDGs(持続可能な開発目標)<br>
+          達成への取り組み
+        </h2>
         <div class="p-sdgs__panel">
-          <h2 class="p-sdgs__title">
-            SDGs(持続可能な開発目標)<br>
-            達成への取り組み
-          </h2>
 
           <div class="p-sdgs__blocks">
           <section class="p-sdgs__block" aria-labelledby="sdgs-nextgen">

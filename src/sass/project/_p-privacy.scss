@@ -1,11 +1,9 @@
 @use "../global" as *;
 
 .p-privacy {
-  padding-top: rem(40);
   padding-bottom: rem(60);
 
   @include mq("md") {
-    padding-top: rem(120);
     padding-bottom: rem(160);
   }
 }
@@ -100,10 +98,8 @@
 }
 
 .p-privacy__list {
-  margin-top: rem(14);
   padding-left: rem(18);
   display: grid;
-  gap: rem(10);
   list-style: disc;
 }
 

@@ -5,7 +5,7 @@
   padding-bottom: rem(60);
 
   @include mq(md) {
-    padding-top: rem(120);
+    padding-top: rem(63);
     padding-bottom: rem(275);
   }
 }
@@ -28,19 +28,19 @@
   margin-inline: auto;
   border: 1px solid #000;
   padding: rem(20) $padding-sp rem(32);
+  margin-top: rem(20);
 
   @include mq("md") {
-    padding: rem(56) rem(64) rem(113);
+    margin-top: rem(40);
+    padding: rem(90) rem(64) rem(113);
   }
 }
 
 .p-sdgs__blocks {
-  margin-top: rem(32);
   display: grid;
   gap: rem(32);
 
   @include mq(md) {
-    margin-top: rem(72);
     gap: rem(86);
   }
 }

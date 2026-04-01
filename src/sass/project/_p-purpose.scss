@@ -165,17 +165,22 @@
 .p-purpose__policyHead {
   display: flex;
   align-items: center;
-  gap: rem(20);
+  gap: rem(8);
+  @include mq(md){
+    gap: rem(20);
+    
+  }
 }
 
 .p-purpose__policyNum {
   font-family: "Cormorant", serif;
   font-weight: $bold;
   font-size: rem(28);
-  line-height: 0.7;
   color: #000;
-
+  margin-top: rem(-12);
+  
   @include mq(md) {
+    margin-top: rem(-16);
     font-size: rem(40);
 
   }
@@ -184,7 +189,6 @@
 .p-purpose__policyTitle {
   font-family: "Cormorant", serif;
   font-weight: $bold;
-  line-height: 0.7;
   color: #000;
   font-size: rem(28);
 
