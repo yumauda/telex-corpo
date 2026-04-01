@@ -79,9 +79,9 @@
           <div class="p-top-about__body">
             <p class="p-top-about__text js-opacity-word">
               ICTの進歩により、急激に変化を遂げた社会。<br>
-              欲しい情報が簡単に手に入り、あたりまえのように遠くの人と顔を合わせて会話ができる。買い物だってどこにいても片手で済ませられるようになった。<br><br>
+              欲しい情報が簡単に手に入り、あたりまえのように遠くの人と顔を合わせて<br class="u-desktop">会話ができる。買い物だってどこにいても片手で済ませられるようになった。<br><br>
               この先、未来はどうなっていくのだろう。<br><br>
-              私たちテレックス関西は時代に合わせて提供すべき価値を見定め、社会と自分たちの可能性を信じ、より豊かで生産性のある社会を目指して前進・進化し続けます。
+              私たちテレックス関西は時代に合わせて提供すべき価値を見定め社会と自分たちの可能性を信じ、より豊かで生産性のある社会を目指して前進・進化し続けます。
             </p>
             <div class="p-top-about__cta">
               <a class="p-top-about__link" href="<?php echo esc_url(home_url('/about/')); ?>">
@@ -127,7 +127,7 @@
               </figure>
               <div class="p-top-business__cardBody">
                 <h3 class="p-top-business__cardTitle">法人営業部</h3>
-                <p class="p-top-business__cardText">法人のお客様に向け、最適なプランを提供いたします。</p>
+                <p class="p-top-business__cardText">法人のお客様に向け最適なプランやソリューションを提供いたします。</p>
               </div>
             </a>
           </li>
@@ -150,8 +150,7 @@
               <div class="p-top-business__cardBody">
                 <h3 class="p-top-business__cardTitle">その他の事業</h3>
                 <p class="p-top-business__cardText">
-                  賃貸、売買、テナントのご提案を<br>
-                  おこなっています。
+                  これまでの経験やノウハウをもとに様々な事業を展開しています。
                 </p>
               </div>
             </a>

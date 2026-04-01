@@ -5,8 +5,8 @@
   padding-bottom: rem(60);
 
   @include mq("md") {
-    padding-top: rem(120);
-    padding-bottom: rem(120);
+    padding-top: rem(145);
+    padding-bottom: rem(63);
   }
 }
 
@@ -46,7 +46,7 @@
   margin-inline: 0;
 
   @include mq("md") {
-    margin-top: rem(40);
+    margin-top: rem(129);
   }
 }
 
@@ -64,6 +64,10 @@
     padding-block: rem(20);
   }
 }
+.p-page-company__row--first {
+  border-top: initial;
+}
+
 
 .p-page-company__list--bottom {
   margin-top: rem(24);
@@ -104,12 +108,12 @@
   @include mq("md") {
     font-size: rem(16);
     line-height: 2.05;
-    width: calc(100% - rem(205));
   }
 }
 
 .p-page-company__value--address {
   line-height: 1.8;
+  position: relative;
 
   @include mq("md") {
     line-height: 1.3625;
@@ -118,12 +122,14 @@
 
 .p-page-company__map {
   margin-top: rem(20);
+  width: 100%;
 
   @include mq("md") {
     margin-top: rem(28);
+
   }
 
-  img {
+  iframe {
     display: block;
     width: 100%;
     height: auto;
@@ -177,7 +183,7 @@
   justify-content: center;
 
   @include mq("md") {
-    margin-top: rem(40);
+    margin-top: rem(126);
   }
 }
 
@@ -233,3 +239,6 @@
   }
 }
 
+.p-page-company__row--last {
+  border-bottom: initial !important;
+}

@@ -2,8 +2,8 @@
 
 .p-message {
   background: #3a3a3a;
-  padding-top: rem(88);
-  padding-bottom: rem(80);
+  padding-top: rem(56);
+  padding-bottom: rem(56);
   overflow-x: clip;
 
   @include mq(md) {
@@ -35,7 +35,7 @@
 
 .p-message__catch {
   font-family: "Noto Serif JP", serif;
-  font-size: rem(26);
+  font-size: rem(24);
   font-weight: 700;
   line-height: 1.5;
 
@@ -59,13 +59,15 @@
   }
 }
 
-.p-message__block {}
+
 
 .p-message__media {
   position: relative;
   z-index: 2;
+  margin-top: rem(24);
 
   @include mq(md) {
+    margin-top: initial;
     width: 100vw;
     margin-right: calc(50% - 50vw);
   }
@@ -100,30 +102,38 @@
   position: absolute;
   content: '';
   background: #fff;
-  top: rem(-109);
-  bottom: 0;
   left: calc(50% - 50vw);
   right: rem(-125);
+  bottom: 0;
+  @include mq(md){
+    top: rem(-109);
+    
+  }
 }
 
 .p-message__block--reverse .p-message__body::before {
   position: absolute;
   content: '';
   background: #fff;
-  top: rem(-109);
   bottom: 0;
   right: calc(50% - 50vw);
   left: rem(-125);
+  @include mq(md){
+    top: rem(-109);
+    
+  }
+
 }
 
 .p-message__text {
   font-size: rem(14);
   font-weight: 400;
   line-height: 2;
-  color: #000;
   position: relative;
-
+  color: #fff;
+  
   @include mq(md) {
+    color: #000;
     font-size: rem(16);
     line-height: 2.05;
   }

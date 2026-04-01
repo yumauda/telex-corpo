@@ -3,17 +3,7 @@
   <section class="p-common-mv">
     <div class="p-common-mv__media">
       <svg class="p-common-mv__waveSvg" viewBox="0 0 1440 672" preserveAspectRatio="xMidYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <filter id="waveWobble" x="-10%" y="-10%" width="120%" height="120%">
-            <feTurbulence type="fractalNoise" baseFrequency="0.006 0.015" numOctaves="2" seed="2" result="noise">
-              <animate attributeName="baseFrequency" dur="14s" values="0.006 0.015;0.009 0.02;0.006 0.015" repeatCount="indefinite" />
-            </feTurbulence>
-            <feDisplacementMap in="SourceGraphic" in2="noise" scale="22" xChannelSelector="R" yChannelSelector="G">
-              <animate attributeName="scale" dur="12s" values="18;28;18" repeatCount="indefinite" />
-            </feDisplacementMap>
-          </filter>
-        </defs>
-        <g class="p-common-mv__waveGroup" opacity="0.1" filter="url(#waveWobble)">
+        <g class="p-common-mv__waveGroup" opacity="0.1">
           <mask id="mask0_0_2372" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="24" y="0" width="1416" height="392">
             <path d="M24.7578 0H1439.87V391.96H24.7578V0Z" fill="white" />
           </mask>
@@ -376,7 +366,7 @@
         </div>
 
         <dl class="p-page-company__list">
-          <div class="p-page-company__row">
+          <div class="p-page-company__row p-page-company__row--first">
             <dt class="p-page-company__label">会社名</dt>
             <dd class="p-page-company__value">株式会社テレックス関西</dd>
           </div>
@@ -390,9 +380,9 @@
               〒651-0096<br>
               兵庫県神戸市中央区雲井通4-2-2<br>
               マークラー神戸ビル4階
-              <figure class="p-page-company__map">
-                <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/company/company-map.png" alt="" width="691" height="470">
-              </figure>
+              <div class="p-page-company__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.39817691681!2d135.19564477574428!3d34.69513567292169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60008eefd5d056dd%3A0x2bcc80c3e36bac37!2z5qCq5byP5Lya56S-44OG44Os44OD44Kv44K56Zai6KW_!5e0!3m2!1sja!2sjp!4v1775009637181!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
             </dd>
           </div>
         </dl>
@@ -446,7 +436,7 @@
             <dt class="p-page-company__label">売上高</dt>
             <dd class="p-page-company__value">約19億5,000万（2023年度実績）</dd>
           </div>
-          <div class="p-page-company__row">
+          <div class="p-page-company__row p-page-company__row--last">
             <dt class="p-page-company__label">社員数</dt>
             <dd class="p-page-company__value">111名（2025年11月現在）</dd>
           </div>
@@ -462,6 +452,6 @@
     </div>
   </section>
   <?php get_template_part('includes/common-link'); ?>
-  
+
 </main>
 <?php get_footer(); ?>

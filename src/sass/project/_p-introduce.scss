@@ -3,11 +3,22 @@
 .p-introduce {
   padding-top: rem(60);
   padding-bottom: rem(60);
+  position: relative;
+  overflow-x: clip;
 
   @include mq("md") {
     padding-top: rem(146);
     padding-bottom: rem(146);
   }
+}
+
+.p-introduce__media {
+  position: absolute;
+  inset: 0;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  z-index: -1;
+  top: rem(-160);
 }
 
 .p-introduce__content {

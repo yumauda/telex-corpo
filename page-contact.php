@@ -3,17 +3,7 @@
   <section class="p-common-mv">
     <div class="p-common-mv__media">
       <svg class="p-common-mv__waveSvg" viewBox="0 0 1440 672" preserveAspectRatio="xMidYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <filter id="waveWobble" x="-10%" y="-10%" width="120%" height="120%">
-            <feTurbulence type="fractalNoise" baseFrequency="0.006 0.015" numOctaves="2" seed="2" result="noise">
-              <animate attributeName="baseFrequency" dur="14s" values="0.006 0.015;0.009 0.02;0.006 0.015" repeatCount="indefinite" />
-            </feTurbulence>
-            <feDisplacementMap in="SourceGraphic" in2="noise" scale="22" xChannelSelector="R" yChannelSelector="G">
-              <animate attributeName="scale" dur="12s" values="18;28;18" repeatCount="indefinite" />
-            </feDisplacementMap>
-          </filter>
-        </defs>
-        <g class="p-common-mv__waveGroup" opacity="0.1" filter="url(#waveWobble)">
+        <g class="p-common-mv__waveGroup" opacity="0.1">
           <mask id="mask0_0_2372" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="24" y="0" width="1416" height="392">
             <path d="M24.7578 0H1439.87V391.96H24.7578V0Z" fill="white" />
           </mask>

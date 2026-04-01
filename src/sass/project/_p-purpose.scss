@@ -101,8 +101,8 @@
   margin-bottom: rem(24);
 
   @include mq(md) {
-    margin-top: rem(56);
-    margin-bottom: rem(56);
+    margin-top: rem(96);
+    margin-bottom: rem(96);
 
   }
 }
@@ -145,7 +145,7 @@
   margin-top: rem(24);
 
   @include mq(md) {
-    margin-top: rem(56);
+    margin-top: rem(96);
 
   }
 }
@@ -154,7 +154,7 @@
   margin-top: rem(24);
 
   @include mq(md) {
-    margin-top: rem(56);
+    margin-top: rem(96);
   }
 }
 

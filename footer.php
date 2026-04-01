@@ -11,11 +11,11 @@
             </div>
 
             <div class="p-footer__cta">
-                <a class="p-footer__ctaLink" href="<?php echo esc_url(home_url('/recruit/')); ?>">
+                <a class="p-footer__ctaLink" href="<?php echo esc_url(home_url('/recruit')); ?>">
                     <span class="p-footer__ctaEn">Recruit</span>
                     <span class="p-footer__ctaJa">採用情報</span>
                 </a>
-                <a class="p-footer__ctaLink" href="<?php echo esc_url(home_url('/contact/')); ?>">
+                <a class="p-footer__ctaLink" href="<?php echo esc_url(home_url('/contact')); ?>">
                     <span class="p-footer__ctaEn">Contact</span>
                     <span class="p-footer__ctaJa">お問い合わせ</span>
                 </a>
@@ -25,34 +25,37 @@
         <nav class="p-footer__nav" aria-label="フッターナビゲーション">
             <ul class="p-footer__navList">
                 <li class="p-footer__navItem">
-                    <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/about/')); ?>">私たちについて</a>
+                    <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/message')); ?>">私たちについて</a>
                 </li>
                 <li class="p-footer__navItem">
-                    <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/csr/')); ?>">CSRの取組み</a>
+                    <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/company')); ?>">会社概要</a>
                 </li>
                 <li class="p-footer__navItem">
-                    <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/news/')); ?>">お知らせ</a>
+                    <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/csr')); ?>">CSRの取組み</a>
                 </li>
                 <li class="p-footer__navItem">
-                    <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/privacy-policy/')); ?>">プライバシーポリシー</a>
+                    <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/news')); ?>">お知らせ</a>
+                </li>
+                <li class="p-footer__navItem">
+                    <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/privacy')); ?>">プライバシーポリシー</a>
                 </li>
             </ul>
 
             <ul class="p-footer__navList p-footer__navList--sub">
                 <li class="p-footer__navItem">
-                    <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/business/')); ?>">事業内容</a>
+                    <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/business')); ?>">事業内容</a>
                 </li>
                 <li class="p-footer__navItem">
-                    <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/business/#mobile')); ?>">-モバイル事業</a>
+                    <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/mobile-business')); ?>">-モバイルショップ事業</a>
                 </li>
                 <li class="p-footer__navItem">
-                    <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/business/#corporate')); ?>">-法人営業部</a>
+                    <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/corporate-sales')); ?>">-法人営業</a>
                 </li>
                 <li class="p-footer__navItem">
-                    <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/business/#event')); ?>">-イベント営業部</a>
+                    <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/event-business')); ?>">-イベント事業</a>
                 </li>
                 <li class="p-footer__navItem">
-                    <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/business/#other')); ?>">-その他事業</a>
+                    <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/other-business')); ?>">-その他事業</a>
                 </li>
             </ul>
         </nav>
