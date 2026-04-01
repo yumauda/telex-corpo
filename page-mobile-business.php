@@ -187,7 +187,7 @@
                 また、AIやシステムを活用しつつも、最終的な判断と提案は必ず人が担います。データだけでは見えない生活背景まで踏まえ、スマートフォン本体から料金プラン、関連サービスに至るまで総合的にご提案します。効率化はテクノロジーに任せ、人はお客様と向き合う時間に集中する――それがテレックス関西の提案スタイルです。
               </p>
             </div>
-            <figure class="p-features__itemMedia js-parallax">
+            <figure class="p-features__itemMedia">
               <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/mobile-business/features-main-01.webp" alt="" width="609" height="406">
             </figure>
           </article>

@@ -184,7 +184,7 @@
         <div class="p-top-csr__grid">
 
           <figure class="p-top-csr__media js-parallax js-opacity-word">
-            <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/common/top-csr.png" alt="" width="828" height="336">
+            <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/common/top-csr.webp" alt="" width="828" height="336">
           </figure>
 
           <div class="p-top-csr__copy">

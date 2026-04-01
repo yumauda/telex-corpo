@@ -155,8 +155,8 @@
       <div class="p-contactThanks__content">
         <p class="p-contactThanks__title">お問い合わせを受け付けました。</p>
         <p class="p-contactThanks__text">
-          この度はお問い合わせいただき、誠にありがとうございます。<br>
-          担当者よりご連絡いたしますので、今しばらくお待ちください。
+          この度はお問い合わせいただき、<br class="u-mobile">誠にありがとうございます。<br>
+          担当者よりご連絡いたしますので、<br class="u-mobile">今しばらくお待ちください。
         </p>
         <div class="p-contactThanks__btn">
           <a class="p-contactThanks__link" href="<?php echo esc_url(home_url('/')); ?>">TOPへ戻る</a>

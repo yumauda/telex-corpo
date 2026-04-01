@@ -3,7 +3,7 @@
         <li class="p-common-link__item">
             <a class="p-common-link__link" href="<?php echo esc_url(home_url('/shop')); ?>">
                 <figure class="p-common-link__img">
-                    <img decoding="async" loading="lazy" class="p-common-link__bg" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/common-link/common-link-shop.png" alt="" width="4096" height="2736">
+                    <img decoding="async" loading="lazy" class="p-common-link__bg" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/common/common-link-shop.webp" alt="店舗一覧" width="664" height="539">
                 </figure>
                 <span class="p-common-link__overlay" aria-hidden="true"></span>
                 <span class="p-common-link__body">
@@ -15,7 +15,7 @@
         <li class="p-common-link__item">
             <a class="p-common-link__link" href="<?php echo esc_url(home_url('/recruit')); ?>">
                 <figure class="p-common-link__img">
-                    <img decoding="async" loading="lazy" class="p-common-link__bg" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/common-link/common-link-recruit.png" alt="" width="4096" height="2736">
+                    <img decoding="async" loading="lazy" class="p-common-link__bg" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/common/common-link-recruit.webp" alt="採用情報" width="664" height="539">
                 </figure>
                 <span class="p-common-link__overlay" aria-hidden="true"></span>
                 <span class="p-common-link__body">
@@ -27,7 +27,7 @@
         <li class="p-common-link__item">
             <a class="p-common-link__link" href="<?php echo esc_url(home_url('/contact')); ?>">
                 <figure class="p-common-link__img">
-                    <img decoding="async" loading="lazy" class="p-common-link__bg" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/top/common-link/common-link-contact-464dba.png" alt="" width="664" height="539">
+                    <img decoding="async" loading="lazy" class="p-common-link__bg" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/common/common-link-contact-464dba.webp" alt="お問い合わせ" width="664" height="539">
                 </figure>
                 <span class="p-common-link__overlay" aria-hidden="true"></span>
                 <span class="p-common-link__body">
