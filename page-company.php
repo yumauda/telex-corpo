@@ -146,7 +146,7 @@
 
         <div class="p-common-mv__titles">
           <p class="p-common-mv__enTitle">Company</p>
-          <h1 class="p-common-mv__jaTitle">会社紹介</h1>
+          <h1 class="p-common-mv__jaTitle">会社概要</h1>
         </div>
       </div>
     </div>
@@ -213,8 +213,7 @@
           </div>
 
           <p class="p-purpose__policyLead">
-            右肩上がりの円弧（ARC）のように、商品サービスへの支援者を未来に向けて爆発的に増やし、“未来のあたりまえ”を実現する。それを実現できているか自己点検するためのStyleと位置づける。私たちは日常業務の中で、常に自らに“IS<br class="u-desktop">
-            ARC?”と問いかけ続ける。
+            右肩上がりの円弧（ARC）のように、商品サービスへの支援者を未来に向けて爆発的に増やし、“未来のあたりまえ”を実現する。それを実現できているか自己点検するためのStyleと位置づける。私たちは日常業務の中で、常に自らに“IS ARC?”と問いかけ続ける。
           </p>
 
           <figure class="p-purpose__policyFigure">

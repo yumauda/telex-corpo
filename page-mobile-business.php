@@ -172,7 +172,7 @@
       <div class="p-features__content">
         <div class="p-features__head">
           <p class="p-features__enTitle">Features</p>
-          <h2 class="p-features__jaTitle">モバイル事業部の特徴</h2>
+          <h2 class="p-features__jaTitle">モバイル事業の特徴</h2>
         </div>
 
         <div class="p-features__list">

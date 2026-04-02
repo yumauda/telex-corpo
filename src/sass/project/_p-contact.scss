@@ -44,6 +44,7 @@
     .js-contactInput {
       display: none;
     }
+
     .js-contactConfirmArea {
       display: block;
     }
@@ -189,10 +190,11 @@
     align-items: center;
     font-size: rem(14);
     gap: rem(8);
-    @include mq(md){
+
+    @include mq(md) {
       gap: rem(10);
       font-size: rem(18);
-      
+
     }
 
     &::before {
@@ -205,10 +207,11 @@
       flex: 0 0 auto;
       width: rem(24);
       height: rem(24);
-      @include mq(md){
+
+      @include mq(md) {
         width: rem(31);
         height: rem(31);
-        
+
       }
     }
 
@@ -217,8 +220,8 @@
     }
   }
 
-  .wpcf7-acceptance input[type="checkbox"]:checked + .wpcf7-list-item-label::before,
-  .wpcf7-checkbox input[type="checkbox"]:checked + .wpcf7-list-item-label::before {
+  .wpcf7-acceptance input[type="checkbox"]:checked+.wpcf7-list-item-label::before,
+  .wpcf7-checkbox input[type="checkbox"]:checked+.wpcf7-list-item-label::before {
     background-color: #fff;
     background-image: url("../images/common/contact-check.svg");
     background-repeat: no-repeat;
@@ -228,8 +231,12 @@
   }
 
   .p-form__btn-wrapper {
-    margin-top: rem(38);
+    margin-top: rem(32);
     justify-content: center;
+
+    @include mq(md) {
+      margin-top: rem(64);
+    }
   }
 
   .p-form__btn-outside {
@@ -253,10 +260,11 @@
     width: rem(210);
     height: rem(44);
     transition: opacity 0.3s ease, background 0.3s ease, color 0.3s ease;
-    @include mq(md){
+
+    @include mq(md) {
       width: rem(248);
       height: rem(59);
-     font-size: rem(20);
+      font-size: rem(20);
     }
 
     &:disabled {
@@ -313,4 +321,3 @@
   color: #000;
   white-space: pre-wrap;
 }
-

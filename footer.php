@@ -27,9 +27,9 @@
                 <li class="p-footer__navItem">
                     <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/message')); ?>">私たちについて</a>
                 </li>
-                <li class="p-footer__navItem">
+                <!-- <li class="p-footer__navItem">
                     <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/company')); ?>">会社概要</a>
-                </li>
+                </li> -->
                 <li class="p-footer__navItem">
                     <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/csr')); ?>">CSRの取組み</a>
                 </li>
