@@ -8,8 +8,8 @@
         </figure>
         <span class="p-page-mv__overlay" aria-hidden="true"></span>
         <div class="p-page-mv__detail">
-          <p class="p-page-mv__en">Other Business</p>
-          <h1 class="p-page-mv__ja">その他の事業</h1>
+          <p class="p-page-mv__en js-page-main-title">Other Business</p>
+          <h1 class="p-page-mv__ja js-opacity-word">その他の事業</h1>
         </div>
       </div>
     </div>
@@ -158,10 +158,10 @@
     <div class="l-page-inner">
       <div class="p-introduce__content">
         <div class="p-introduce__head">
-          <p class="p-introduce__enTitle">Other Business</p>
-          <h2 class="p-introduce__jaTitle">その他の事業について</h2>
+          <p class="p-introduce__enTitle js-page-main-title">Other Business</p>
+          <h2 class="p-introduce__jaTitle js-opacity-word">その他の事業について</h2>
         </div>
-        <p class="p-introduce__text">
+        <p class="p-introduce__text js-opacity-word">
           既存事業の枠にとらわれることなく、新たな可能性に挑戦しています。<br>
           市場環境や顧客ニーズの変化を的確に捉え、これまで培ってきた経験・技術・ネットワークを活かしながら、新しい価値を創出しています。
           新規事業は単なる事業拡大ではなく、当社の持続的成長を支える重要な取り組みの一つです。<br>
@@ -177,31 +177,31 @@
     <div class="l-page-inner">
       <div class="p-features__content p-features__content--other">
         <div class="p-features__head">
-          <p class="p-features__enTitle">Business Portfolio</p>
-          <h2 class="p-features__jaTitle">これまでの事業展開</h2>
+          <p class="p-features__enTitle js-page-main-title">Business Portfolio</p>
+          <h2 class="p-features__jaTitle js-opacity-word">これまでの事業展開</h2>
         </div>
 
         <div class="p-features__list">
           <article class="p-features__item p-features__item--other">
             <div class="p-features__itemBody p-features__itemBody--other">
-              <h3 class="p-features__itemTitle">スマホ修理・買取事業</h3>
-              <p class="p-features__itemText">
+              <h3 class="p-features__itemTitle js-opacity-word">スマホ修理・買取事業</h3>
+              <p class="p-features__itemText js-opacity-word">
                 スマートフォンをはじめとするモバイルデバイスの修理・メンテナンス・買取。専門スタッフによる高品質な技術で、デバイスの「可能性」を最後まで守り抜きます。
               </p>
             </div>
-            <figure class="p-features__itemMedia p-features__itemOther-img">
+            <figure class="p-features__itemMedia p-features__itemOther-img js-opacity-word">
               <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/other-business/other_1.webp" alt="スマホ修理・買取事業" width="355" height="237">
             </figure>
           </article>
 
           <article class="p-features__item p-features__item--other">
             <div class="p-features__itemBody p-features__itemBody--other">
-              <h3 class="p-features__itemTitle">コンサルティング事業</h3>
-              <p class="p-features__itemText">
+              <h3 class="p-features__itemTitle js-opacity-word">コンサルティング事業</h3>
+              <p class="p-features__itemText js-opacity-word">
                 採用支援、人財育成プログラムの提供、組織マネジメントの最適化。テレックス関西の成長を支えた「人」のノウハウを、企業の力へと変換します。
               </p>
             </div>
-            <figure class="p-features__itemMedia p-features__itemOther-img">
+            <figure class="p-features__itemMedia p-features__itemOther-img js-opacity-word">
               <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/other-business/other_2.webp" alt="コンサルティング事業" width="355" height="237">
             </figure>
           </article>

@@ -143,8 +143,8 @@
     <div class="l-inner">
       <div class="p-common-mv__content">
         <div class="p-common-mv__titles">
-          <p class="p-common-mv__enTitle">Contact</p>
-          <h1 class="p-common-mv__jaTitle">お問い合わせ</h1>
+          <p class="p-common-mv__enTitle js-page-main-title">Contact</p>
+          <h1 class="p-common-mv__jaTitle js-opacity-word">お問い合わせ</h1>
         </div>
       </div>
     </div>

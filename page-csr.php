@@ -7,8 +7,8 @@
           <img src="<?php echo get_template_directory_uri() ?>/images/csr/page_mv_csr.webp" alt="CSRの取り組み" width="1440" height="480">
         </figure>
         <div class="p-page-mv__detail">
-          <p class="p-page-mv__en">CSR</p>
-          <h1 class="p-page-mv__ja">CSRの取り組み</h1>
+          <p class="p-page-mv__en js-page-main-title">CSR</p>
+          <h1 class="p-page-mv__ja js-opacity-word">CSRの取り組み</h1>
         </div>
       </div>
     </div>
@@ -160,8 +160,8 @@
       <div class="p-us__content">
         <div class="p-us__grid">
           <div class="p-us__body">
-            <h2 class="p-us__title">基本方針</h2>
-            <p class="p-us__text">
+            <h2 class="p-us__title js-opacity-word">基本方針</h2>
+            <p class="p-us__text js-opacity-word">
               私たちは、地域に寄り添う携帯電話ショップ代理店<br>
               として、人と社会に貢献する企業を目指しています。<br>
               お客様はもちろん、社員や地域社会とのつながりを<br>
@@ -169,7 +169,7 @@
             </p>
           </div>
 
-          <figure class="p-us__media">
+          <figure class="p-us__media js-opacity-word">
             <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/csr/us-policy-3b9136.webp" alt="" width="1412" height="843">
           </figure>
         </div>
@@ -179,96 +179,96 @@
   <section class="p-sdgs">
     <div class="l-inner">
       <div class="p-sdgs__content">
-        <h2 class="p-sdgs__title">
+        <h2 class="p-sdgs__title js-opacity-word">
           SDGs(持続可能な開発目標)<br>
           達成への取り組み
         </h2>
         <div class="p-sdgs__panel">
 
           <div class="p-sdgs__blocks">
-          <section class="p-sdgs__block" aria-labelledby="sdgs-nextgen">
-            <h3 class="p-sdgs__blockTitle" id="sdgs-nextgen">次世代の育成</h3>
-            <ul class="p-sdgs__icons">
-              <li class="p-sdgs__iconItem">
-                <img decoding="async" loading="lazy" class="p-sdgs__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/csr/sdgs/goal-03.png" alt="SDGs目標3 すべての人に健康と福祉を" width="1276" height="1276">
-              </li>
-              <li class="p-sdgs__iconItem">
-                <img decoding="async" loading="lazy" class="p-sdgs__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/csr/sdgs/goal-04.png" alt="SDGs目標4 質の高い教育をみんなに" width="1276" height="1276">
-              </li>
-              <li class="p-sdgs__iconItem">
-                <img decoding="async" loading="lazy" class="p-sdgs__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/csr/sdgs/goal-09.png" alt="SDGs目標9 産業と技術革新の基盤をつくろう" width="1276" height="1276">
-              </li>
-              <li class="p-sdgs__iconItem">
-                <img decoding="async" loading="lazy" class="p-sdgs__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/csr/sdgs/goal-10.png" alt="SDGs目標10 人や国の不平等をなくそう" width="1276" height="1276">
-              </li>
-            </ul>
-            <p class="p-sdgs__text">
-              社員一人ひとりが持つ能力を最大限に発揮できるよう、集合研修と実務を通じた研修を組み合わせ、体系的な人材育成に取り組んでいます。また、各人の成長段階に応じて、対人関係力や主体性などの基礎的な力の向上を図っています。
-            </p>
-          </section>
+            <section class="p-sdgs__block" aria-labelledby="sdgs-nextgen">
+              <h3 class="p-sdgs__blockTitle js-opacity-word" id="sdgs-nextgen">次世代の育成</h3>
+              <ul class="p-sdgs__icons">
+                <li class="p-sdgs__iconItem js-opacity-word">
+                  <img decoding="async" loading="lazy" class="p-sdgs__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/csr/sdgs/goal-03.png" alt="SDGs目標3 すべての人に健康と福祉を" width="1276" height="1276">
+                </li>
+                <li class="p-sdgs__iconItem js-opacity-word">
+                  <img decoding="async" loading="lazy" class="p-sdgs__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/csr/sdgs/goal-04.png" alt="SDGs目標4 質の高い教育をみんなに" width="1276" height="1276">
+                </li>
+                <li class="p-sdgs__iconItem js-opacity-word">
+                  <img decoding="async" loading="lazy" class="p-sdgs__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/csr/sdgs/goal-09.png" alt="SDGs目標9 産業と技術革新の基盤をつくろう" width="1276" height="1276">
+                </li>
+                <li class="p-sdgs__iconItem js-opacity-word">
+                  <img decoding="async" loading="lazy" class="p-sdgs__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/csr/sdgs/goal-10.png" alt="SDGs目標10 人や国の不平等をなくそう" width="1276" height="1276">
+                </li>
+              </ul>
+              <p class="p-sdgs__text js-opacity-word">
+                社員一人ひとりが持つ能力を最大限に発揮できるよう、集合研修と実務を通じた研修を組み合わせ、体系的な人材育成に取り組んでいます。また、各人の成長段階に応じて、対人関係力や主体性などの基礎的な力の向上を図っています。
+              </p>
+            </section>
 
-          <section class="p-sdgs__block" aria-labelledby="sdgs-workstyle">
-            <h3 class="p-sdgs__blockTitle" id="sdgs-workstyle">多様な働き方</h3>
-            <ul class="p-sdgs__icons">
-              <li class="p-sdgs__iconItem">
-                <img decoding="async" loading="lazy" class="p-sdgs__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/csr/sdgs/goal-03.png" alt="SDGs目標3 すべての人に健康と福祉を" width="1276" height="1276">
-              </li>
-              <li class="p-sdgs__iconItem">
-                <img decoding="async" loading="lazy" class="p-sdgs__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/csr/sdgs/goal-05.png" alt="SDGs目標5 ジェンダー平等を実現しよう" width="1276" height="1276">
-              </li>
-              <li class="p-sdgs__iconItem">
-                <img decoding="async" loading="lazy" class="p-sdgs__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/csr/sdgs/goal-08.png" alt="SDGs目標8 働きがいも経済成長も" width="1276" height="1276">
-              </li>
-              <li class="p-sdgs__iconItem">
-                <img decoding="async" loading="lazy" class="p-sdgs__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/csr/sdgs/goal-16.png" alt="SDGs目標16 平和と公正をすべての人に" width="1276" height="1276">
-              </li>
-            </ul>
-            <p class="p-sdgs__text">
-              社員一人ひとりが自分らしく働けるよう、多様な働き方を支援しています。時短勤務制度をはじめ、ライフステージに応じた柔軟な働き方が可能な環境を整えています。また、ジョブエントリー制度により、自ら希望する業務に挑戦できる機会を設け、主体的なキャリア形成を後押ししています。
-            </p>
-          </section>
+            <section class="p-sdgs__block" aria-labelledby="sdgs-workstyle">
+              <h3 class="p-sdgs__blockTitle js-opacity-word" id="sdgs-workstyle">多様な働き方</h3>
+              <ul class="p-sdgs__icons">
+                <li class="p-sdgs__iconItem js-opacity-word">
+                  <img decoding="async" loading="lazy" class="p-sdgs__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/csr/sdgs/goal-03.png" alt="SDGs目標3 すべての人に健康と福祉を" width="1276" height="1276">
+                </li>
+                <li class="p-sdgs__iconItem js-opacity-word">
+                  <img decoding="async" loading="lazy" class="p-sdgs__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/csr/sdgs/goal-05.png" alt="SDGs目標5 ジェンダー平等を実現しよう" width="1276" height="1276">
+                </li>
+                <li class="p-sdgs__iconItem js-opacity-word">
+                  <img decoding="async" loading="lazy" class="p-sdgs__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/csr/sdgs/goal-08.png" alt="SDGs目標8 働きがいも経済成長も" width="1276" height="1276">
+                </li>
+                <li class="p-sdgs__iconItem js-opacity-word">
+                  <img decoding="async" loading="lazy" class="p-sdgs__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/csr/sdgs/goal-16.png" alt="SDGs目標16 平和と公正をすべての人に" width="1276" height="1276">
+                </li>
+              </ul>
+              <p class="p-sdgs__text js-opacity-word">
+                社員一人ひとりが自分らしく働けるよう、多様な働き方を支援しています。時短勤務制度をはじめ、ライフステージに応じた柔軟な働き方が可能な環境を整えています。また、ジョブエントリー制度により、自ら希望する業務に挑戦できる機会を設け、主体的なキャリア形成を後押ししています。
+              </p>
+            </section>
 
-          <section class="p-sdgs__block" aria-labelledby="sdgs-environment">
-            <h3 class="p-sdgs__blockTitle" id="sdgs-environment">地球環境の保全</h3>
-            <ul class="p-sdgs__icons">
-              <li class="p-sdgs__iconItem">
-                <img decoding="async" loading="lazy" class="p-sdgs__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/csr/sdgs/goal-07.png" alt="SDGs目標7 エネルギーをみんなに そしてクリーンに" width="1276" height="1276">
-              </li>
-              <li class="p-sdgs__iconItem">
-                <img decoding="async" loading="lazy" class="p-sdgs__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/csr/sdgs/goal-11.png" alt="SDGs目標11 住み続けられるまちづくりを" width="1276" height="1276">
-              </li>
-              <li class="p-sdgs__iconItem">
-                <img decoding="async" loading="lazy" class="p-sdgs__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/csr/sdgs/goal-12.png" alt="SDGs目標12 つくる責任 つかう責任" width="1276" height="1276">
-              </li>
-              <li class="p-sdgs__iconItem">
-                <img decoding="async" loading="lazy" class="p-sdgs__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/csr/sdgs/goal-13.png" alt="SDGs目標13 気候変動に具体的な対策を" width="1276" height="1276">
-              </li>
-            </ul>
-            <p class="p-sdgs__text">
-              地球環境の保全に向け、店舗における省エネルギーの推進や資源の有効活用に取り組んでいます。具体的には、書類の電子化による紙の使用削減、使用済み携帯電話の回収などを行っています。また、社員一人ひとりが環境への意識を持ち、日常業務の中でできる取り組みを継続しています。
-            </p>
-          </section>
+            <section class="p-sdgs__block" aria-labelledby="sdgs-environment">
+              <h3 class="p-sdgs__blockTitle js-opacity-word" id="sdgs-environment">地球環境の保全</h3>
+              <ul class="p-sdgs__icons">
+                <li class="p-sdgs__iconItem js-opacity-word">
+                  <img decoding="async" loading="lazy" class="p-sdgs__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/csr/sdgs/goal-07.png" alt="SDGs目標7 エネルギーをみんなに そしてクリーンに" width="1276" height="1276">
+                </li>
+                <li class="p-sdgs__iconItem js-opacity-word">
+                  <img decoding="async" loading="lazy" class="p-sdgs__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/csr/sdgs/goal-11.png" alt="SDGs目標11 住み続けられるまちづくりを" width="1276" height="1276">
+                </li>
+                <li class="p-sdgs__iconItem js-opacity-word">
+                  <img decoding="async" loading="lazy" class="p-sdgs__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/csr/sdgs/goal-12.png" alt="SDGs目標12 つくる責任 つかう責任" width="1276" height="1276">
+                </li>
+                <li class="p-sdgs__iconItem js-opacity-word">
+                  <img decoding="async" loading="lazy" class="p-sdgs__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/csr/sdgs/goal-13.png" alt="SDGs目標13 気候変動に具体的な対策を" width="1276" height="1276">
+                </li>
+              </ul>
+              <p class="p-sdgs__text js-opacity-word">
+                地球環境の保全に向け、店舗における省エネルギーの推進や資源の有効活用に取り組んでいます。具体的には、書類の電子化による紙の使用削減、使用済み携帯電話の回収などを行っています。また、社員一人ひとりが環境への意識を持ち、日常業務の中でできる取り組みを継続しています。
+              </p>
+            </section>
 
-          <section class="p-sdgs__block" aria-labelledby="sdgs-service">
-            <h3 class="p-sdgs__blockTitle" id="sdgs-service">安心・安全なサービス環境</h3>
-            <ul class="p-sdgs__icons">
-              <li class="p-sdgs__iconItem">
-                <img decoding="async" loading="lazy" class="p-sdgs__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/csr/sdgs/goal-09.png" alt="SDGs目標9 産業と技術革新の基盤をつくろう" width="1276" height="1276">
-              </li>
-              <li class="p-sdgs__iconItem">
-                <img decoding="async" loading="lazy" class="p-sdgs__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/csr/sdgs/goal-12.png" alt="SDGs目標12 つくる責任 つかう責任" width="1276" height="1276">
-              </li>
-              <li class="p-sdgs__iconItem">
-                <img decoding="async" loading="lazy" class="p-sdgs__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/csr/sdgs/goal-16.png" alt="SDGs目標16 平和と公正をすべての人に" width="1276" height="1276">
-              </li>
-              <li class="p-sdgs__iconItem">
-                <img decoding="async" loading="lazy" class="p-sdgs__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/csr/sdgs/goal-17.png" alt="SDGs目標17 パートナーシップで目標を達成しよう" width="1276" height="1276">
-              </li>
-            </ul>
-            <p class="p-sdgs__text">
-              お客様に安心してご利用いただけるサービス環境の整備に取り組んでいます。正確で分かりやすいご案内を心がけるとともに、社内研修を通じて接客力の向上を図っています。また、個人情報の適切な管理を徹底し、安全な情報の取り扱いに努めています。さらに、ご購入後のサポートにも力を入れ、お客様に寄り添った対応を継続しています。
-            </p>
-          </section>
+            <section class="p-sdgs__block" aria-labelledby="sdgs-service">
+              <h3 class="p-sdgs__blockTitle js-opacity-word" id="sdgs-service">安心・安全なサービス環境</h3>
+              <ul class="p-sdgs__icons">
+                <li class="p-sdgs__iconItem js-opacity-word">
+                  <img decoding="async" loading="lazy" class="p-sdgs__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/csr/sdgs/goal-09.png" alt="SDGs目標9 産業と技術革新の基盤をつくろう" width="1276" height="1276">
+                </li>
+                <li class="p-sdgs__iconItem js-opacity-word">
+                  <img decoding="async" loading="lazy" class="p-sdgs__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/csr/sdgs/goal-12.png" alt="SDGs目標12 つくる責任 つかう責任" width="1276" height="1276">
+                </li>
+                <li class="p-sdgs__iconItem js-opacity-word">
+                  <img decoding="async" loading="lazy" class="p-sdgs__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/csr/sdgs/goal-16.png" alt="SDGs目標16 平和と公正をすべての人に" width="1276" height="1276">
+                </li>
+                <li class="p-sdgs__iconItem js-opacity-word">
+                  <img decoding="async" loading="lazy" class="p-sdgs__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/csr/sdgs/goal-17.png" alt="SDGs目標17 パートナーシップで目標を達成しよう" width="1276" height="1276">
+                </li>
+              </ul>
+              <p class="p-sdgs__text js-opacity-word">
+                お客様に安心してご利用いただけるサービス環境の整備に取り組んでいます。正確で分かりやすいご案内を心がけるとともに、社内研修を通じて接客力の向上を図っています。また、個人情報の適切な管理を徹底し、安全な情報の取り扱いに努めています。さらに、ご購入後のサポートにも力を入れ、お客様に寄り添った対応を継続しています。
+              </p>
+            </section>
           </div>
         </div>
       </div>

@@ -142,8 +142,8 @@
     <div class="l-inner">
       <div class="p-common-mv__content">
         <div class="p-common-mv__titles">
-          <p class="p-common-mv__enTitle">Message</p>
-          <h1 class="p-common-mv__jaTitle">代表挨拶</h1>
+          <p class="p-common-mv__enTitle js-page-main-title">Message</p>
+          <h1 class="p-common-mv__jaTitle js-opacity-word">代表挨拶</h1>
         </div>
       </div>
     </div>
@@ -161,14 +161,14 @@
             </p>
             <p class="p-message__name">代表取締役 会長 上村 計明</p>
           </div>
-          <figure class="p-message__media">
+          <figure class="p-message__media js-opacity-word">
             <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/message/message-chairman.webp" alt="代表取締役 会長 上村 計明" width="4096" height="2736">
           </figure>
         </div>
 
         <div class="p-message__block">
 
-          <div class="p-message__body">
+          <div class="p-message__body js-opacity-word">
             <p class="p-message__text">
               お客様に感動や喜びを届ける。その根底にあるのは、サービスを支える社員一人ひとりの「誰かを喜ばせたい」という純粋な意欲です。私は会社経営において、緻密な戦略や戦術以上に社員が「やりがい」を感じているかどうかを最優先に考えています。この「想い」の有無こそが、すべての成否を分けると確信しているからです。人は一人では弱いものですが、前向きな空気が満ちる環境にあれば、互いに高め合い、自然と良い方向へ進んでいける。<br>
               そんな「環境づくり」こそが、私の使命であると考えています。<br>
@@ -179,13 +179,13 @@
         </div>
         <div class="p-message__row p-message__row--reverse mt114">
 
-          <div class="p-message__lead p-message__lead--right">
+          <div class="p-message__lead p-message__lead--right js-opacity-word">
             <p class="p-message__catch">
               一人ひとりの可能性を信じ<br>未来を創り出す「先駆者」<br>であり続ける
             </p>
             <p class="p-message__name">代表取締役 社長 蓬莱 和真</p>
           </div>
-          <figure class="p-message__media">
+          <figure class="p-message__media js-opacity-word">
             <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/message/message-president-2.webp" alt="代表取締役 社長 蓬莱 和真" width="4070" height="2280">
           </figure>
         </div>
@@ -193,7 +193,7 @@
 
         <div class="p-message__block p-message__block--reverse">
 
-          <div class="p-message__body">
+          <div class="p-message__body js-opacity-word">
             <p class="p-message__text">
               テレックス関西は「未来のあたりまえを世界に」というビジョンのもと、常に変化の激しい時代の先頭を走り続けてきました。私たちが提供するのは、単なるテクノロジーや商品ではありません。それらを通じて、お客様のライフスタイルを劇的に変え、まだ誰も見たことがない「ワクワクする未来」を現実にすることです。<br>
               いかにデジタル技術が進歩しても、イノベーションを起こす最後の決め手は「ヒトの熱意」に他なりません。どれほど便利なサービスも、送り手の「本気で貢献したい」というエネルギーが乗らなければ、社会に深く浸透することはないでしょう。だからこそ、目の前の数字を追うこと以上に、社員一人ひとりが自らの可能性に賭け、胸を張って仕事に打ち込めるような環境を追求し続けています。<br>
@@ -207,7 +207,7 @@
       </div>
     </div>
   </section>
-  <div class="p-message__company">
+  <div class="p-message__company js-opacity-word">
     <a class="p-message__companyLink" href="<?php echo esc_url(home_url('/company/')); ?>">
       <span class="p-message__companyEn">Company</span>
       <span class="p-message__companyJa">会社概要</span>

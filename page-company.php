@@ -145,8 +145,8 @@
 
 
         <div class="p-common-mv__titles">
-          <p class="p-common-mv__enTitle">Company</p>
-          <h1 class="p-common-mv__jaTitle">会社概要</h1>
+          <p class="p-common-mv__enTitle js-page-main-title">Company</p>
+          <h1 class="p-common-mv__jaTitle js-opacity-word">会社概要</h1>
         </div>
       </div>
     </div>
@@ -155,11 +155,11 @@
     <div class="l-page-inner">
       <div class="p-purpose__content">
         <div class="p-purpose__head">
-          <p class="p-purpose__enTitle">Purpose</p>
-          <h2 class="p-purpose__jaTitle">存在意義</h2>
+          <p class="p-purpose__enTitle js-page-main-title">Purpose</p>
+          <h2 class="p-purpose__jaTitle js-opacity-word">存在意義</h2>
         </div>
 
-        <div class="p-purpose__vision">
+        <div class="p-purpose__vision js-opacity-word">
           <p class="p-purpose__sectionEn">Vision</p>
           <p class="p-purpose__visionTitle">“未来のあたりまえ”を世界に</p>
           <p class="p-purpose__text">
@@ -170,31 +170,31 @@
           </p>
         </div>
 
-        <hr class="p-purpose__divider" aria-hidden="true">
+        <hr class="p-purpose__divider js-opacity-word" aria-hidden="true">
 
         <div class="p-purpose__mission">
-          <p class="p-purpose__sectionEn">Mission</p>
-          <p class="p-purpose__missionLead">
+          <p class="p-purpose__sectionEn js-opacity-word">Mission</p>
+          <p class="p-purpose__missionLead js-opacity-word">
             私たちはライフバリューイノベーションによってお客様に新たな価値を提供し、<br class="u-desktop">
             “未来のあたりまえ”にワクワクする世界を実現します。
           </p>
 
           <div class="p-purpose__missionItems">
-            <div class="p-purpose__missionItem">
+            <div class="p-purpose__missionItem js-opacity-word">
               <p class="p-purpose__missionItemTitle">ライフバリューイノベーション</p>
               <p class="p-purpose__text">
                 私たちは「ライフバリューイノベーション」によって顧客に価値ある商品を提供します。商品の使い方のプロフェッショナルとしてお客様の気づいていないニーズを引き出し、“未来のあたりまえ”になるような新しいサービスを提供し、ライフスタイルを変革します。
               </p>
             </div>
 
-            <div class="p-purpose__missionItem">
+            <div class="p-purpose__missionItem js-opacity-word">
               <p class="p-purpose__missionItemTitle">お客様に新たな価値を提供</p>
               <p class="p-purpose__text">
                 私たちはお客様自身が気づかないような新たな価値を提供します。お客様の目に見えるご要望にそのままお応えするのではなく、常に+αの感動を添え、家族や友人に自慢したくなるような新たな価値を提供します。
               </p>
             </div>
 
-            <div class="p-purpose__missionItem">
+            <div class="p-purpose__missionItem js-opacity-word">
               <p class="p-purpose__missionItemTitle">“未来のあたりまえ”にワクワクする世界</p>
               <p class="p-purpose__text">
                 私たちは “未来のあたりまえ” にワクワクする世界を実現します。今はまだ誰も信じていなくとも、近い将来にそれが現実化することを伝えることで “未来のあたりまえ” を身近に感じ、ワクワクするような世界を実現します。
@@ -203,49 +203,49 @@
           </div>
         </div>
 
-        <hr class="p-purpose__divider p-purpose__divider--bottom" aria-hidden="true">
+        <hr class="p-purpose__divider p-purpose__divider--bottom js-opacity-word" aria-hidden="true">
       </div>
       <div class="p-purpose__policy">
         <div class="p-purpose__policyInner">
-          <div class="p-purpose__policyHead">
+          <div class="p-purpose__policyHead js-opacity-word">
             <p class="p-purpose__policyNum">5</p>
             <h3 class="p-purpose__policyTitle">Policy</h3>
           </div>
 
-          <p class="p-purpose__policyLead">
+          <p class="p-purpose__policyLead js-opacity-word">
             右肩上がりの円弧（ARC）のように、商品サービスへの支援者を未来に向けて爆発的に増やし、“未来のあたりまえ”を実現する。それを実現できているか自己点検するためのStyleと位置づける。私たちは日常業務の中で、常に自らに“IS ARC?”と問いかけ続ける。
           </p>
 
-          <figure class="p-purpose__policyFigure">
+          <figure class="p-purpose__policyFigure js-opacity-word">
             <img decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/company/purpose-policy-diagram.svg" alt="" width="406" height="392">
           </figure>
 
           <ul class="p-purpose__policyList">
-            <li class="p-purpose__policyItem">
+            <li class="p-purpose__policyItem js-opacity-word">
               <p class="p-purpose__policyItemTitle">01 Innovate</p>
               <p class="p-purpose__policyItemText">
                 私たちは、「ライフバリューイノベーション」によってお客様と商品をつなぎます。お客様の要望を聞くだけの「御用聞き」では不十分です。お客様のニーズと商品を深く理解し、お客様のライフスタイルを変化させるような新たな価値を提供します。
               </p>
             </li>
-            <li class="p-purpose__policyItem">
+            <li class="p-purpose__policyItem js-opacity-word">
               <p class="p-purpose__policyItemTitle">02 Search</p>
               <p class="p-purpose__policyItemText">
                 私たちは、未来のライフスタイルを探求し商品理解を深めます。過去のやり方を踏襲するだけではお客様に価値を届けられません。5手10手先の未来を探求した情報収集により、お客様のライフスタイルの可能性を拡げます。
               </p>
             </li>
-            <li class="p-purpose__policyItem">
+            <li class="p-purpose__policyItem js-opacity-word">
               <p class="p-purpose__policyItemTitle">03 Active</p>
               <p class="p-purpose__policyItemText">
                 私たちは、自ら主体的に仕事を行い経営に参画します。誰かの頑張りにタダ乗りするだけでは私たちの存在意義はありません。一人ひとりが仕事の意味や背景を考え、経営の当事者として仕事に取り組みます。
               </p>
             </li>
-            <li class="p-purpose__policyItem">
+            <li class="p-purpose__policyItem js-opacity-word">
               <p class="p-purpose__policyItemTitle">04 Respect</p>
               <p class="p-purpose__policyItemText">
                 私たちは、同志として「切磋琢磨」し高め合います。トップダウンだけで経営していても組織は発展しません。経営陣の100歩よりも社員全員が1歩踏み出すことで、お互いに高め合い喜びを感じられる組織を創ります。
               </p>
             </li>
-            <li class="p-purpose__policyItem">
+            <li class="p-purpose__policyItem js-opacity-word">
               <p class="p-purpose__policyItemTitle">05 Challenge</p>
               <p class="p-purpose__policyItemText">
                 私たちは、常に過去の自分たちを超える「自己新記録」にこだわります。自己満足に陥った瞬間に組織の成長も顧客満足も停滞してしまいます。常に昨日の自分を超える「自己新記録」に挑戦し、最高レベルを実現し続けます。
@@ -260,13 +260,48 @@
     <div class="l-page-inner">
       <div class="p-history__content">
         <div class="p-history__head">
-          <p class="p-history__enTitle">History</p>
-          <h2 class="p-history__jaTitle">沿革</h2>
+          <p class="p-history__enTitle js-page-main-title">History</p>
+          <h2 class="p-history__jaTitle js-opacity-word">沿革</h2>
         </div>
 
         <div class="p-history__timeline">
           <ul class="p-history__list">
-            <li class="p-history__item">
+            <li class="p-history__item js-opacity-word">
+              <span class="p-history__dot" aria-hidden="true"></span>
+              <span class="p-history__year">1995</span>
+              <span class="p-history__desc">テレックス関西第一号店をオープン</span>
+            </li>
+            <li class="p-history__item js-opacity-word">
+              <span class="p-history__dot" aria-hidden="true"></span>
+              <span class="p-history__year">1995</span>
+              <span class="p-history__desc">テレックス関西第一号店をオープン</span>
+            </li>
+            <li class="p-history__item js-opacity-word">
+              <span class="p-history__dot" aria-hidden="true"></span>
+              <span class="p-history__year">1995</span>
+              <span class="p-history__desc">テレックス関西第一号店をオープン</span>
+            </li>
+            <li class="p-history__item js-opacity-word">
+              <span class="p-history__dot" aria-hidden="true"></span>
+              <span class="p-history__year">1995</span>
+              <span class="p-history__desc">テレックス関西第一号店をオープン</span>
+            </li>
+            <li class="p-history__item js-opacity-word">
+              <span class="p-history__dot" aria-hidden="true"></span>
+              <span class="p-history__year">1995</span>
+              <span class="p-history__desc">テレックス関西第一号店をオープン</span>
+            </li>
+            <li class="p-history__item js-opacity-word">
+              <span class="p-history__dot" aria-hidden="true"></span>
+              <span class="p-history__year">1995</span>
+              <span class="p-history__desc">テレックス関西第一号店をオープン</span>
+            </li>
+            <li class="p-history__item js-opacity-word">
+              <span class="p-history__dot" aria-hidden="true"></span>
+              <span class="p-history__year">1995</span>
+              <span class="p-history__desc">テレックス関西第一号店をオープン</span>
+            </li>
+            <li class="p-history__item js-opacity-word">
               <span class="p-history__dot" aria-hidden="true"></span>
               <span class="p-history__year">1995</span>
               <span class="p-history__desc">テレックス関西第一号店をオープン</span>
@@ -276,77 +311,42 @@
               <span class="p-history__year">1995</span>
               <span class="p-history__desc">テレックス関西第一号店をオープン</span>
             </li>
-            <li class="p-history__item">
+            <li class="p-history__item js-opacity-word">
               <span class="p-history__dot" aria-hidden="true"></span>
               <span class="p-history__year">1995</span>
               <span class="p-history__desc">テレックス関西第一号店をオープン</span>
             </li>
-            <li class="p-history__item">
+            <li class="p-history__item js-opacity-word">
               <span class="p-history__dot" aria-hidden="true"></span>
               <span class="p-history__year">1995</span>
               <span class="p-history__desc">テレックス関西第一号店をオープン</span>
             </li>
-            <li class="p-history__item">
+            <li class="p-history__item js-opacity-word">
               <span class="p-history__dot" aria-hidden="true"></span>
               <span class="p-history__year">1995</span>
               <span class="p-history__desc">テレックス関西第一号店をオープン</span>
             </li>
-            <li class="p-history__item">
+            <li class="p-history__item js-opacity-word">
               <span class="p-history__dot" aria-hidden="true"></span>
               <span class="p-history__year">1995</span>
               <span class="p-history__desc">テレックス関西第一号店をオープン</span>
             </li>
-            <li class="p-history__item">
+            <li class="p-history__item js-opacity-word">
               <span class="p-history__dot" aria-hidden="true"></span>
               <span class="p-history__year">1995</span>
               <span class="p-history__desc">テレックス関西第一号店をオープン</span>
             </li>
-            <li class="p-history__item">
+            <li class="p-history__item js-opacity-word">
               <span class="p-history__dot" aria-hidden="true"></span>
               <span class="p-history__year">1995</span>
               <span class="p-history__desc">テレックス関西第一号店をオープン</span>
             </li>
-            <li class="p-history__item">
+            <li class="p-history__item js-opacity-word">
               <span class="p-history__dot" aria-hidden="true"></span>
               <span class="p-history__year">1995</span>
               <span class="p-history__desc">テレックス関西第一号店をオープン</span>
             </li>
-            <li class="p-history__item">
-              <span class="p-history__dot" aria-hidden="true"></span>
-              <span class="p-history__year">1995</span>
-              <span class="p-history__desc">テレックス関西第一号店をオープン</span>
-            </li>
-            <li class="p-history__item">
-              <span class="p-history__dot" aria-hidden="true"></span>
-              <span class="p-history__year">1995</span>
-              <span class="p-history__desc">テレックス関西第一号店をオープン</span>
-            </li>
-            <li class="p-history__item">
-              <span class="p-history__dot" aria-hidden="true"></span>
-              <span class="p-history__year">1995</span>
-              <span class="p-history__desc">テレックス関西第一号店をオープン</span>
-            </li>
-            <li class="p-history__item">
-              <span class="p-history__dot" aria-hidden="true"></span>
-              <span class="p-history__year">1995</span>
-              <span class="p-history__desc">テレックス関西第一号店をオープン</span>
-            </li>
-            <li class="p-history__item">
-              <span class="p-history__dot" aria-hidden="true"></span>
-              <span class="p-history__year">1995</span>
-              <span class="p-history__desc">テレックス関西第一号店をオープン</span>
-            </li>
-            <li class="p-history__item">
-              <span class="p-history__dot" aria-hidden="true"></span>
-              <span class="p-history__year">1995</span>
-              <span class="p-history__desc">テレックス関西第一号店をオープン</span>
-            </li>
-            <li class="p-history__item">
-              <span class="p-history__dot" aria-hidden="true"></span>
-              <span class="p-history__year">1995</span>
-              <span class="p-history__desc">テレックス関西第一号店をオープン</span>
-            </li>
-            <li class="p-history__item">
+            <li class="p-history__item js-opacity-word">
               <span class="p-history__dot" aria-hidden="true"></span>
               <span class="p-history__year">1995</span>
               <span class="p-history__desc">テレックス関西第一号店をオープン</span>
@@ -360,11 +360,11 @@
     <div class="l-page-inner">
       <div class="p-page-company__content">
         <div class="p-page-company__head">
-          <p class="p-page-company__enTitle">Company</p>
-          <h2 class="p-page-company__jaTitle">会社概要</h2>
+          <p class="p-page-company__enTitle js-page-main-title">Company</p>
+          <h2 class="p-page-company__jaTitle js-opacity-word">会社概要</h2>
         </div>
 
-        <dl class="p-page-company__list">
+        <dl class="p-page-company__list js-opacity-word">
           <div class="p-page-company__row p-page-company__row--first">
             <dt class="p-page-company__label">会社名</dt>
             <dd class="p-page-company__value">株式会社テレックス関西</dd>

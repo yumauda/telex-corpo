@@ -145,8 +145,8 @@
 
 
         <div class="p-common-mv__titles">
-          <p class="p-common-mv__enTitle">Privacy Policy</p>
-          <h1 class="p-common-mv__jaTitle">個人情報保護方針</h1>
+          <p class="p-common-mv__enTitle js-page-main-title">Privacy Policy</p>
+          <h1 class="p-common-mv__jaTitle js-opacity-word">個人情報保護方針</h1>
         </div>
       </div>
     </div>

@@ -325,11 +325,33 @@
 
                 <nav class="p-header__nav" aria-label="グローバルナビゲーション">
                     <ul class="p-header__navList">
-                        <li class="p-header__navItem">
-                            <a class="p-header__navLink" href="<?php echo esc_url(home_url('/message')); ?>">私たちについて</a>
+                        <li class="p-header__navItem p-header__navItem--hasDropdown">
+                            <span class="p-header__navLink">私たちについて</span>
+                            <ul class="p-header__dropdown">
+                                <li class="p-header__dropdownItem">
+                                    <a class="p-header__dropdownLink" href="<?php echo esc_url(home_url('/message')); ?>">代表メッセージ</a>
+                                </li>
+                                <li class="p-header__dropdownItem">
+                                    <a class="p-header__dropdownLink" href="<?php echo esc_url(home_url('/company')); ?>">会社概要</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="p-header__navItem">
-                            <a class="p-header__navLink" href="<?php echo esc_url(home_url('/business')); ?>">事業内容</a>
+                        <li class="p-header__navItem p-header__navItem--hasDropdown">
+                            <span class="p-header__navLink">事業内容</span>
+                            <ul class="p-header__dropdown">
+                                <li class="p-header__dropdownItem">
+                                    <a class="p-header__dropdownLink" href="<?php echo esc_url(home_url('/mobile-business')); ?>">モバイルショップ事業</a>
+                                </li>
+                                <li class="p-header__dropdownItem">
+                                    <a class="p-header__dropdownLink" href="<?php echo esc_url(home_url('/corporate-sales')); ?>">法人営業</a>
+                                </li>
+                                <li class="p-header__dropdownItem">
+                                    <a class="p-header__dropdownLink" href="<?php echo esc_url(home_url('/event-business')); ?>">イベント事業</a>
+                                </li>
+                                <li class="p-header__dropdownItem">
+                                    <a class="p-header__dropdownLink" href="<?php echo esc_url(home_url('/other-business')); ?>">その他事業</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="p-header__navItem">
                             <a class="p-header__navLink" href="<?php echo esc_url(home_url('/csr')); ?>">CSRの取り組み</a>

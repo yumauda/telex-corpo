@@ -99,7 +99,7 @@
               私たちテレックス関西は時代に合わせて提供すべき価値を見定め社会と自分たちの可能性を信じ、より豊かで生産性のある社会を目指して前進・進化し続けます。
             </p>
             <div class="p-top-about__cta">
-              <a class="p-top-about__link" href="<?php echo esc_url(home_url('/about/')); ?>">
+              <a class="p-top-about__link" href="<?php echo esc_url(home_url('/message')); ?>">
                 <span class="p-top-about__linkText">VIEW ALL</span>
                 <span class="p-top-about__linkIcon" aria-hidden="true"></span>
               </a>
