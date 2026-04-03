@@ -172,6 +172,11 @@
   line-height: 1.1375;
   color: #fff;
   white-space: nowrap;
+
+  &.is-disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
 }
 
 .p-header--light {

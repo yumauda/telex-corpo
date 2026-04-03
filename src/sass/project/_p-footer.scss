@@ -107,6 +107,11 @@
     background: $white;
     color: #3a3a3a;
   }
+
+  &.is-disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
 }
 
 .p-footer__ctaEn {

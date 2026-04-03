@@ -362,7 +362,7 @@
                     </ul>
 
                     <div class="p-header__cta">
-                        <a class="p-header__btn" href="<?php echo esc_url(home_url('/recruit')); ?>">採用情報</a>
+                        <a class="p-header__btn is-disabled" href="<?php echo esc_url(home_url('/recruit')); ?>">採用情報</a>
                         <a class="p-header__btn" href="<?php echo esc_url(home_url('/contact')); ?>">お問い合わせ</a>
                     </div>
                 </nav>
@@ -408,7 +408,7 @@
                                 <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-drawer-content__link">お知らせ</a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="<?php echo esc_url(home_url('/recruit')); ?>" class="p-drawer-content__link">採用情報</a>
+                                <a href="<?php echo esc_url(home_url('/recruit')); ?>" class="p-drawer-content__link is-disabled">採用情報</a>
                             </li>
                         </ul>
                         <div class="p-drawer-content__contact-wrapper">

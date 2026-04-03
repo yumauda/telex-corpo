@@ -11,7 +11,7 @@
             </div>
 
             <div class="p-footer__cta">
-                <a class="p-footer__ctaLink" href="<?php echo esc_url(home_url('/recruit')); ?>">
+                <a class="p-footer__ctaLink is-disabled" href="<?php echo esc_url(home_url('/recruit')); ?>">
                     <span class="p-footer__ctaEn">Recruit</span>
                     <span class="p-footer__ctaJa">採用情報</span>
                 </a>

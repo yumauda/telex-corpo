@@ -23,6 +23,11 @@
   overflow: hidden;
   color: #fff;
   aspect-ratio: 479 / 390;
+
+  &.is-disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
 }
 
 .p-common-link__img img {

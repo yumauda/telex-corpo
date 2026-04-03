@@ -13,7 +13,7 @@
             </a>
         </li>
         <li class="p-common-link__item">
-            <a class="p-common-link__link" href="<?php echo esc_url(home_url('/recruit')); ?>">
+            <a class="p-common-link__link is-disabled" href="<?php echo esc_url(home_url('/recruit')); ?>">
                 <figure class="p-common-link__img">
                     <img decoding="async" loading="lazy" class="p-common-link__bg" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/common/common-link-recruit.webp" alt="採用情報" width="664" height="539">
                 </figure>
