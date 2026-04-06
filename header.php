@@ -354,6 +354,9 @@
                             </ul>
                         </li>
                         <li class="p-header__navItem">
+                            <a class="p-header__navLink" href="<?php echo esc_url(home_url('/shop')); ?>">店舗一覧</a>
+                        </li>
+                        <li class="p-header__navItem">
                             <a class="p-header__navLink" href="<?php echo esc_url(home_url('/csr')); ?>">CSRの取り組み</a>
                         </li>
                         <li class="p-header__navItem">
@@ -406,6 +409,9 @@
                             </li>
                             <li class="p-drawer-content__list">
                                 <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-drawer-content__link">お知らせ</a>
+                            </li>
+                            <li class="p-drawer-content__list">
+                                <a href="<?php echo esc_url(home_url('/shop')); ?>" class="p-drawer-content__link">店舗一覧</a>
                             </li>
                             <li class="p-drawer-content__list">
                                 <a href="<?php echo esc_url(home_url('/recruit')); ?>" class="p-drawer-content__link is-disabled">採用情報</a>

@@ -27,14 +27,15 @@
                 <li class="p-footer__navItem">
                     <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/message')); ?>">私たちについて</a>
                 </li>
-                <!-- <li class="p-footer__navItem">
-                    <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/company')); ?>">会社概要</a>
-                </li> -->
+           
                 <li class="p-footer__navItem">
                     <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/csr')); ?>">CSRの取組み</a>
                 </li>
                 <li class="p-footer__navItem">
                     <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/news')); ?>">お知らせ</a>
+                </li>
+                <li class="p-footer__navItem">
+                    <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/shop')); ?>">店舗一覧</a>
                 </li>
                 <li class="p-footer__navItem">
                     <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/privacy')); ?>">プライバシーポリシー</a>

@@ -73,7 +73,7 @@
 .p-header__nav {
   display: none;
   align-items: center;
-  gap: rem(60);
+  gap: rem(40);
   @include mq(md) {
     display: flex;
   }

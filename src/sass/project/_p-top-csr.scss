@@ -2,6 +2,7 @@
 
 .p-top-csr {
   padding-bottom: rem(64);
+  overflow-x: clip;
 
   @include mq(md) {
     padding-bottom: rem(230);
