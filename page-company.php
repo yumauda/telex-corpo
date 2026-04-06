@@ -269,87 +269,77 @@
             <li class="p-history__item js-opacity-word">
               <span class="p-history__dot" aria-hidden="true"></span>
               <span class="p-history__year">1995</span>
-              <span class="p-history__desc">テレックス関西第一号店をオープン</span>
+              <span class="p-history__desc">テレックス関西 携帯電話プラザ1号店をオープン</span>
             </li>
             <li class="p-history__item js-opacity-word">
               <span class="p-history__dot" aria-hidden="true"></span>
-              <span class="p-history__year">1995</span>
-              <span class="p-history__desc">テレックス関西第一号店をオープン</span>
+              <span class="p-history__year">2004</span>
+              <span class="p-history__desc">auショップ代理店事業開始</span>
             </li>
             <li class="p-history__item js-opacity-word">
               <span class="p-history__dot" aria-hidden="true"></span>
-              <span class="p-history__year">1995</span>
-              <span class="p-history__desc">テレックス関西第一号店をオープン</span>
+              <span class="p-history__year">2005</span>
+              <span class="p-history__desc">docomoショップ代理店事業開始</span>
             </li>
             <li class="p-history__item js-opacity-word">
               <span class="p-history__dot" aria-hidden="true"></span>
-              <span class="p-history__year">1995</span>
-              <span class="p-history__desc">テレックス関西第一号店をオープン</span>
+              <span class="p-history__year">2006</span>
+              <span class="p-history__desc">Softbankショップ代理店事業開始</span>
             </li>
             <li class="p-history__item js-opacity-word">
               <span class="p-history__dot" aria-hidden="true"></span>
-              <span class="p-history__year">1995</span>
-              <span class="p-history__desc">テレックス関西第一号店をオープン</span>
+              <span class="p-history__year">2011</span>
+              <span class="p-history__desc">アロージャパン株式会社設立（Softbank/Y!mobile代理店運営会社）</span>
             </li>
             <li class="p-history__item js-opacity-word">
               <span class="p-history__dot" aria-hidden="true"></span>
-              <span class="p-history__year">1995</span>
-              <span class="p-history__desc">テレックス関西第一号店をオープン</span>
+              <span class="p-history__year">2013</span>
+              <span class="p-history__desc">新卒採用開始</span>
             </li>
             <li class="p-history__item js-opacity-word">
               <span class="p-history__dot" aria-hidden="true"></span>
-              <span class="p-history__year">1995</span>
-              <span class="p-history__desc">テレックス関西第一号店をオープン</span>
+              <span class="p-history__year"></span>
+              <span class="p-history__desc">株式会社アローリンク設立</span>
             </li>
             <li class="p-history__item js-opacity-word">
               <span class="p-history__dot" aria-hidden="true"></span>
-              <span class="p-history__year">1995</span>
-              <span class="p-history__desc">テレックス関西第一号店をオープン</span>
-            </li>
-            <li class="p-history__item">
-              <span class="p-history__dot" aria-hidden="true"></span>
-              <span class="p-history__year">1995</span>
-              <span class="p-history__desc">テレックス関西第一号店をオープン</span>
+              <span class="p-history__year">2017</span>
+              <span class="p-history__desc">HRイノベーション事業開始</span>
             </li>
             <li class="p-history__item js-opacity-word">
               <span class="p-history__dot" aria-hidden="true"></span>
-              <span class="p-history__year">1995</span>
-              <span class="p-history__desc">テレックス関西第一号店をオープン</span>
+              <span class="p-history__year">2020</span>
+              <span class="p-history__desc">デジタルイノベーション事業開始</span>
             </li>
             <li class="p-history__item js-opacity-word">
               <span class="p-history__dot" aria-hidden="true"></span>
-              <span class="p-history__year">1995</span>
-              <span class="p-history__desc">テレックス関西第一号店をオープン</span>
+              <span class="p-history__year">2021</span>
+              <span class="p-history__desc">代表取締役社長交代: 代表取締役社長に蓬莱和真が就任</span>
             </li>
             <li class="p-history__item js-opacity-word">
               <span class="p-history__dot" aria-hidden="true"></span>
-              <span class="p-history__year">1995</span>
-              <span class="p-history__desc">テレックス関西第一号店をオープン</span>
+              <span class="p-history__year">2022</span>
+              <span class="p-history__desc">事業再編に伴い、アロージャパン株式会社が株式会社ラネットグループへ参画</span>
             </li>
             <li class="p-history__item js-opacity-word">
               <span class="p-history__dot" aria-hidden="true"></span>
-              <span class="p-history__year">1995</span>
-              <span class="p-history__desc">テレックス関西第一号店をオープン</span>
+              <span class="p-history__year">2023</span>
+              <span class="p-history__desc">モバイル部門イベント事業開始</span>
             </li>
             <li class="p-history__item js-opacity-word">
               <span class="p-history__dot" aria-hidden="true"></span>
-              <span class="p-history__year">1995</span>
-              <span class="p-history__desc">テレックス関西第一号店をオープン</span>
+              <span class="p-history__year">2025年12月</span>
+              <span class="p-history__desc">auショップニトリモール枚方 新規オープン（au史上全国初のUQからauへの昇格）</span>
             </li>
             <li class="p-history__item js-opacity-word">
               <span class="p-history__dot" aria-hidden="true"></span>
-              <span class="p-history__year">1995</span>
-              <span class="p-history__desc">テレックス関西第一号店をオープン</span>
+              <span class="p-history__year">2026</span>
+              <span class="p-history__desc">事業再編に伴い、株式会社アローリンクがソーシャルデータバンク株式会社グループへ参画</span>
             </li>
             <li class="p-history__item js-opacity-word">
               <span class="p-history__dot" aria-hidden="true"></span>
-              <span class="p-history__year">1995</span>
-              <span class="p-history__desc">テレックス関西第一号店をオープン</span>
-            </li>
-            <li class="p-history__item js-opacity-word">
-              <span class="p-history__dot" aria-hidden="true"></span>
-              <span class="p-history__year">1995</span>
-              <span class="p-history__desc">テレックス関西第一号店をオープン</span>
+              <span class="p-history__year">2026年3月</span>
+              <span class="p-history__desc">auショップサテライトアル・プラザ城陽 当社初のauサテライトショップ新規オープン</span>
             </li>
           </ul>
         </div>
