@@ -198,7 +198,7 @@
             <div class="p-features__itemBody p-features__itemBody--other">
               <h3 class="p-features__itemTitle js-opacity-word">コンサルティング事業</h3>
               <p class="p-features__itemText js-opacity-word">
-                採用支援、人財育成プログラムの提供、組織マネジメントの最適化。テレックス関西の成長を支えた「人」のノウハウを、企業の力へと変換します。
+              採用支援、人材育成プログラムの提供、組織マネジメントの最適化に加え、イベント事業のコンサルティングまでを一貫して支援。テレックス関西の成長を支えてきた「人」に関する実践的なノウハウを体系化し、企業の持続的な成長と価値創出へとつなげます。
               </p>
             </div>
             <figure class="p-features__itemMedia p-features__itemOther-img js-opacity-word">
