@@ -89,6 +89,70 @@
     }
   }
 
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin: rem(32) 0 rem(16);
+    line-height: 1.5;
+    font-weight: $bold;
+  }
+
+  h2 {
+    font-size: rem(24);
+    border-bottom: 1px solid #000;
+    padding-bottom: rem(8);
+    
+  }
+
+  h3 {
+    font-size: rem(22);
+    border-left: rem(4) solid #000;
+    padding-left: rem(12);
+  }
+
+  h4 {
+    font-size: rem(19);
+  }
+
+  h5,h6 {
+    font-size: rem(17);
+  }
+
+  ul,
+  ol {
+    margin: rem(20) 0;
+    padding-left: 1.4em;
+  }
+
+  li {
+    margin-top: rem(8);
+  }
+
+  li:first-child {
+    margin-top: 0;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: rem(24);
+    font-size: inherit;
+  }
+
+  th,
+  td {
+    border: 1px solid #d9d9d9;
+    padding: rem(10) rem(12);
+    text-align: left;
+    vertical-align: top;
+  }
+
+  th {
+    background: #f7f7f7;
+    font-weight: $bold;
+  }
+
   img {
     max-width: 100%;
     height: auto;

@@ -160,10 +160,21 @@
               <article class="p-news__item">
                 <a class="p-news__itemLink" href="<?php the_permalink(); ?>">
                   <figure class="p-news__thumb">
-                    <?php if (has_post_thumbnail()) : ?>
-                      <?php the_post_thumbnail('large', array('loading' => 'lazy', 'decoding' => 'async')); ?>
+                    <?php
+                    $noimage_url = esc_url(get_template_directory_uri()) . '/images/common/noimage.webp';
+                    $thumb_id = get_post_thumbnail_id(get_the_ID());
+                    $thumb_url = '';
+                    if ($thumb_id) {
+                      $thumb_path = get_attached_file($thumb_id);
+                      if ($thumb_path && file_exists($thumb_path)) {
+                        $thumb_url = wp_get_attachment_image_url($thumb_id, 'large');
+                      }
+                    }
+                    if ($thumb_url) :
+                    ?>
+                      <img decoding="async" loading="lazy" src="<?php echo esc_url($thumb_url); ?>" onerror="this.onerror=null;this.src='<?php echo esc_url($noimage_url); ?>';" alt="<?php echo esc_attr(get_the_title()); ?>" width="260" height="185">
                     <?php else : ?>
-                      <img class="p-news__thumbNoImage" decoding="async" loading="lazy" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/common/noimage.webp" alt="" width="260" height="185">
+                      <img class="p-news__thumbNoImage" decoding="async" loading="lazy" src="<?php echo esc_url($noimage_url); ?>" alt="" width="260" height="185">
                     <?php endif; ?>
                   </figure>
                   <time class="p-news__date" datetime="<?php echo esc_attr(get_the_date('c')); ?>">
