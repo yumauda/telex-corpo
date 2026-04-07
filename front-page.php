@@ -21,7 +21,7 @@
         </figure>
         <span class="p-mv__overlay" aria-hidden="true"></span>
         <h1 class="p-mv__title">
-          <span class="p-mv__titleMain js-page-main-title">「未来のあたりまえ」<br class="u-mobile">を世界に</span>
+          <span class="p-mv__titleMain js-page-main-title">「未来のあたりまえ」を世界に</span>
         </h1>
       </div>
     </div>

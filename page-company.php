@@ -390,6 +390,10 @@
                 <span class="p-page-company__execTitle">代表取締役社長</span>
                 <span class="p-page-company__execName">蓬莱 和真</span>
               </span>
+              <span class="p-page-company__exec">
+                <span class="p-page-company__execTitle">常務取締役</span>
+                <span class="p-page-company__execName">木下 和成</span>
+              </span>
             </dd>
           </div>
           <div class="p-page-company__row">

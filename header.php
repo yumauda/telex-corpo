@@ -354,13 +354,13 @@
                             </ul>
                         </li>
                         <li class="p-header__navItem">
-                            <a class="p-header__navLink" href="<?php echo esc_url(home_url('/shop')); ?>">店舗一覧</a>
-                        </li>
-                        <li class="p-header__navItem">
                             <a class="p-header__navLink" href="<?php echo esc_url(home_url('/csr')); ?>">CSRの取り組み</a>
                         </li>
                         <li class="p-header__navItem">
                             <a class="p-header__navLink" href="<?php echo esc_url(home_url('/news')); ?>">お知らせ</a>
+                        </li>
+                        <li class="p-header__navItem">
+                            <a class="p-header__navLink" href="<?php echo esc_url(home_url('/shop')); ?>">店舗一覧</a>
                         </li>
                     </ul>
 
@@ -381,11 +381,16 @@
                             <li class="p-drawer-content__list">
                                 <a href="<?php echo esc_url(home_url('/')); ?>" class="p-drawer-content__link">トップ</a>
                             </li>
-                            <li class="p-drawer-content__list">
-                                <a href="<?php echo esc_url(home_url('/about')); ?>" class="p-drawer-content__link">私たちについて</a>
-                            </li>
-                            <li class="p-drawer-content__list">
-                                <a href="<?php echo esc_url(home_url('/company')); ?>" class="p-drawer-content__link">会社概要</a>
+                            <li class="p-drawer-content__list p-drawer-content__list--parent">
+                                <span class="p-drawer-content__link p-drawer-content__link--parent">私たちについて</span>
+                                <ul class="p-drawer-content__sublist">
+                                    <li class="p-drawer-content__subitem">
+                                        <a href="<?php echo esc_url(home_url('/message')); ?>" class="p-drawer-content__sublink">代表メッセージ</a>
+                                    </li>
+                                    <li class="p-drawer-content__subitem">
+                                        <a href="<?php echo esc_url(home_url('/company')); ?>" class="p-drawer-content__sublink">会社概要</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="p-drawer-content__list p-drawer-content__list--parent">
                                 <span class="p-drawer-content__link p-drawer-content__link--parent">事業内容</span>
