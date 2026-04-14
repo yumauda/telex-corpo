@@ -333,6 +333,17 @@ function exclude_multiple_categories_from_homepage($query)
 }
 add_action('pre_get_posts', 'exclude_multiple_categories_from_homepage');
 
+/**
+ * 店舗一覧の表示件数を全件表示に変更
+ */
+function shop_archive_posts_per_page($query)
+{
+	if (!is_admin() && $query->is_main_query() && is_post_type_archive('shop')) {
+		$query->set('posts_per_page', -1);
+	}
+}
+add_action('pre_get_posts', 'shop_archive_posts_per_page');
+
 add_filter('wpcf7_validate_text', 'custom_hiragana_validation_filter', 20, 2);
 add_filter('wpcf7_validate_text*', 'custom_hiragana_validation_filter', 20, 2);
 

@@ -328,7 +328,7 @@
             </li>
             <li class="p-history__item js-opacity-word">
               <span class="p-history__dot" aria-hidden="true"></span>
-              <span class="p-history__year">2025年12月</span>
+              <span class="p-history__year">2025</span>
               <span class="p-history__desc">auショップニトリモール枚方 新規オープン（au史上全国初のUQからauへの昇格）</span>
             </li>
             <li class="p-history__item js-opacity-word">
@@ -338,7 +338,7 @@
             </li>
             <li class="p-history__item js-opacity-word">
               <span class="p-history__dot" aria-hidden="true"></span>
-              <span class="p-history__year">2026年3月</span>
+              <span class="p-history__year">2026</span>
               <span class="p-history__desc">auショップサテライトアル・プラザ城陽 当社初のauサテライトショップ新規オープン</span>
             </li>
           </ul>

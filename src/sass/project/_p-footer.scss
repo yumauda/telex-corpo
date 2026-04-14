@@ -70,6 +70,10 @@
   }
 }
 
+.p-footer__navLink--disabled {
+  pointer-events: none;
+}
+
 .p-footer__cta {
   display: flex;
   flex-direction: column;

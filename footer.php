@@ -44,7 +44,7 @@
 
             <ul class="p-footer__navList p-footer__navList--sub">
                 <li class="p-footer__navItem">
-                    <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/business')); ?>">事業内容</a>
+                    <a class="p-footer__navLink p-footer__navLink--disabled" href="<?php echo esc_url(home_url('/business')); ?>" aria-disabled="true" tabindex="-1">事業内容</a>
                 </li>
                 <li class="p-footer__navItem">
                     <a class="p-footer__navLink" href="<?php echo esc_url(home_url('/mobile-business')); ?>">-モバイルショップ事業</a>

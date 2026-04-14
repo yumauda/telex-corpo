@@ -158,102 +158,129 @@
 
         <div class="p-privacy__body">
           <p class="p-privacy__intro">
-            株式会社テレックス関西（以下「当社」）は、個人情報の重要性を認識し、個人情報保護法その他関連法令を遵守し、個人情報を適切に取り扱います。
+            株式会社テレックス関西（以下「当社」）は、個人情報の重要性を認識し、個人情報保護法その他関連法令を遵守し、本個人情報保護方針の通り、個人情報を適切に取り扱います。
           </p>
 
           <div class="p-privacy__sections">
             <section class="p-privacy__section">
-              <h3 class="p-privacy__sectionTitle">1. 個人情報の取得</h3>
+              <h3 class="p-privacy__sectionTitle">＜個人情報取扱事業者の名称・住所・代表者氏名＞</h3>
+              <div class="p-privacy__dl">
+                <div class="p-privacy__dlRow">
+                  <p class="p-privacy__dt">名　称：株式会社テレックス関西</p>
+                </div>
+                <div class="p-privacy__dlRow">
+                  <p class="p-privacy__dt">
+                    住　所：〒651-0096<br>
+                    兵庫県神戸市中央区雲井通4-2-2 マークラー神戸ビル4階
+                  </p>
+                </div>
+                <div class="p-privacy__dlRow">
+                  <p class="p-privacy__dt">代表者：代表取締役　上村　計明</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="p-privacy__section">
+              <h3 class="p-privacy__sectionTitle">1. 個人情報の取得方法</h3>
               <p class="p-privacy__text">当社は、以下の方法により個人情報を取得する場合があります。</p>
               <ul class="p-privacy__list">
                 <li class="p-privacy__listItem">お問い合わせフォーム</li>
                 <li class="p-privacy__listItem">採用応募フォーム</li>
                 <li class="p-privacy__listItem">電子メール、電話等によるお問い合わせ</li>
               </ul>
+            </section>
+
+            <section class="p-privacy__section">
+              <h3 class="p-privacy__sectionTitle">2. 取得する個人情報の項目</h3>
               <p class="p-privacy__text">
-                取得する情報には、氏名、メールアドレス、電話番号、会社名、住所、その他お問い合わせ内容や応募情報が含まれる場合があります。
+                当社が取得する個人情報には、氏名、メールアドレス、電話番号、会社名、住所、その他お問い合わせ内容や応募情報等当社に提供された情報が含まれます。
               </p>
             </section>
 
             <section class="p-privacy__section">
-              <h3 class="p-privacy__sectionTitle">2. 個人情報の利用目的</h3>
+              <h3 class="p-privacy__sectionTitle">3. 個人情報の利用目的</h3>
               <p class="p-privacy__text">当社は、取得した個人情報を以下の目的のために利用します。</p>
               <ul class="p-privacy__list">
                 <li class="p-privacy__listItem">お問い合わせへの対応</li>
-                <li class="p-privacy__listItem">当社サービスに関するご案内</li>
-                <li class="p-privacy__listItem">資料送付</li>
+                <li class="p-privacy__listItem">当社サービスに関するご案内等</li>
+                <li class="p-privacy__listItem">資料送付等</li>
                 <li class="p-privacy__listItem">サービス向上および改善のための分析</li>
-                <li class="p-privacy__listItem">採用選考および採用活動に関する連絡</li>
+                <li class="p-privacy__listItem">採用選考および採用活動に関する連絡等</li>
               </ul>
             </section>
 
             <section class="p-privacy__section">
-              <h3 class="p-privacy__sectionTitle">3. 採用応募者の個人情報について</h3>
-              <p class="p-privacy__text">当社は、採用応募者から取得した個人情報を、以下の目的で利用します。</p>
+              <h3 class="p-privacy__sectionTitle">4. 採用応募者の個人情報について</h3>
+              <p class="p-privacy__text">
+                当社は、採用応募者から取得した個人情報については、「3」記載の目的に加え、以下の目的でも利用します。
+              </p>
               <ul class="p-privacy__list">
                 <li class="p-privacy__listItem">採用選考</li>
                 <li class="p-privacy__listItem">面接日程等の連絡</li>
                 <li class="p-privacy__listItem">採用に関する情報提供</li>
                 <li class="p-privacy__listItem">採用活動の改善</li>
               </ul>
+              <p class="p-privacy__text">なお、採用応募者の個人情報は、採用活動終了後、当社の規定に従い適切に管理・廃棄します。</p>
+            </section>
+
+            <section class="p-privacy__section">
+              <h3 class="p-privacy__sectionTitle">5. 個人情報の第三者提供</h3>
               <p class="p-privacy__text">
-                採用応募者の個人情報は、採用活動終了後、当社の規定に従い適切に管理・廃棄します。
+                当社は、法令で認められる場合を除き、本人の同意を得ずに個人情報（個人データ）を第三者に提供することはありません。
               </p>
             </section>
 
             <section class="p-privacy__section">
-              <h3 class="p-privacy__sectionTitle">4. 個人情報の第三者提供</h3>
-              <p class="p-privacy__text">当社は、以下の場合を除き、個人情報を第三者に提供することはありません。</p>
+              <h3 class="p-privacy__sectionTitle">6. 個人情報の安全管理</h3>
+              <p class="p-privacy__text">
+                当社は、個人情報の漏洩、紛失、改ざん、不正アクセス等を防止するため、以下に掲げる適切な安全管理措置を講じます。
+              </p>
               <ul class="p-privacy__list">
-                <li class="p-privacy__listItem">本人の同意がある場合</li>
-                <li class="p-privacy__listItem">法令に基づく場合</li>
+                <li class="p-privacy__listItem">個人情報の適切な取扱いの確保のため、基本方針の策定を行う。</li>
+                <li class="p-privacy__listItem">個人情報の取扱いに係る各種規程を整備する。</li>
+                <li class="p-privacy__listItem">個人情報取扱いに関する責任者を定める等組織的安全管理措置を講じる。</li>
+                <li class="p-privacy__listItem">当社社内規程に従った人的安全管理措置を講じる。</li>
+                <li class="p-privacy__listItem">個人情報を取り扱う機器、電子媒体等の盗難、紛失等を防止するための措置を講じる等物理的安全管理措置を講じる。</li>
+                <li class="p-privacy__listItem">個人情報へのアクセス権限の管理等技術的安全管理措置を講じる。</li>
               </ul>
             </section>
 
             <section class="p-privacy__section">
-              <h3 class="p-privacy__sectionTitle">5. 個人情報の安全管理</h3>
+              <h3 class="p-privacy__sectionTitle">7. 個人情報の開示・訂正・削除</h3>
               <p class="p-privacy__text">
-                当社は、個人情報の漏洩、紛失、改ざん、不正アクセス等を防止するため、適切な安全管理措置を講じます。
+                当社は、本人またはその代理人から、当社の保有個人データについて、利用目的の通知、開示、訂正・追加・削除、利用停止・消去または第三者提供の停止の請求等があった場合には、法令に従い適切に対応します。請求等の手続の詳細については、第10項のお問い合わせ窓口までご連絡ください。
               </p>
             </section>
 
             <section class="p-privacy__section">
-              <h3 class="p-privacy__sectionTitle">6. 個人情報の開示・訂正・削除</h3>
-              <p class="p-privacy__text">
-                本人から個人情報の開示、訂正、削除等の請求があった場合、法令に基づき適切に対応します。
-              </p>
-            </section>
-
-            <section class="p-privacy__section">
-              <h3 class="p-privacy__sectionTitle">7. Cookie等の利用について</h3>
+              <h3 class="p-privacy__sectionTitle">8. Cookie等の利用について</h3>
               <p class="p-privacy__text">
                 当サイトでは、サービス向上および利用状況の分析のためCookieを利用する場合があります。また、アクセス解析ツールとしてGoogle Analyticsを利用することがあります。
               </p>
             </section>
 
             <section class="p-privacy__section">
-              <h3 class="p-privacy__sectionTitle">8. プライバシーポリシーの変更</h3>
+              <h3 class="p-privacy__sectionTitle">9. 個人情報保護方針の変更</h3>
               <p class="p-privacy__text">
-                当社は、必要に応じて本方針を変更することがあります。変更後の内容は当サイトに掲載した時点で効力を生じます。
+                当社は、必要に応じて本個人情報保護方針を変更することがあります。当社が別途定める場合を除き、本個人情報保護方針の変更は、当社ウェブサイトへの掲載によって随時公表するものとし、当該掲載をもって効力が生じます。
               </p>
             </section>
 
             <section class="p-privacy__section">
-              <h3 class="p-privacy__sectionTitle">9. お問い合わせ窓口</h3>
+              <h3 class="p-privacy__sectionTitle">10. お問い合わせ窓口</h3>
               <p class="p-privacy__text">個人情報の取り扱いに関するお問い合わせは、以下までご連絡ください。</p>
               <div class="p-privacy__dl">
                 <div class="p-privacy__dlRow">
                   <p class="p-privacy__dt">会社名：株式会社テレックス関西</p>
                 </div>
                 <div class="p-privacy__dlRow">
-                  <p class="p-privacy__dt">所在地：兵庫県神戸市中央区雲井通4-2-2マークラー神戸ビル5階</p>
+                  <p class="p-privacy__dt">所在地：兵庫県神戸市中央区雲井通4-2-2マークラー神戸ビル4階</p>
                 </div>
                 <div class="p-privacy__dlRow">
                   <p class="p-privacy__dt">
                     メールアドレス：
                     <a class="p-privacy__mail" href="mailto:info@telex.co.jp">info@telex.co.jp</a>
                   </p>
-                 
                 </div>
               </div>
             </section>
