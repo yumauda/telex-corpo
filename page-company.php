@@ -427,11 +427,14 @@
           </div>
           <div class="p-page-company__row">
             <dt class="p-page-company__label">売上高</dt>
-            <dd class="p-page-company__value">約19億5,000万（2023年度実績）</dd>
+            <dd class="p-page-company__value">36億7280万（2025年度）<br>
+              30億530万（2024年度）<br>
+              26億2400万（2023年度）<br>
+              21億7340万（2022年度）</dd>
           </div>
           <div class="p-page-company__row p-page-company__row--last">
             <dt class="p-page-company__label">社員数</dt>
-            <dd class="p-page-company__value">111名（2025年11月現在）</dd>
+            <dd class="p-page-company__value">153名（2026年4月1日時点）</dd>
           </div>
         </dl>
 

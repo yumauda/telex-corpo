@@ -8,14 +8,14 @@
 
     <!-- meta情報 -->
     <?php
-    $site_name = 'テレックス関西株式会社';
+    $site_name = '株式会社テレックス関西';
     $site_url = esc_url(home_url('/'));
     $default_description = 'テレックス関西は、モバイルショップ事業、法人営業、イベント事業などを通じて、地域社会に貢献する企業です。';
-    $ogp_image = get_template_directory_uri() . '/images/common/ogp.jpg';
+    $ogp_image = get_template_directory_uri() . '/images/common/ogp.webp';
     ?>
 
     <?php if (is_home() || is_front_page()) : ?>
-        <title><?php echo $site_name; ?>｜トップページ</title>
+        <title><?php echo $site_name; ?>｜コーポレートサイト</title>
         <meta name="description" content="<?php echo $default_description; ?>" />
         <meta property="og:title" content="<?php echo $site_name; ?>" />
         <meta property="og:type" content="website" />
@@ -365,7 +365,7 @@
                     </ul>
 
                     <div class="p-header__cta">
-                        <a class="p-header__btn is-disabled" href="<?php echo esc_url(home_url('/recruit')); ?>">採用情報</a>
+                        <a class="p-header__btn" href="https://arrow-group.jp/recruit03/" target="_blank" rel="noopener noreferrer">採用情報</a>
                         <a class="p-header__btn" href="<?php echo esc_url(home_url('/contact')); ?>">お問い合わせ</a>
                     </div>
                 </nav>
@@ -419,7 +419,7 @@
                                 <a href="<?php echo esc_url(home_url('/shop')); ?>" class="p-drawer-content__link">店舗一覧</a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="<?php echo esc_url(home_url('/recruit')); ?>" class="p-drawer-content__link is-disabled">採用情報</a>
+                                <a href="https://arrow-group.jp/recruit03/" target="_blank" rel="noopener noreferrer" class="p-drawer-content__link">採用情報</a>
                             </li>
                         </ul>
                         <div class="p-drawer-content__contact-wrapper">
