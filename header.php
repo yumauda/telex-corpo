@@ -365,7 +365,7 @@
                     </ul>
 
                     <div class="p-header__cta">
-                        <a class="p-header__btn" href="https://arrow-group.jp/recruit03/" target="_blank" rel="noopener noreferrer">採用情報</a>
+                        <a class="p-header__btn" href="<?php echo esc_url(home_url('/recruit')); ?>" target="_blank" rel="noopener noreferrer">採用情報</a>
                         <a class="p-header__btn" href="<?php echo esc_url(home_url('/contact')); ?>">お問い合わせ</a>
                     </div>
                 </nav>
@@ -419,7 +419,7 @@
                                 <a href="<?php echo esc_url(home_url('/shop')); ?>" class="p-drawer-content__link">店舗一覧</a>
                             </li>
                             <li class="p-drawer-content__list">
-                                <a href="https://arrow-group.jp/recruit03/" target="_blank" rel="noopener noreferrer" class="p-drawer-content__link">採用情報</a>
+                                <a href="<?php echo esc_url(home_url('/recruit')); ?>" target="_blank" rel="noopener noreferrer" class="p-drawer-content__link">採用情報</a>
                             </li>
                         </ul>
                         <div class="p-drawer-content__contact-wrapper">
