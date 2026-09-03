@@ -171,7 +171,7 @@
                 <div class="p-privacy__dlRow">
                   <p class="p-privacy__dt">
                     住　所：〒651-0096<br>
-                    兵庫県神戸市中央区雲井通4-2-2 マークラー神戸ビル4階
+                    兵庫県神戸市中央区雲井通4-2-2 マークラー神戸ビル10階
                   </p>
                 </div>
                 <div class="p-privacy__dlRow">
@@ -274,7 +274,7 @@
                   <p class="p-privacy__dt">会社名：株式会社テレックス関西</p>
                 </div>
                 <div class="p-privacy__dlRow">
-                  <p class="p-privacy__dt">所在地：兵庫県神戸市中央区雲井通4-2-2マークラー神戸ビル4階</p>
+                  <p class="p-privacy__dt">所在地：兵庫県神戸市中央区雲井通4-2-2マークラー神戸ビル10階</p>
                 </div>
                 <div class="p-privacy__dlRow">
                   <p class="p-privacy__dt">

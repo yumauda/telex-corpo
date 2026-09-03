@@ -368,7 +368,7 @@
             <dd class="p-page-company__value p-page-company__value--address">
               〒651-0096<br>
               兵庫県神戸市中央区雲井通4-2-2<br>
-              マークラー神戸ビル4階
+              マークラー神戸ビル10階
               <div class="p-page-company__map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.39817691681!2d135.19564477574428!3d34.69513567292169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60008eefd5d056dd%3A0x2bcc80c3e36bac37!2z5qCq5byP5Lya56S-44OG44Os44OD44Kv44K56Zai6KW_!5e0!3m2!1sja!2sjp!4v1775009637181!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
