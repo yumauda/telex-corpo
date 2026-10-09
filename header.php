@@ -226,6 +226,24 @@
         <meta name="twitter:description" content="<?php echo $page_description; ?>" />
         <meta name="twitter:image" content="<?php echo $ogp_image; ?>" />
 
+    <?php elseif (is_page('customer-harassment')) : ?>
+        <?php
+        $page_title = 'カスタマーハラスメントに対する基本方針';
+        $page_description = 'テレックス関西のカスタマーハラスメントに対する基本方針をご確認いただけます。';
+        ?>
+        <title><?php echo $page_title; ?>｜<?php echo $site_name; ?></title>
+        <meta name="description" content="<?php echo $page_description; ?>" />
+        <meta property="og:title" content="<?php echo $page_title; ?>｜<?php echo $site_name; ?>" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="<?php echo esc_url(home_url('/customer-harassment')); ?>" />
+        <meta property="og:image" content="<?php echo $ogp_image; ?>" />
+        <meta property="og:site_name" content="<?php echo $site_name; ?>" />
+        <meta property="og:description" content="<?php echo $page_description; ?>" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="<?php echo $page_title; ?>｜<?php echo $site_name; ?>" />
+        <meta name="twitter:description" content="<?php echo $page_description; ?>" />
+        <meta name="twitter:image" content="<?php echo $ogp_image; ?>" />
+
     <?php elseif (is_page('privacy')) : ?>
         <?php
         $page_title = 'プライバシーポリシー';
@@ -310,7 +328,7 @@
 
 <body <?php body_class(); ?>>
     <?php
-    $is_header_light = is_home() || is_singular('post') || is_page(array('contact', 'contact-thanks', 'privacy', 'message', 'company'));
+    $is_header_light = is_home() || is_singular('post') || is_page(array('contact', 'contact-thanks', 'privacy', 'customer-harassment', 'message', 'company'));
     $header_logo_file = $is_header_light ? 'header-logo-black.png' : 'header-logo.png';
     ?>
     <header class="p-header<?php echo is_front_page() ? ' js-top-header' : ''; ?><?php echo $is_header_light ? ' p-header--light' : ''; ?>">

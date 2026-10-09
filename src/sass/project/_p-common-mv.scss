@@ -101,6 +101,23 @@
   }
 }
 
+.p-common-mv__enTitle--customer-harassment {
+  font-size: rem(30);
+  line-height: 1;
+
+  @include mq("md") {
+    font-size: rem(58);
+  }
+}
+
+.p-common-mv__titleBreak {
+  display: block;
+
+  @include mq("md") {
+    display: none;
+  }
+}
+
 .p-common-mv__jaTitle {
   font-family: $base-font-family;
   font-weight: $normal;

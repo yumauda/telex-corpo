@@ -1,0 +1,99 @@
+@use "../global" as *;
+
+.p-customer-harassment {
+  padding-bottom: rem(60);
+
+  @include mq(md) {
+    padding-bottom: rem(160);
+  }
+}
+
+.p-customer-harassment__content {
+  max-width: rem(899);
+  margin-inline: auto;
+}
+
+.p-customer-harassment__body {
+  @include mq(md) {
+    margin-top: rem(48);
+  }
+}
+
+.p-customer-harassment__intro,
+.p-customer-harassment__text,
+.p-customer-harassment__list-item,
+.p-customer-harassment__signature-line {
+  font-family: $base-font-family;
+  font-weight: $normal;
+  font-size: rem(14);
+  color: #222;
+
+  @include mq(md) {
+    font-size: rem(20);
+  }
+}
+
+.p-customer-harassment__intro,
+.p-customer-harassment__text {
+  line-height: 2.05;
+}
+
+.p-customer-harassment__sections {
+  display: grid;
+  gap: rem(24);
+  margin-top: rem(24);
+
+  @include mq(md) {
+    gap: rem(40);
+    margin-top: rem(56);
+  }
+}
+
+.p-customer-harassment__section-title {
+  font-weight: $bold;
+  font-size: rem(16);
+  line-height: 1.6;
+  color: #000;
+
+  @include mq(md) {
+    font-size: rem(20);
+  }
+}
+
+.p-customer-harassment__text,
+.p-customer-harassment__list {
+  margin-top: rem(12);
+
+  @include mq(md) {
+    margin-top: rem(16);
+  }
+}
+
+.p-customer-harassment__list {
+  display: grid;
+  row-gap: rem(8);
+  padding-left: rem(18);
+  list-style: disc;
+
+  @include mq(md) {
+    row-gap: rem(12);
+  }
+}
+
+.p-customer-harassment__list--ordered {
+  list-style: decimal;
+}
+
+.p-customer-harassment__list-item,
+.p-customer-harassment__signature-line {
+  line-height: 1.8;
+}
+
+.p-customer-harassment__signature {
+  margin-top: rem(40);
+  text-align: right;
+
+  @include mq(md) {
+    margin-top: rem(64);
+  }
+}
